@@ -1,0 +1,87 @@
+// sala de Control
+Monitor de Camaras por Gps
+Visualizar ubicación
+//
+
+// Programa Principal
+  Incial infomacion a la Sala de Control para supervisar al robot (ITIEL)
+  Si InicializarRobot() == EXITO Entonces
+    tiempo_para_paseo = ObtenerTiempoDisponible()
+    ruta_planificada = PlanificarRuta(ObtenerUbicacionActual(), tiempo_para_paseo)
+    Si ruta_planificada no es vacía Entonces
+      PasearPerro(ruta_planificada)
+      RegresarACasa(ObtenerUbicacionActual(), ObtenerUbicacionCasa())
+    Sino
+      Informar: "No se pudo planificar una ruta válida."
+    Fin Si
+   Cerrar informacion a la sala.
+  Fin Si
+
+  Función InicializarRobot():
+    Cargar mapa del área
+    Obtener ubicación actual (casa)
+    Si batería < nivel_minimo Entonces
+      Mostrar mensaje: "Batería baja. Cargando..."
+      Esperar hasta batería >= nivel_requerido
+    Fin Si
+    Si no hay bolsitas Entonces
+      Mostrar mensaje: "No hay bolsitas. Imposible pasear."
+      Detener robot
+      Retornar FALLO
+    Fin Si
+    Mostrar mensaje: "Robot listo para pasear."
+    Retornar Estado
+  Fin Función
+
+  Función PlanificarRuta(ubicación_actual, tiempo_disponible):
+    Generar ruta aleatoria dentro del área permitida
+    Retornar ruta_planificada
+  Fin Función
+
+  Función PasearPerro(ruta):
+    Para cada punto en la ruta:
+    Infomar a la sala la ubicacion actual de robot
+      Mover robot al siguiente punto
+      Si encuentra un charco cerca Entonces
+        Informar a la sala la ubicacion del charco
+        Función EvitarCharco(ubicación_charco):
+          Calcular trayectoria alternativa para rodear el charco
+          Seguir trayectoria alternativa
+        Fin Función
+      Fin Si
+      Esperar tiempo_simulado
+      Si detección de excremento Entonces
+        Mostrar mensaje: "¡El perro hizo sus necesidades!"
+        Función RecogerExcremento():
+          Localizar excremento
+          Desplegar bolsa
+          Recoger excremento (Accionar brazo recolector, llevarlo al excremento, barrerlo al recolector, llenar bolsa)
+          Sellar bolsa
+          Almacenar bolsa de forma segura
+          Mostrar mensaje: "Excremento recogido."
+       Si es orina Entonces
+	 Localizar orina
+       Fin Orina
+       Desinfectar zona contagiada
+       Desplegar (Manguera con Agua, con detergente)
+        
+        Fin Función
+        RecogerExcremento()
+      Fin Si
+
+      Si TiempoRestanteParaRegresar() < margen_seguridad Entonces
+        Mostrar mensaje: "Tiempo de regreso cercano. Iniciando retorno."
+        Interrumpir ruta actual
+        Retornar a casa
+        Salir del bucle
+      Fin Si
+    Fin Para
+    Informar "Paseo completado."
+  Fin Función
+
+  Función RegresarACasa(ubicación_actual, ubicación_casa):
+    Calcular ruta óptima a casa
+    Seguir ruta a casa
+    Informar "Robot ha regresado a casa a tiempo."
+  Fin Función
+

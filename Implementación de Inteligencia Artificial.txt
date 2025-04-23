@@ -1,0 +1,10 @@
+Introducción a la Inteligencia Artificial
+Prof. Chantell Gebauer
+
+github - controlador de versiones
+chat 
+conectar con github
+a visual code
+git bash a que verificar si visual lo tiene
+
+
