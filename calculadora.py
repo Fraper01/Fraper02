@@ -1,3 +1,6 @@
+from os import system
+
+system('cls')
 number1 = int(input("Digite o primer número: "))
 number2 = int(input("Digite o segundo número: ")) 
 
@@ -16,9 +19,9 @@ def division(a, b)-> int | float | str:
     return a / b
 
 
-print (f"\nResultado de Sumar {number1} y {number2}: {suma(number1,number2)}")
-print (f"\nResultado de Restar {number1} y {number2}: {resta(number1,number2)}")
-print (f"\nResultado de Multiplicar {number1} y {number2}: {multiplicacion(number1,number2)}")
-print (f"\nResultado de División {number1} y {number2}: {division(number1,number2)}")
+print (f"\nResultado de {number1} + {number2} es  {suma(number1,number2):>5.2f}")
+print (f"\nResultado de {number1} - {number2} es  {resta(number1,number2):>5.2f}")
+print (f"\nResultado de {number1} * {number2} es  {multiplicacion(number1,number2):>5.2f}")
+print (f"\nResultado de {number1} / {number2} es  {division(number1,number2):>5.2f}")
 
 
