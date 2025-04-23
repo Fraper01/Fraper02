@@ -1,8 +1,8 @@
 from os import system
 
 system('cls')
-number1 = int(input("Digite o primer número: "))
-number2 = int(input("Digite o segundo número: ")) 
+number1 = int(input("Digite el primer número: "))
+number2 = int(input("Digite el segundo número: ")) 
 
 def suma(a, b)-> int | float:
     return a + b
