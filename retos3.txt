@@ -1,0 +1,220 @@
+mama de matematicas
+
+Comprobamos si recuerdas las condiciones, bucles y funciones:
+Crea un script con un menú:
+Del tema que os guste
+Varias opciones
+Varias funciones
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import sklearn
+import os
+
+def mostrar_menu_ciencia_datos():
+    """Muestra el menú de exploración de librerías de ciencia de datos."""
+    print("\n--- Exploración de Librerías de Ciencia de Datos ---")
+    print("1. Crear y visualizar un DataFrame de Pandas")
+    print("2. Realizar operaciones básicas con arrays de NumPy")
+    print("3. Generar un gráfico simple con Matplotlib")
+    print("4. Entrenar un modelo de clasificación simple con scikit-learn")
+    print("5. Listar archivos en un directorio usando os")
+    print("6. Salir")
+    print("----------------------------------------------------")
+
+def crear_visualizar_dataframe():
+    """Crea un DataFrame de Pandas y muestra información básica."""
+    data = {'Nombre': ['Alice', 'Bob', 'Charlie', 'David'],
+            'Edad': [25, 30, 22, 35],
+            'Puntuación': [85, 92, 78, 88]}
+    df = pd.DataFrame(data)
+    print("\n--- DataFrame de Pandas ---")
+    print(df)
+    print("\nInformación del DataFrame:")
+    df.info()
+
+def operaciones_basicas_numpy():
+    """Realiza operaciones básicas con arrays de NumPy."""
+    array1 = np.array([1, 2, 3, 4, 5])
+    array2 = np.array([5, 4, 3, 2, 1])
+    print("\n--- Operaciones Básicas con NumPy ---")
+    print(f"Array 1: {array1}")
+    print(f"Array 2: {array2}")
+    print(f"Suma: {array1 + array2}")
+    print(f"Producto escalar: {np.dot(array1, array2)}")
+    print(f"Media de Array 1: {np.mean(array1)}")
+
+def generar_grafico_matplotlib():
+    """Genera un gráfico de dispersión simple con Matplotlib."""
+    x = np.array([1, 2, 3, 4, 5])
+    y = np.array([2, 4, 1, 5, 3])
+    plt.figure(figsize=(6, 4))
+    plt.scatter(x, y, color='red', marker='o')
+    plt.title('Gráfico de Dispersión Simple')
+    plt.xlabel('Eje X')
+    plt.ylabel('Eje Y')
+    plt.grid(True)
+    plt.show()
+
+def entrenar_modelo_sklearn():
+    """Entrena un modelo de clasificación simple con scikit-learn."""
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.model_selection import train_test_split
+    from sklearn.datasets import load_iris
+
+    iris = load_iris()
+    X, y = iris.data[:, :2], iris.target  # Usamos solo las dos primeras características para simplificar
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+    modelo = LogisticRegression()
+    modelo.fit(X_train, y_train)
+    print("\n--- Entrenamiento de Modelo con scikit-learn ---")
+    print("Modelo de Regresión Logística entrenado.")
+    print(f"Precisión en el conjunto de prueba: {modelo.score(X_test, y_test):.2f}")
+
+def listar_archivos_directorio():
+    """Lista los archivos en el directorio actual usando la librería os."""
+    directorio = input("Introduce la ruta del directorio (o deja en blanco para el actual): ")
+    if not directorio:
+        directorio = "."
+    try:
+        archivos = os.listdir(directorio)
+        print(f"\n--- Archivos en el directorio '{directorio}' ---")
+        for archivo in archivos:
+            print(archivo)
+    except FileNotFoundError:
+        print(f"Error: El directorio '{directorio}' no fue encontrado.")
+    except Exception as e:
+        print(f"Ocurrió un error: {e}")
+
+if __name__ == "__main__":
+    while True:
+        mostrar_menu_ciencia_datos()
+        opcion = input("Selecciona una opción: ")
+
+        if opcion == '1':
+            crear_visualizar_dataframe()
+        elif opcion == '2':
+            operaciones_basicas_numpy()
+        elif opcion == '3':
+            generar_grafico_matplotlib()
+        elif opcion == '4':
+            entrenar_modelo_sklearn()
+        elif opcion == '5':
+            listar_archivos_directorio()
+        elif opcion == '6':
+            print("¡Exploración de datos completada!")
+            break
+        else:
+            print("Opción inválida. Por favor, intenta de nuevo.")
+
+
+
+import pandas as pd
+
+data = {'Nombre': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Edad': [25, 30, 22, 35],
+        'Puntuación': [85, 92, 78, 88]}
+df = pd.DataFrame(data)
+
+print("DataFrame original:")
+print(df)
+print("\n")
+
+# Calcular la media de las columnas numéricas
+media_edad = df['Edad'].mean()
+media_puntuacion = df['Puntuación'].mean()
+
+print(f"Media de la columna 'Edad': {media_edad}")
+print(f"Media de la columna 'Puntuación': {media_puntuacion}")
+print("\n")
+
+# Calcular la mediana de las columnas numéricas
+mediana_edad = df['Edad'].median()
+mediana_puntuacion = df['Puntuación'].median()
+
+print(f"Mediana de la columna 'Edad': {mediana_edad}")
+print(f"Mediana de la columna 'Puntuación': {mediana_puntuacion}")
+print("\n")
+
+# Calcular la moda de las columnas numéricas
+# La moda puede tener múltiples valores, así que el resultado es una Serie
+moda_edad = df['Edad'].mode()
+moda_puntuacion = df['Puntuación'].mode()
+
+print(f"Moda de la columna 'Edad':")
+print(moda_edad)
+print(f"\nModa de la columna 'Puntuación':")
+print(moda_puntuacion)
+
+import pandas as pd
+import os
+
+data = {'Nombre': ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank', 'Grace', 'Ana', 'Luis'],
+        'Sexo': ['F', 'M', 'M', 'M', 'F', 'M', 'F', 'F', 'M'],
+        'Edad': [25, 30, 22, 35, 28, 30, 22, 25, 30],
+        'Puntuación': [85, 92, 78, 88, 90, 95, 80, 85, 92]}
+df = pd.DataFrame(data)
+
+os.system('cls')
+print("\n--- DataFrame de Pandas ---")
+print(df)
+print("\n--- Frecuencia de las Modas por Columna ---")
+
+def obtener_frecuencia_modas(serie):
+    """Calcula la moda de una Serie y su frecuencia."""
+    modas = serie.mode()
+    frecuencias = serie.value_counts()
+    resultado = {}
+    if not modas.empty:
+        for moda in modas:
+            if moda in frecuencias:
+                resultado[moda] = frecuencias[moda]
+    return resultado
+
+# Frecuencia de las modas de la columna 'Edad'
+frecuencia_moda_edad = obtener_frecuencia_modas(df['Edad'])
+print(f"\nFrecuencia de la(s) moda(s) de la columna 'Edad': {frecuencia_moda_edad}")
+
+# Frecuencia de las modas de la columna 'Sexo'
+frecuencia_moda_sexo = obtener_frecuencia_modas(df['Sexo'])
+print(f"\nFrecuencia de la(s) moda(s) de la columna 'Sexo': {frecuencia_moda_sexo}")
+
+# Frecuencia de las modas de la columna 'Puntuación'
+frecuencia_moda_puntuacion = obtener_frecuencia_modas(df['Puntuación'])
+print(f"\nFrecuencia de la(s) moda(s) de la columna 'Puntuación': {frecuencia_moda_puntuacion}")
+
+
+import pandas as pd
+import os
+
+data = {'Nombre': ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank', 'Grace'],
+        'Sexo': ['F', 'M', 'M', 'M', 'F', 'M', 'F'],
+        'Edad': [25, 30, 22, 35, 28, 30, 22],
+        'Puntuación': [88, 95, 78, 88, 95, 95, 88]}
+df = pd.DataFrame(data)
+
+os.system('cls')
+print("\n--- DataFrame de Pandas ---")
+print(df)
+print("\n--- Desviación Estándar por Columna Numérica ---")
+
+# Calcular la desviación estándar de la columna 'Edad'
+desviacion_estandar_edad = df['Edad'].std()
+print(f"Desviación Estándar de la columna 'Edad': {desviacion_estandar_edad:.2f}")
+
+# Calcular la desviación estándar de la columna 'Puntuación'
+desviacion_estandar_puntuacion = df['Puntuación'].std()
+print(f"Desviación Estándar de la columna 'Puntuación': {desviacion_estandar_puntuacion:.2f}")
+
+# Intentar calcular la desviación estándar de la columna 'Sexo' (no numérica)
+# Esto devolverá un error o un resultado no significativo, dependiendo de la versión de Pandas.
+# Generalmente, .std() solo opera en columnas numéricas.
+try:
+    desviacion_estandar_sexo = df['Sexo'].std()
+    print(f"Desviación Estándar de la columna 'Sexo': {desviacion_estandar_sexo}")
+except TypeError as e:
+    print(f"\nError al calcular la desviación estándar de la columna 'Sexo': {e}")
+    print("La desviación estándar solo se calcula para columnas numéricas.")
+

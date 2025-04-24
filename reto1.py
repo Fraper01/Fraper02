@@ -25,3 +25,13 @@ edad = año_actual - año_nacimiento
 print(f"\nHola, {nombre}.")
 print(f"Naciste en el año {año_nacimiento}.")
 print(f"Tu edad a la fecha de hoy es de {edad} años.")
+
+
+mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+print(mi_diccionario)
+
+bool1 = False
+bool2 = False
+print(bool1 or bool2)
+print(bool1 and bool2)
+
