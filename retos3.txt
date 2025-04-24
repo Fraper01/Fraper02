@@ -218,3 +218,52 @@ except TypeError as e:
     print(f"\nError al calcular la desviación estándar de la columna 'Sexo': {e}")
     print("La desviación estándar solo se calcula para columnas numéricas.")
 
+
+import pandas as pd
+import os
+
+def ejemplo_csv_dataFrame() -> None:
+    """Ejemplo de cómo crear un DataFrame de Pandas desde un archivo CSV."""
+    os.system('cls')
+    print("\n--- Crear DataFrame desde CSV con Pandas ---")
+    print("Este ejemplo muestra cómo utilizar pd.read_csv() para cargar datos desde un archivo CSV en un DataFrame de Pandas.")
+
+    # 1. Especificar la ruta del archivo CSV
+    csv_file_path = 'ejemplo.csv'  # Reemplaza 'ejemplo.csv' con la ruta de tu archivo CSV
+    print(f"\nRuta del archivo CSV: {csv_file_path}")
+    print("Syntax: csv_file_path = 'ruta/a/tu/archivo.csv'")
+
+    # 2. Intentar leer el archivo CSV y cargarlo en un DataFrame
+    df_from_csv = None  # Inicializar df_from_csv fuera del try
+    try:
+        df_from_csv = pd.read_csv(csv_file_path)
+        print("\nDataFrame creado a partir del archivo CSV:")
+        print(df_from_csv)
+        print("\nSyntax: df_from_csv = pd.read_csv(csv_file_path)")
+
+    except FileNotFoundError:
+        print(f"\nError: No se encontró el archivo CSV en la ruta: {csv_file_path}")
+    except pd.errors.EmptyDataError:
+        print(f"\nError: El archivo CSV en la ruta: {csv_file_path} está vacío.")
+    except pd.errors.ParserError as e:
+        print(f"\nError al analizar el archivo CSV en la ruta: {csv_file_path}: {e}")
+    except Exception as e:
+        print(f"\nOcurrió un error inesperado al leer el archivo CSV: {e}")
+
+    print("\n--- Fin de la información ---")
+    input("Pulse Enter para continuar...")
+
+# Llamar a la función para ejecutar el ejemplo
+if __name__ == "__main__":
+    # Crear un archivo CSV de ejemplo si no existe
+    if not os.path.exists('ejemplo.csv'):
+        data = {'Nombre': ['Alice', 'Bob', 'Charlie'],
+                'Sexo': ['F', 'M', 'M'],
+                'Edad': [25, 30, 22],
+                'Puntuación': [88, 95, 78]}
+        df_ejemplo = pd.DataFrame(data)
+        df_ejemplo.to_csv('ejemplo.csv', index=False)
+        print("\nArchivo 'ejemplo.csv' de ejemplo creado.")
+
+    ejemplo_csv_dataFrame()
+
