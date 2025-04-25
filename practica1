@@ -1,0 +1,30 @@
+
+
+peliculas = {"Padrino": [1, 0, 1, 0, 1],
+             "Cadena": [0, 0, 1, 0, 1],
+             "Lista": [1, 0, 1, 0, 0],
+             "Caballero": [0, 0, 1, 1, 1],
+             "Pulp": [0, 0, 1, 0, 1],
+             "Señor": [1, 0, 1, 0, 1]
+             }
+
+nombre_pelicula1 = input("Por favor, introduce el nombre de la película número 1: ")
+nombre_pelicula2 = input("Por favor, introduce el nombre de la película número 2: ")
+
+vpelicula1 = []
+vpelicula2 = []
+
+if nombre_pelicula1 in peliculas:
+    vpelicula1.append(peliculas[nombre_pelicula1])  # Corrección: usar corchetes []
+    if nombre_pelicula2 in peliculas:
+        vpelicula2.append(peliculas[nombre_pelicula2])
+        # Asegurarse de que vpelicula1 y vpelicula2 contengan listas para el zip
+        if vpelicula1 and vpelicula2 and isinstance(vpelicula1[0], list) and isinstance(vpelicula2[0], list):
+            similitud = sum([a * b for a, b in zip(vpelicula1[0], vpelicula2[0])])
+            print("La similitud entre las películas es: ", similitud)
+        else:
+            print("Error: No se pudieron calcular la similitud. Asegúrate de haber seleccionado dos películas válidas.")
+    else:
+        print(f"La película '{nombre_pelicula2}' no se encuentra en el catálogo.")
+else:
+    print(f"La película '{nombre_pelicula1}' no se encuentra en el catálogo.")

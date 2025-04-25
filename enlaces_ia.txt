@@ -1,0 +1,33 @@
+¡Buenos días desde Aranjuez! ¡Excelente iniciativa mantenerse al día con la IA! Aquí tienes algunas páginas web, grupos y servicios que puedes seguir para encontrar artículos actualizados sobre inteligencia artificial:
+
+Páginas Web y Blogs Especializados:
+
+    Google AI Blog: (ai.googleblog.com/) Publican artículos sobre sus últimas investigaciones y avances en IA.
+    OpenAI Blog: (openai.com/blog/) Mantente al tanto de los desarrollos de GPT, DALL-E y otras investigaciones punteras.
+    DeepMind Blog: (deepmind.com/blog) Artículos sobre sus investigaciones en IA general, aprendizaje por refuerzo y más.
+    MIT Technology Review - AI: (technologyreview.com/topic/artificial-intelligence/) Noticias y análisis sobre los últimos avances y el impacto de la IA.
+    The AI Journal: (theaijournal.com/) Un blog con noticias, análisis y opiniones sobre la industria de la IA.
+    Towards Data Science (Medium): (towardsdatascience.com/) Una plataforma con muchos artículos de profesionales y entusiastas de la ciencia de datos e IA. Puedes filtrar por temas.
+    KDnuggets: (kdnuggets.com/) Noticias, tutoriales, datasets y opiniones sobre IA, aprendizaje automático y ciencia de datos.
+    VentureBeat - AI: (venturebeat.com/category/ai/) Noticias sobre negocios, financiación y desarrollos en el espacio de la IA.
+    TechCrunch - AI: (techcrunch.com/tag/ai/) Noticias sobre startups, productos y tendencias en IA.
+    NVIDIA Blog: (blogs.nvidia.com/ai/) Novedades sobre hardware, software y aplicaciones de IA, especialmente en el ámbito del procesamiento gráfico.
+
+
+
+https://research.google/blog/instructpipe-generating-visual-blocks-pipelines-with-human-instructions-and-llms/
+
+
+InstructPipe. Es exactamente eso: un prototipo de investigación diseñado para simplificar la creación de flujos de trabajo de Inteligencia Artificial (IA), también conocidos como "pipelines" o "tuberías de IA", para usuarios que trabajan con programación visual.
+
+Desglosemos la definición para entenderlo mejor:
+
+    Prototipo de investigación: Esto significa que es un proyecto en desarrollo, una prueba de concepto para explorar una nueva idea o tecnología. No es un producto final y puede evolucionar o incluso no llegar a comercializarse.
+    Permite a los usuarios de programación visual: Esto se refiere a entornos de desarrollo donde la lógica se construye arrastrando y conectando bloques o nodos visuales, en lugar de escribir código tradicionalmente. Ejemplos de plataformas de programación visual para IA podrían incluir herramientas como Node-RED con extensiones de IA, o plataformas específicas de flujo de trabajo de aprendizaje automático con interfaces gráficas.
+    Generar tuberías de IA: Una "tubería de IA" o "pipeline de IA" es una secuencia de pasos o componentes interconectados que procesan datos para realizar una tarea de IA específica. Esto podría incluir la carga de datos, el preprocesamiento, la selección de un modelo de IA, el entrenamiento, la evaluación y la implementación.
+    A partir de instrucciones humanas: Aquí está la clave. InstructPipe busca que los usuarios puedan crear estas complejas tuberías de IA simplemente proporcionando descripciones o instrucciones en lenguaje natural (instrucciones humanas). En lugar de tener que seleccionar y conectar manualmente cada nodo, el usuario describe lo que quiere lograr.
+    Automatizando la selección y conexión de los nodos: Este es el mecanismo principal de InstructPipe. El sistema interpreta la instrucción humana y, basándose en su conocimiento interno, automáticamente elige los nodos o componentes de IA necesarios (por ejemplo, un nodo para cargar datos CSV, un nodo para escalar características, un nodo para un modelo de clasificación específico) y los conecta de manera lógica para formar la tubería deseada.
+
+En esencia, InstructPipe busca hacer la creación de flujos de trabajo de IA más accesible y rápida para usuarios de programación visual, reduciendo la necesidad de un conocimiento profundo de cada componente individual y su forma correcta de conexión. Imagina poder decir "Quiero un pipeline que cargue estos datos, entrene un clasificador de imágenes y me diga la precisión" y que el sistema construya automáticamente ese flujo de trabajo visual por ti.
+
+Es una idea muy interesante que podría democratizar aún más el desarrollo de aplicaciones de IA, permitiendo que personas con menos experiencia en programación tradicional puedan crear soluciones sofisticadas.
