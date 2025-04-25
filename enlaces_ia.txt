@@ -31,3 +31,8 @@ Desglosemos la definición para entenderlo mejor:
 En esencia, InstructPipe busca hacer la creación de flujos de trabajo de IA más accesible y rápida para usuarios de programación visual, reduciendo la necesidad de un conocimiento profundo de cada componente individual y su forma correcta de conexión. Imagina poder decir "Quiero un pipeline que cargue estos datos, entrene un clasificador de imágenes y me diga la precisión" y que el sistema construya automáticamente ese flujo de trabajo visual por ti.
 
 Es una idea muy interesante que podría democratizar aún más el desarrollo de aplicaciones de IA, permitiendo que personas con menos experiencia en programación tradicional puedan crear soluciones sofisticadas.
+
+
+https://www.youtube.com/watch?v=a2me1FApVLA&list=PLoRfWwOOv4jyO61oMnqpD6i_0GBNXqzTZ&index=1
+https://www.youtube.com/watch?v=W1_eCwuYkAI
+https://www.youtube.com/watch?v=gGnyfnaRFVw
