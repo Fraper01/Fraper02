@@ -102,7 +102,7 @@ if os.path.exists(ruta_archivo):
         print("No se puede crear el histograma: falta la columna 'precio'.")
 
     # Crear la figura y la matriz de subplots (2 filas, 2 columnas)
-    fig, axs = plt.subplots(2, 2, figsize=(15, 10))
+    fig, axs = plt.subplots(1, 2, figsize=(15, 10))
     fig.suptitle('Análisis de Ventas', fontsize=16)
 
     # --- Gráfico de Líneas (plot) en axs[0, 0] ---

@@ -2,6 +2,7 @@ from os import system, path
 import time
 import pandas as pd
 import pildoraNumpy
+import matplotlib.pyplot as plt 
 
 def mostrar_menu()-> None:
     #Muestra el menú de General."""
@@ -52,9 +53,175 @@ def mostrar_pandas_dataFrame_Eemplos()-> None:
     print("5. Desviación Estándar DataFrame de Pandas") 
     print("6. Crear un DataFrame con SQL") 
     print("7. Crear un DataFrame desde CSV")
+    print("8. Agregar columnas a un DataFrame")
+    print("9. Agrupar Datos por Categoria DataFrame")
+    print("10. Filtrar filas por condición DataFrame")
+    print("11. Crear Graficos con Agrupaciones y Filtros DataFrame")   
     print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
+def grafico_dataFrame()-> None:
+    system('cls')
+    # Definir la ruta del archivo Excel
+    ruta_archivo = 'ventas.csv'
+    # Verificar si el archivo existe
+    if path.exists(ruta_archivo):
+        # Leer el archivo Excel
+        df = pd.read_csv(ruta_archivo)
+   
+        df['total'] = df['precio'] * df['unidades']  
+        df['fecha'] = pd.to_datetime(df['fecha'])  # Convertir la columna 'fecha' a tipo datetime
+        df['mes'] = df['fecha'].dt.month  # Extraer el mes de la fecha
+        df['año'] = df['fecha'].dt.year  # Extraer el año de la fecha
+
+        # Mostrar información del DataFrame
+        print("\n--- Filtra Filas por Condición a DataFrame ---")
+        print("Este ejemplo muestra cómo filtramos filas por condición DataFrame de Pandas.")
+
+        print("\nSyntax: filtro_producto = df['producto'] == 'Camiseta'")
+        print("\n            df_filtrado = df[filtro_producto]")
+        print("\n      nventas_por_fecha = df_filtrado.groupby('fecha')['total'].sum()")  
+        print("\n      axs[0].plot(ventas_por_fecha.index, ventas_por_fecha.values, marker='o', linestyle='-')")
+        print("\nSyntax: filtro_producto2 = df['mes'] == 1")
+        print("\n            df_filtrado2 = df[filtro_producto2].sort_values(by='fecha')")
+        print("\n            ventas_por_producto = df_filtrado2.groupby('producto')['total'].sum().sort_values(ascending=False)")
+        print("\n            axs[1].bar(ventas_por_producto.index, ventas_por_producto.values, color='skyblue')")
+
+        input("\nPulse Enter para continuar...")
+
+        filtro_producto = df['producto'] == 'Camiseta'
+        df_filtrado = df[filtro_producto]
+
+        try:
+            # Crear la figura y la matriz de subplots (1 fila, 2 columnas)
+            fig, axs = plt.subplots(1, 2, figsize=(15, 6))  # Ajusté el figsize para que sea más proporcional
+            # --- Gráfico de Líneas (plot) en axs[0] ---
+            if 'fecha' in df_filtrado.columns and 'total' in df_filtrado.columns:
+                ventas_por_fecha = df_filtrado.groupby('fecha')['total'].sum()
+                axs[0].plot(ventas_por_fecha.index, ventas_por_fecha.values, marker='o', linestyle='-')
+                axs[0].set_title('Ventas por Fecha de Camiseta')
+                axs[0].set_xlabel('Fecha')
+                axs[0].set_ylabel('Total Ventas')
+                axs[0].tick_params(axis='x', rotation=45, labelsize=8)
+                etiquetas_x_lineas = axs[0].get_xticklabels()
+                plt.setp(etiquetas_x_lineas, rotation=45, ha='right')
+                axs[0].grid(True)
+            else:
+                axs[0].text(0.5, 0.5, 'Faltan datos para el gráfico de líneas', horizontalalignment='center', verticalalignment='center')
+
+            # --- Gráfico de Barras (bar) en axs[1] ---
+            filtro_producto2 = df['mes'] == 1
+            df_filtrado2 = df[filtro_producto2].sort_values(by='fecha')
+
+            if 'producto' in df_filtrado2.columns and 'total' in df_filtrado2.columns:
+                ventas_por_producto = df_filtrado2.groupby('producto')['total'].sum().sort_values(ascending=False)
+                axs[1].bar(ventas_por_producto.index, ventas_por_producto.values, color='skyblue')
+                axs[1].set_title('Ventas por Producto Enero')
+                axs[1].set_xlabel('Producto')
+                axs[1].set_ylabel('Total Ventas')
+                axs[1].grid(axis='y', alpha=0.7)
+                axs[1].tick_params(axis='x', rotation=45, labelsize=8)
+                etiquetas_x_barras = axs[1].get_xticklabels()
+                plt.setp(etiquetas_x_barras, rotation=45, ha='right')
+            else:
+                axs[1].text(0.5, 0.5, 'Faltan datos para el gráfico de barras', horizontalalignment='center', verticalalignment='center')
+
+            fig.tight_layout(rect=[0, 0.03, 1, 0.95]) # Ajustar layout después de intentar crear ambos gráficos
+            plt.show()
+        except Exception as e:
+            print(f"Ocurrió un error: {e}")
+            input("Presione Enter para continuar...")
+
+def agregar_filtros()-> None:
+    system('cls')
+    # Definir la ruta del archivo Excel
+    ruta_archivo = 'ventas.csv'
+    # Verificar si el archivo existe
+    if path.exists(ruta_archivo):
+        # Leer el archivo Excel
+        df = pd.read_csv(ruta_archivo)
+   
+        df['total'] = df['precio'] * df['unidades']  
+        df['fecha'] = pd.to_datetime(df['fecha'])  # Convertir la columna 'fecha' a tipo datetime
+        df['mes'] = df['fecha'].dt.month  # Extraer el mes de la fecha
+        df['año'] = df['fecha'].dt.year  # Extraer el año de la fecha
+
+        # Mostrar información del DataFrame
+        print("\n--- Filtra Filas por Condición a DataFrame ---")
+        print("Este ejemplo muestra cómo filtramos filas por condición DataFrame de Pandas.")
+
+        print("\nSyntax: df[df['unidades'] > 5]")
+        print("\nSyntax: df[df['mes'] == 1].sort_values(by='fecha')")
+        print("\nSyntax: df[df['producto'] == 'Camiseta'].sort_values(by='fecha').head(10)")  
+
+        print("\n")
+        print(df[df['unidades'] > 5])
+        print(df[df['mes'] == 1].sort_values(by='fecha'))
+        print(df[df['producto'] == 'Camiseta'].sort_values(by='fecha').head(10))
+   
+        print("\n--- Fin de la información ---")
+        input("Pulse Enter para continuar...")
+
+
+def agrupar_datos()-> None:
+    system('cls')
+    # Definir la ruta del archivo Excel
+    ruta_archivo = 'ventas.csv'
+    # Verificar si el archivo existe
+    if path.exists(ruta_archivo):
+        # Leer el archivo Excel
+        df = pd.read_csv(ruta_archivo)
+   
+        df['total'] = df['precio'] * df['unidades']  
+        df['fecha'] = pd.to_datetime(df['fecha'])  # Convertir la columna 'fecha' a tipo datetime
+        df['mes'] = df['fecha'].dt.month  # Extraer el mes de la fecha
+        df['año'] = df['fecha'].dt.year  # Extraer el año de la fecha
+
+        # Mostrar información del DataFrame
+        print("\n--- Agrupar Datos por Categoria a DataFrame ---")
+        print("Este ejemplo muestra cómo agrupamos por las columnas año, mes, producto DataFrame de Pandas.")
+
+        print("\nSyntax: df.groupby(['año'])['total'].median()")
+        print("\nSyntax: df.groupby(['año', 'mes'])['total'].mean()")
+        print("\nSyntax: df.groupby('producto')['total'].sum()")  
+
+        print("\n--- Mediana de Ventas por Año  ---")
+        print(df.groupby(['año'])['total'].median())
+        print("\n--- Promedio de Ventas por Año, mes  ---")
+        print(df.groupby(['año', 'mes'])['total'].mean())
+        print("\n--- Ventas por Producto ---")
+        print(df.groupby('producto')['total'].sum())  
+
+        print("\n--- Fin de la información ---")
+        input("Pulse Enter para continuar...")
+
+def agregar_columnas()-> None:
+    system('cls')
+    # Definir la ruta del archivo Excel
+    ruta_archivo = 'ventas.csv'
+    # Verificar si el archivo existe
+    if path.exists(ruta_archivo):
+        # Leer el archivo Excel
+        df = pd.read_csv(ruta_archivo)
+   
+        # Mostrar información del DataFrame
+        print("\n--- Agregar una Columna a DataFrame ---")
+        print("Este ejemplo muestra cómo agregamos la columna total, año, mes al DataFrame de Pandas.")
+
+        print("\nSyntax: df['total'] = df['precio'] * df['unidades']")
+        print("\nSyntax: df['mes']   = df['fecha'].dt.month")
+        print("\nSyntax: df['año']   = df['fecha'].dt.year")  
+
+        df['total'] = df['precio'] * df['unidades']  
+        df['fecha'] = pd.to_datetime(df['fecha'])  # Convertir la columna 'fecha' a tipo datetime
+        df['mes'] = df['fecha'].dt.month  # Extraer el mes de la fecha
+        df['año'] = df['fecha'].dt.year  # Extraer el año de la fecha
+
+        print("\n")
+        print(df.head())
+
+        print("\n--- Fin de la información ---")
+        input("Pulse Enter para continuar...")
 
 def crea_r_csv()-> None:
     #"""Crea un archivo CSV de ejemplo."""
@@ -472,6 +639,14 @@ def menu_pandas_ejercicios()-> None:
                 ejemplo_sql_dataFrame()
             elif opcion == '7':
                 ejemplo_csv_dataFrame()
+            elif opcion == '8':
+                agregar_columnas()
+            elif opcion == '9':
+                agrupar_datos()
+            elif opcion == '10':
+                agregar_filtros()
+            elif opcion == '11':
+                grafico_dataFrame()
             elif opcion == '0':
                 break
             else:
@@ -506,7 +681,7 @@ def menu_pandas()-> None:
         except ValueError:
             print("Por favor, introduce una opción valida.")
 
-"""
+#"""
 # Este bloque se ejecuta solo si el script se ejecuta directamente, no si se importa como un módulo.
 if __name__ == "__main__":
     # Bucle principal del programa.
@@ -526,7 +701,7 @@ if __name__ == "__main__":
                 None
             elif opcion == '4':
                 None
-            elif opcion == '9':
+            elif opcion == '0':
                 print("¡Despegando hacia la próxima aventura!")
                 break
             else:
@@ -534,4 +709,4 @@ if __name__ == "__main__":
         except ValueError:
             print("Por favor, introduce una opción valida.")
         
-"""
+#"""
