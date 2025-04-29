@@ -1,0 +1,39 @@
+import os
+
+def Title() -> None:
+    os.system('cls')
+    print ("Simple Acumulador de Compra")
+    print("------------------------------------")
+
+def Entrada(vCompras: list) -> None:
+    vCant = int(input("Ingrese la Cantidad de Articulos: "))
+    Title()
+    for i in range(vCant): # For
+        vMonto = float(input(f"Ingrese el Monto del Articulo Nº {i+1} :"))
+        AddMonto(vCompras, vMonto)
+
+def Salida(vCompras: list) -> None:
+    Title()
+    vAcumCompra = 0
+    vcont = 0
+    for e in vCompras: # foreach
+        vAcumCompra += e
+        vcont += 1
+        print(f"Artículo Nº {vcont} por un Monto de {e} €")
+
+    print("------------------------------------")
+    print(f"El Total de las Compras es de {vAcumCompra} €")
+    print("\n")
+
+def AddMonto(vAcumMonto: list, vMonto:float) -> None:
+    vAcumMonto.append(vMonto)
+
+def Evaluar():
+    Title()
+    vCompras = []
+    Entrada(vCompras)
+    Salida(vCompras)    
+
+# Realizamos la Llamada a calcular el main.
+if __name__ == "__main__":
+    Evaluar()

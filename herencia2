@@ -1,0 +1,29 @@
+class Animal:
+    def __init__(self, _nombre, _sonido):
+        self.nombre = _nombre
+        self.sonido = _sonido
+
+
+    def hacer_sonido(self):
+        return f"{self.nombre} dice: {self.sonido}!"
+
+class Perro(Animal):
+    def __init__(self, _nombre):
+        super().__init__(_nombre, "Guau")
+
+
+
+class Gato(Animal):
+    def __init__(self, _nombre):
+        super().__init__(_nombre, "Miau")
+
+
+
+if __name__ == "__main__":
+    mi_perro = Perro("Boby")
+    mi_gato = Gato("Michi")
+
+
+print(mi_perro.hacer_sonido())
+print(mi_gato.hacer_sonido())
+

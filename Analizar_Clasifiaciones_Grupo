@@ -1,0 +1,77 @@
+import numpy as np
+import os
+import random
+
+
+def Undido():
+
+
+    #Limpiamos la pantalla
+    limpiar()
+
+
+
+    # Definir las dimensiones de la matriz
+    pos1 = 10  # Número de filas
+    pos2 = 10  # Número de columnas
+
+
+    # Crear una matriz con dimensiones pos1 x pos2 llena de ceros
+    matriz = np.zeros((pos1, pos2))
+
+
+    print("Matriz inicial:")
+    print(matriz)
+
+
+    #Guardamos valores "1" maximo 10, aleatoriamente en la matriz
+    for i in range(10):
+        fila = np.random.randint(0, pos1-1)
+        columna = np.random.randint(0, pos2-1)
+
+
+        #Agregamos a la matriz el valor 1 aleatoriamente
+        matriz[fila][columna] = 1
+
+
+        print(f"{fila}, {columna}")
+
+
+    #Limpiamos la pantalla
+    limpiar()
+
+
+    #Cantidad de intento 6
+    contUndidos = 0
+
+
+    for i in range(6):
+        
+        print(f"Intento Nº {i+1}")
+        print()
+        coordenada_fila = int(input("\nIngrese la coordenada de la fila (0-9): "))
+        coordenada_columna = int(input("\nIngrese la coordenada de la columna (0-9): "))
+
+
+        if ((coordenada_fila >=0 and coordenada_fila <=9)
+            and (coordenada_columna >=0 and coordenada_columna <=9)):
+                if matriz[coordenada_fila][coordenada_columna]== 1:
+                    print("🤯")
+                    contUndidos+=1
+                else:
+                    print("😥")
+
+
+
+    print((f"\n{matriz}"))
+    print(f"Undidos: {contUndidos}")
+
+
+
+def limpiar():
+    os.system("cls")
+
+
+if __name__ == "__main__":
+     Undido()
+

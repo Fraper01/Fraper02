@@ -1,0 +1,136 @@
+import requests
+from bs4 import BeautifulSoup
+import os
+
+
+def limpiar_pantalla():
+    #Limpiamos la pantalla de la terminal
+    os.system("cls")
+
+
+def obtener_texto_plano(url):
+    try:
+        #Realizamos una solicitud HTTP GET a la URL proporcionada
+        respuesta = requests.get(url)
+        
+        #Lanza una excepción si hay un error (404, 500, etc)
+        respuesta.raise_for_status()
+        
+        #Obtenemos el texto de la pagina web
+        soup = BeautifulSoup(respuesta.text, 'html.parser')
+        
+        #Buscamos script y style y todo lo que querramos para quitarlo del texto. 
+        for script_or_style in soup(['script', "style"]):
+            script_or_style.decompose()
+
+
+        #Obtenemos el texto
+        texto = soup.get_text(separator=" ", strip=True) 
+        
+        return texto
+    
+    #Verificamos si la except es de request y en ese caso mostramos el mensaje de error.
+    except requests.exceptions.RequestException as e:
+        return f"Error al obtener la pagina: {e}"
+    
+if __name__ == "__main__":
+    limpiar_pantalla()
+    
+    print("== Extracción del plano desde una página web ==\n")
+    url = input("Ingresa la URL del página: ")
+    
+    texto =obtener_texto_plano(url)
+
+
+    print ("\n== Texto Obtenido ==\n")
+    print(texto)
+
+
+Primero me pare en el directorio donde esta pip
+cd C:\Users\image\AppData\Local\Programs\Python\Python313\Scripts
+..\python.exe .\pip.exe install BeautifulSoup4
+
+Instalar ollama
+ollama list
+ollama run llama3
+
+Formacion CAM Aula 4 25/04/2025 19:38 • 
+import requests
+from bs4 import BeautifulSoup
+import os
+import ollama
+
+
+class Extraer_texto:
+def __init__(self):
+self.modelo = 'mistral'
+self.resumen =''
+
+def limpiar_pantalla(self):
+#Limpiamos la pantalla de la terminal
+os.system("cls")
+
+
+def obtener_texto_plano(self, url):
+try:
+#Realizamos una solicitud HTTP GET a la URL proporcionada
+respuesta = requests.get(url)
+
+#Lanza una excepción si hay un error (404, 500, etc)
+respuesta.raise_for_status()
+
+#Obtenemos el texto de la pagina web
+soup = BeautifulSoup(respuesta.text, 'html.parser')
+
+#Buscamos script y style y todo lo que querramos para quitarlo del texto. 
+for script_or_style in soup(['script', "style"]):
+script_or_style.decompose()
+
+
+#Obtenemos el texto
+texto = soup.get_text(separator=" ", strip=True) 
+
+return texto
+
+#Verificamos si la except es de request y en ese caso mostramos el mensaje de error.
+except requests.exceptions.RequestException as e:
+return f"Error al obtener la pagina: {e}"
+
+def resumir_texto(self,texto):
+prompt=f"""
+- Eres un experto en resumir texto.
+- Resume el texto:{texto} con 500 palabras (tokens) maximo. 
+"""
+
+respuesta = ollama.chat(model=self.modelo, messages=[
+{
+'role': 'user',
+'content': prompt
+}
+])
+
+
+self.resumen = respuesta['message']['content'].strip()
+return self.resumen
+
+
+if __name__ == "__main__":
+extraer = Extraer_texto()
+
+
+extraer.limpiar_pantalla()
+
+print("== Extracción del plano desde una página web ==\n")
+url = input("Ingresa la URL del página: ")
+
+texto_obtenido =extraer.obtener_texto_plano(url)
+resumen = extraer.resumir_texto(texto_obtenido)
+
+
+print ("\n== Texto Obtenido ==\n")
+print(resumen)
+
+
+
+https://www.abc.es/sociedad/cardenales-empiezan-perfilar-nuevo-papa-espero-conclave-20250424211450-nt.html
+
