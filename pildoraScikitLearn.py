@@ -4,6 +4,12 @@ import time
 import pandas as pd
 import numpy as np  # Importamos la librería NumPy
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+from sklearn.datasets import load_iris
 
 def presentar_texto(info_scikitlearn, titulo) -> None:
     #"""Imprime un Texto (Formato Diccionario) por consola."""
@@ -40,35 +46,35 @@ def mostrar_menu()-> None:
 def mostrar_scikitlearn()-> None:
     #Muestra el menú de ScikitLearn."""
     system('cls')
-    titulo = "Librerias de Python SciketLearn"
+    titulo = "Librerias de Python ScikitLearn"
     ancho_linea = 40
     print("Elaborado por: Monica & Francisco")
     print("-" * ancho_linea)
     print(titulo.center(ancho_linea))
-    print("1. Definición de SciketLearn")
-    print("2. Conceptos Básicos de SciketLearn")
-    print("3. Ejemplos de Gráficas")
-    print("4. Consideraciones de SciketLearn")
+    print("1. Definición de ScikitLearn")
+    print("2. Conceptos Básicos de ScikitLearn")
+    print("3. Ejemplos de ScikitLearn")
+    print("4. Consideraciones de ScikitLearn")
     print("5. Recursos Adicionales")
     print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
-def mostrar_matplotlib_ejemplos()-> None:
-    #Muestra el menú de Matplotlib."""
+def mostrar_scikitlearn_ejemplos()-> None:
+    #Muestra el menú de scikitlearn."""
     system('cls')
-    titulo = "Ejemplos de Python Matplotlib"
+    titulo = "Ejemplos de Python ScikitLearn"
     ancho_linea = 40
     print("Elaborado por: Monica & Francisco")
     print("-" * ancho_linea)
     print(titulo.center(ancho_linea))
-    print("1. Gráfico de Líneas")
+    print("1. Clasificación con Regresión Logística")
     print("2. Gráfico de Dispersión")
     print("3. Gráfico de Barras")
     print("4. Multiples Subgráficos")
     print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
-def que_es_SciketLearn()-> None:
+def que_es_ScikitLearn()-> None:
     #"""Muestra información general sobre la librería ScikitLearn."""
     info_scikitlearn = {
         "Nombre": "SciKit-Learn",
@@ -101,26 +107,35 @@ def que_es_SciketLearn()-> None:
     }
     presentar_texto(info_scikitlearn, "Definición de scikit-learn")
 
-def conceptos_matplotlib()-> None:
-    #"""Muestra información general sobre la librería MatPlotLib."""
-    info_matplotlib = {
-        "Nombre": "Matplotlib",
+def conceptos_sciketLearn()-> None:
+    #"""Muestra información general sobre la librería ScikitLearn."""
+    info_sciketlearn = {
+        "Nombre": "Scikit-Learn",
         "Conceptos Clave": 
             [
-            "Figure: Es la ventana o la página completa donde se dibuja el gráfico. Puede contener uno o varios subgráficos (axes).",
-            "Axes (Subplot): Es un área de trazado individual dentro de una figura. Cada Axes tiene sus propios objetos de coordenadas (x-axis, y-axis), "
-            "\n    un título, etiquetas, etc. "
-            "\n    La mayoría de los comandos de trazado se dirigen a un objeto Axes.",
-            "Artist: Todo lo que se dibuja en una figura es un Artist. Esto incluye objetos Text, Line2D, Rectangle, Axes, Figure, etc. "
-            "\n    Los Artist tienen propiedades que controlan su apariencia (por ejemplo, color, estilo de línea, grosor).",
-            "Plotting Functions (en pyplot): Funciones como plot(), scatter(), bar(), hist(), imshow() proporcionan una forma sencilla de crear diferentes tipos de gráficos.",
-            "Properties: Casi todos los elementos de un gráfico tienen propiedades que se pueden personalizar utilizando argumentos en las funciones de trazado o "
-            "\n    mediante métodos de los objetos Artist.",
-            "Backend: El motor que renderiza el gráfico. Diferentes backends son adecuados para diferentes entornos y propósitos "
-            "\n    (por ejemplo, agg para archivos estáticos, TkAgg para ventanas interactivas con Tkinter, WebAgg para visualizaciones en navegadores web)."
+            "Estimadores (Estimators): Son objetos que implementan los algoritmos de aprendizaje automático. "
+            "\n    Tienen un método fit(X, y) para aprender de los datos de entrenamiento (X: características, y: variable objetivo) "
+            "\n    y un método predict(T) para hacer predicciones sobre nuevos datos (T). "
+            "\n    Ejemplos: LinearRegression, LogisticRegression, DecisionTreeClassifier, KMeans.",
+            "Transformadores (Transformers): Son objetos utilizados para preprocesar y transformar datos. "
+            "\n    Implementan un método fit(X) para aprender los parámetros de la transformación (por ejemplo, la media y la desviación estándar para la estandarización)"
+            "\n    y un método transform(X) para aplicar la transformación a los datos. "
+            "\n    Algunos transformadores también tienen un método fit_transform(X) que realiza ambas operaciones de manera eficiente. "
+            "\n    Ejemplos: StandardScaler, MinMaxScaler, OneHotEncoder, PCA.",
+            "Pipelines: Permiten encadenar una secuencia de estimadores y transformadores para automatizar flujos de trabajo de aprendizaje automático comunes "
+            "\n    (por ejemplo, preprocesamiento seguido de entrenamiento de un modelo).",
+            "Validación Cruzada (Cross-validation): Técnicas para evaluar el rendimiento de un modelo dividiendo los datos en múltiples particiones para "
+            "\n    entrenamiento y prueba, proporcionando una estimación más robusta del rendimiento del modelo en datos no vistos",
+            "Selección de Hiperparámetros (Hyperparameter Tuning): Métodos para encontrar la mejor combinación de hiperparámetros para un modelo "
+            "\n    (parámetros que no se aprenden de los datos sino que se configuran antes del entrenamiento) utilizando técnicas como "
+            "\n    la búsqueda en cuadrícula (GridSearchCV) o la búsqueda aleatoria (RandomizedSearchCV).",
+            "Métricas de Evaluación (Evaluation Metrics): Funciones para cuantificar el rendimiento de los modelos "
+            "\n    (por ejemplo, precisión, recall, F1-score para clasificación; error cuadrático medio, R cuadrado para regresión; coeficiente de silueta para clustering).",
+            "Conjuntos de Datos (Datasets): Scikit-learn incluye algunos conjuntos de datos de ejemplo que se pueden utilizar para aprender y experimentar "
+            "\n    (por ejemplo, el conjunto de datos Iris para clasificación, el conjunto de datos Boston Housing para regresión)."
             ]
     }
-    presentar_texto(info_matplotlib, "Conceptos de Matplotlib")
+    presentar_texto(info_sciketlearn, "Conceptos de scikit-learn")
 
 def recursos_matplotlib()-> None:
     #"""Muestra información general sobre la librería MatPlotLib."""
@@ -156,30 +171,129 @@ def consideraciones_matplotlib()-> None:
     }
     presentar_texto(info_matplotlib, "Consideraciones de Matplotlib")
 
-def ejemplo_multi_grafico()-> None:
-    fig, axs = plt.subplots(2, 2, figsize=(10, 8))  # Crear una figura con 2x2 subgráficos
+def ejemplo_clasif_regresion_logistica()-> None:
+    system('cls')
+    texto = """\n
+    # Ejemplo de clasificación con regresión logística utilizando scikit-learn
+    Importaciones: Se importan las herramientas necesarias de scikit-learn:
 
-    x = np.linspace(0, 10, 100)  # Definimos x aquí si no está definido globalmente
-    axs[0, 0].plot(x, np.cos(x))
-    axs[0, 0].set_title('Coseno(x)')
+    train_test_split   : Para dividir los datos en conjuntos de entrenamiento y prueba.
+    LogisticRegression : El modelo de clasificación que se va a utilizar.
+    accuracy_score     : Para evaluar la precisión del modelo.
+    StandardScaler     : Para estandarizar las características (escalar los datos para que tengan media 0 y desviación estándar 1). 
+                         Esto es importante para muchos modelos lineales como la regresión logística.
+    Pipeline           : Para encadenar múltiples pasos de procesamiento de datos (en este caso, escalado y entrenamiento del modelo) 
+                         en un flujo de trabajo coherente.
+    load_iris          : Para cargar el famoso conjunto de datos Iris, que es un problema de clasificación de flores en tres especies.
+    
+    1.- Se carga el conjunto de datos Iris:
+        donde X contiene las características (medidas de las flores) 
+              Y contiene las etiquetas de las clases (las especies de flores).
+    
+        Syntax:
+            iris = load_iris()
+            X, y = iris.data, iris.target
+    """
+    print(texto)
 
-    x_scatter = np.random.rand(50)
-    y_scatter = np.random.rand(50)
-    axs[0, 1].scatter(x_scatter, y_scatter, color='orange')
-    axs[0, 1].set_title('Dispersión 2')
+    # Cargar el conjunto de datos Iris
+    iris = load_iris()
+    X, y = iris.data, iris.target
 
-    # Definimos las variables 'categorias' y 'valores' aquí
-    categorias = ['A', 'B', 'C', 'D']
-    valores = [25, 40, 30, 55]
-    axs[1, 0].bar(categorias, valores, color='cyan')
-    axs[1, 0].set_title('Barras 2')
+    input("Pulse Enter para continuar...")
 
-    axs[1, 1].hist(np.random.randn(100), bins=20, color='magenta', alpha=0.7)
-    axs[1, 1].set_title('Histograma')
+    system('cls')
+    texto = """\n
+    2.- División de Datos: 
+        Los datos se dividen en un conjunto de entrenamiento (X_train, y_train) que se utiliza para entrenar el modelo, 
+        y un conjunto de prueba (X_test, y_test) que se utiliza para evaluar su rendimiento en datos no vistos. 
+        test_size=0.3 indica que el 30% de los datos se utilizará para la prueba, 
+        y random_state=42 asegura que la división sea la misma cada vez que se ejecuta el código (para reproducibilidad).
 
-    fig.suptitle('Múltiples Subgráficos', fontsize=16)
-    plt.tight_layout()  # Ajusta el espaciado entre subgráficos
-    plt.show()
+        Syntax:
+            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+    """
+    print(texto)
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+    input("Pulse Enter para continuar...")
+
+    system('cls')
+    texto = """\n
+    3.- Creación del Pipeline: 
+        Se crea un Pipeline que consta de dos pasos:
+
+        ('scaler', StandardScaler()): Primero, se aplica la estandarización a las características.
+        ('logreg', LogisticRegression(random_state=42))
+         
+        Syntax:
+            pipeline = Pipeline([
+                    ('scaler', StandardScaler()),
+                    ('logreg', LogisticRegression(random_state=42))
+    ])
+    """
+    print(texto)
+   
+    # Crear un pipeline: escalar los datos y luego entrenar un modelo de regresión logística
+    pipeline = Pipeline([
+        ('scaler', StandardScaler()),
+        ('logreg', LogisticRegression(random_state=42))
+    ])
+
+    input("Pulse Enter para continuar...")
+
+    system('cls')
+    texto = """\n
+    4.- Entrenamiento del Modelo: 
+        Entrenamos el modelo (la regresión logística) utilizando los datos de entrenamiento escalados. 
+        El Pipeline automáticamente aplica el escalado a X_train antes de entrenar el modelo.
+
+        syntax:
+            pipeline.fit(X_train, y_train)
+    """ 
+    print(texto)
+
+    # Entrenar el modelo utilizando el pipeline
+    pipeline.fit(X_train, y_train)
+
+    input("Pulse Enter para continuar...")
+
+    system('cls')
+    texto = """\n
+    5.- Predicciones: 
+        Utilizamos el modelo entrenado (dentro del pipeline, lo que significa que los datos de prueba también se escalan automáticamente primero) 
+        para hacer predicciones sobre las etiquetas de las flores en el conjunto de prueba.
+
+        syntax:
+            y_pred = pipeline.predict(X_test)
+    """
+    print(texto)
+
+    # Hacer predicciones en el conjunto de prueba
+    y_pred = pipeline.predict(X_test)
+
+    input("Pulse Enter para continuar...")
+
+    system('cls')
+    texto = """\n
+    6.- Evaluación: 
+        Comparamos las etiquetas verdaderas del conjunto de prueba (y_test) 
+        con las etiquetas predichas por el modelo (y_pred) y calcula la precisión del modelo 
+        (la proporción de predicciones correctas). 
+
+        Syntax:
+            accuracy = accuracy_score(y_test, y_pred)
+    """
+    print(texto)
+
+    # Evaluar el rendimiento del modelo
+    accuracy = accuracy_score(y_test, y_pred)
+
+    print(f"Precisión del modelo de regresión logística: {accuracy:.2f}\n")
+    print("\n--- Fin de la información ---")
+    input("Pulse Enter para continuar...")
+
 
 def ejemplo_graf_barra()-> None:
     categorias = ['A', 'B', 'C', 'D']
@@ -236,11 +350,11 @@ def menu_ScikitLearn()-> None:
             mostrar_scikitlearn()
             opcion = input("Selecciona una opción: ")
             if opcion == '1':
-                que_es_SciketLearn()
+                que_es_ScikitLearn()
             elif opcion == '2':
-                conceptos_matplotlib()
+                conceptos_sciketLearn()
             elif opcion == '3':
-                menu_matplotlib_ejemplos()
+                menu_scikitlearn_ejemplos()
             elif opcion == '4':
                 consideraciones_matplotlib()
             elif opcion == '5':
@@ -252,17 +366,17 @@ def menu_ScikitLearn()-> None:
         except ValueError:
             print("Por favor, introduce una opción valida.")
 
-def menu_matplotlib_ejemplos()-> None:
+def menu_scikitlearn_ejemplos()-> None:
     #Muestra el menú de opciones de la librería Matplotlib
     # Bucle Menu Matplotlib.
     while True:
         # Manejo de excepciones para evitar errores de entrada.
         # Se utiliza para asegurarse de que el usuario introduce un valor válido.
         try:
-            mostrar_matplotlib_ejemplos()
+            mostrar_scikitlearn_ejemplos()
             opcion = input("Selecciona una opción: ")
             if opcion == '1':
-                ejemplo_graf_linea()
+                ejemplo_clasif_regresion_logistica()
             elif opcion == '2':
                 ejemplo_graf_diagrama_dispersión()
             elif opcion == '3':

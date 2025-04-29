@@ -2,6 +2,7 @@ from os import system, path
 import pildoraPanda
 import pildoraNumpy
 import pildoraMatplotlib
+import pildoraScikitLearn
 
 def mostrar_menu()-> None:
     #Muestra el menú de General."""
@@ -36,9 +37,8 @@ if __name__ == "__main__":
                 pildoraNumpy.menu_numpy()
             elif opcion == '3':
                 pildoraMatplotlib.menu_matplotlib()
-                None
             elif opcion == '4':
-                None
+                pildoraScikitLearn.menu_ScikitLearn()
             elif opcion == '0':
                 print("¡Despegando hacia la próxima aventura!")
                 break
