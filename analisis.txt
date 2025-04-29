@@ -1,0 +1,11 @@
+Fecha y Hora: 2025-04-28 12:23:56
+Cantidad de Aguacates: 16
+Media del Peso (gramos): 224.44
+Mediana del Peso (gramos): 155.0
+Desviación Estándar del Peso (gramos): 308.53
+Coeficiente de Variación (%): 137.47
+Asimetría del Peso: 3.51
+Aguacate Más Pesado (gramos): 1410.0
+Aguacate Más Ligero (gramos): 1.0
+Aguacates en Rango Ideal (150.0-160.0 gramos): 7
+Rango Ideal (gramos): 150.0-160.0

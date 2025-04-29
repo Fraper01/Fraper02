@@ -2,6 +2,7 @@ from os import system, path
 import time
 import pandas as pd
 import numpy as np  # Importamos la librería NumPy
+import pandilla_manzana as pm
 
 def mostrar_menu()-> None:
     #Muestra el menú de General."""
@@ -18,7 +19,7 @@ def mostrar_menu()-> None:
     print("2. NumPy")
     print("3. Matplotlib")
     print("4. Scikit-learn")
-    print("9. Salir")
+    print("0. Salir")
     print("-" * ancho_linea)
 
 def mostrar_numpy()-> None:
@@ -36,7 +37,8 @@ def mostrar_numpy()-> None:
     print("5. Indexación y Slicing de Arrays")
     print("6. Funciones Universales (ufuncs)")
     print("7. Álgebra Lineal con NumPy")
-    print("9. Regresar al menú principal")
+    print("8. Ejemplo de Aplicación")
+    print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
 def que_es_numpy()-> None:
@@ -232,7 +234,9 @@ def menu_numpy()-> None:
                 funciones_universales_numpy()
             elif opcion == '7':
                 algebra_lineal_numpy()
-            elif opcion == '9':
+            elif opcion == '8':
+                pm.menu_manzanas()
+            elif opcion == '0':
                 break
             else:
                 print("Opción inválida. Por favor, intenta de nuevo.")

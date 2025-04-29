@@ -18,7 +18,7 @@ def mostrar_menu()-> None:
     print("2. NumPy")
     print("3. Matplotlib")
     print("4. Scikit-learn")
-    print("9. Salir")
+    print("0. Salir")
     print("-" * ancho_linea)
 
 def mostrar_pandas()-> None:
@@ -34,7 +34,7 @@ def mostrar_pandas()-> None:
     print("3. Que es un Series")
     print("4. Crear y visualicar DataFrame")
     print("5. Ejemplos de uso")
-    print("9. Regresar al menú principal")
+    print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
 def mostrar_pandas_dataFrame_Eemplos()-> None:
@@ -52,7 +52,7 @@ def mostrar_pandas_dataFrame_Eemplos()-> None:
     print("5. Desviación Estándar DataFrame de Pandas") 
     print("6. Crear un DataFrame con SQL") 
     print("7. Crear un DataFrame desde CSV")
-    print("9. Regresar al menú principal")
+    print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
 
@@ -472,7 +472,7 @@ def menu_pandas_ejercicios()-> None:
                 ejemplo_sql_dataFrame()
             elif opcion == '7':
                 ejemplo_csv_dataFrame()
-            elif opcion == '9':
+            elif opcion == '0':
                 break
             else:
                 print("Opción inválida. Por favor, intenta de nuevo.")
@@ -499,13 +499,15 @@ def menu_pandas()-> None:
                 crear_visualizar_dataframe()
             elif opcion == '5':
                 menu_pandas_ejercicios()
-            elif opcion == '9':
+            elif opcion == '0':
                 break
             else:
                 print("Opción inválida. Por favor, intenta de nuevo.")
         except ValueError:
             print("Por favor, introduce una opción valida.")
 
+"""
+# Este bloque se ejecuta solo si el script se ejecuta directamente, no si se importa como un módulo.
 if __name__ == "__main__":
     # Bucle principal del programa.
     # Se utiliza para mostrar el menú y ejecutar las opciones seleccionadas por el usuario. 
@@ -532,3 +534,4 @@ if __name__ == "__main__":
         except ValueError:
             print("Por favor, introduce una opción valida.")
         
+"""

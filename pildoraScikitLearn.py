@@ -1,15 +1,15 @@
+# scikit-learn
 from os import system, path
 import time
 import pandas as pd
 import numpy as np  # Importamos la librería NumPy
 import matplotlib.pyplot as plt
-import ejercicio_aguacate2 as ea
 
-def presentar_texto(info_matplotlib, titulo) -> None:
+def presentar_texto(info_scikitlearn, titulo) -> None:
     #"""Imprime un Texto (Formato Diccionario) por consola."""
     system('cls')
     print(f"\n--- {titulo} ---")
-    for clave, valor in info_matplotlib.items():
+    for clave, valor in info_scikitlearn.items():
         print(f"{clave}:")
         if isinstance(valor, list):
             for item in valor:
@@ -37,20 +37,19 @@ def mostrar_menu()-> None:
     print("0. Salir")
     print("-" * ancho_linea)
 
-def mostrar_matplotlib()-> None:
-    #Muestra el menú de NumPy."""
+def mostrar_scikitlearn()-> None:
+    #Muestra el menú de ScikitLearn."""
     system('cls')
-    titulo = "Librerias de Python Matplotlib"
+    titulo = "Librerias de Python SciketLearn"
     ancho_linea = 40
     print("Elaborado por: Monica & Francisco")
     print("-" * ancho_linea)
     print(titulo.center(ancho_linea))
-    print("1. Definición de Matplotlib")
-    print("2. Conceptos Básicos de Matplotlib")
+    print("1. Definición de SciketLearn")
+    print("2. Conceptos Básicos de SciketLearn")
     print("3. Ejemplos de Gráficas")
-    print("4. Consideraciones de Matplotlib")
+    print("4. Consideraciones de SciketLearn")
     print("5. Recursos Adicionales")
-    print("6. Ejemplo de Aplicación")
     print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
@@ -65,45 +64,42 @@ def mostrar_matplotlib_ejemplos()-> None:
     print("1. Gráfico de Líneas")
     print("2. Gráfico de Dispersión")
     print("3. Gráfico de Barras")
-    print("4. Gráfico de Bloxplot")
-    print("5. Multiples Subgráficos")
+    print("4. Multiples Subgráficos")
     print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
-def que_es_matplotlib()-> None:
-    #"""Muestra información general sobre la librería MatPlotLib."""
-    info_matplotlib = {
-        "Nombre": "Matplotlib",
-        "Descripción": "- Matplotlib es la biblioteca fundamental para la visualización de datos en 2D (y algunas capacidades en 3D) en Python."
-            "\n  - Proporciona una forma flexible y poderosa de crear gráficos estáticos, interactivos y animados de calidad de publicación."
-            "\n  - Es la base sobre la que se construyen muchas otras bibliotecas de visualización de datos de nivel superior en Python, como Seaborn.",
-        "Propósito principal": "- El objetivo principal de Matplotlib es permitir a los científicos de datos, ingenieros, investigadores y programadores "
-            "generar visualizaciones significativas \n    y personalizables de sus datos. "
-            "\n  - Ofrece un control granular sobre cada aspecto de un gráfico, desde los marcadores y las líneas hasta las etiquetas, los títulos, las leyendas y los ejes.",
+def que_es_SciketLearn()-> None:
+    #"""Muestra información general sobre la librería ScikitLearn."""
+    info_scikitlearn = {
+        "Nombre": "SciKit-Learn",
+        "Descripción": "- Scikit-learn (a menudo abreviado como sklearn) es una biblioteca integral y de código abierto de aprendizaje automático (machine learning) para Python. "
+        "\n    Está construida sobre NumPy, SciPy y Matplotlib, y proporciona herramientas eficientes para una amplia gama de tareas de aprendizaje supervisado y no supervisado.",
+        "Propósito principal": "- El objetivo principal de scikit-learn es ofrecer una interfaz consistente y fácil de usar para implementar algoritmos de aprendizaje automático "
+        "\n    para clasificación, regresión, clustering, reducción de dimensionalidad, selección de modelos, preprocesamiento de datos y más. "
+        "\n    Se enfoca en la simplicidad, la eficiencia y la accesibilidad para científicos de datos, ingenieros y desarrolladores.",
         "Cuándo se Utiliza": 
             [
-            "Exploración de datos (EDA): Crear histogramas, diagramas de dispersión, gráficos de líneas, gráficos de barras y otros tipos de visualizaciones "
-            "\n    para comprender las características y las relaciones dentro de los conjuntos de datos.",
-            "Presentación de resultados: Generar figuras de alta calidad para informes, publicaciones científicas, presentaciones y dashboards.",
-            "Comunicación: Visualizar tendencias, patrones y comparaciones de manera clara y efectiva para audiencias diversas.",
-            "Desarrollo de interfaces gráficas (GUI): Integrar gráficos dentro de aplicaciones de escritorio utilizando sus backends.",
-            "Creación de animaciones: Visualizar datos que cambian con el tiempo o iteraciones."
+            "Problemas de clasificación: Identificar a qué categoría pertenece un nuevo dato (por ejemplo, detección de spam, clasificación de imágenes).",
+            "Problemas de regresión: Predecir un valor numérico continuo (por ejemplo, predicción de precios, pronóstico de ventas).",
+            "Agrupamiento (Clustering): Descubrir estructuras inherentes en los datos agrupando puntos similares (por ejemplo, segmentación de clientes).",
+            "Reducción de dimensionalidad: Reducir el número de variables en un conjunto de datos manteniendo la información importante "
+            "\n    (por ejemplo, visualización de datos de alta dimensión).",
+            "Selección de modelos: Comparar y seleccionar el mejor modelo para una tarea específica mediante técnicas como la validación cruzada "
+            "\n    y la búsqueda de hiperparámetros.",
+            "Preprocesamiento de datos: Limpiar, transformar y escalar datos para mejorar el rendimiento de los modelos de aprendizaje automático "
+            "\n    (por ejemplo, normalización, estandarización, manejo de valores faltantes).",
+            "Ingeniería de características (Feature Engineering): Crear nuevas características a partir de las existentes para mejorar la capacidad "
+            "\n    predictiva de los modelos."
             ],
-        "Contexto adicional sobre Matplotlib: \n    El diseño de Matplotlib se inspiró en MATLAB, un popular entorno de programación numérica."
-            "\n    Esto hace que la transición para los usuarios familiarizados con MATLAB sea más sencilla. "
-            "\n    Matplotlib ofrece una arquitectura modular con varias capas:": 
-        [
-            "Backend: La capa backend se encarga de renderizar el gráfico en un dispositivo de salida específico "
-            "\n    (por ejemplo, una ventana en pantalla, un archivo PNG, un documento PDF). "
-            "\n    Matplotlib soporta múltiples backends.",
-            "Artist Layer: Esta es la capa de programación orientada a objetos que proporciona un control completo sobre los elementos"
-            "\n    del gráfico (los 'artistas' como líneas, rectángulos, texto, ejes, etc.).",
-            "Scripting Layer (pyplot): Esta es una interfaz de conveniencia basada en el estado que proporciona una forma más rápida y similar a MATLAB"
-            "\n    de crear gráficos para tareas comunes. "
-            "\n    La mayoría de los usuarios principiantes e intermedios interactúan principalmente con esta capa."
-        ]
+        "Contexto adicional sobre scikit-learn": "Scikit-learn se distingue por su API limpia y coherente. "
+        "\n  Los algoritmos se implementan como clases con métodos estándar como fit() (para entrenar el modelo con datos) y "
+        "\n  predict() (para hacer predicciones con datos nuevos). "
+        "\n  Esto facilita la experimentación con diferentes modelos y la construcción de flujos de trabajo de aprendizaje automático completos."
+        "\n  La biblioteca también incluye amplias herramientas para la evaluación de modelos, la selección de hiperparámetros y el preprocesamiento de datos,"
+        "\n  lo que la convierte en una solución integral para muchas tareas de aprendizaje automático. "
+        "\n  Su fuerte integración con las bibliotecas numéricas de Python (NumPy y SciPy) garantiza la eficiencia en el manejo de grandes conjuntos de datos."
     }
-    presentar_texto(info_matplotlib, "Definición de Matplotlib")
+    presentar_texto(info_scikitlearn, "Definición de scikit-learn")
 
 def conceptos_matplotlib()-> None:
     #"""Muestra información general sobre la librería MatPlotLib."""
@@ -161,9 +157,9 @@ def consideraciones_matplotlib()-> None:
     presentar_texto(info_matplotlib, "Consideraciones de Matplotlib")
 
 def ejemplo_multi_grafico()-> None:
-    fig, axs = plt.subplots(2, 3, figsize=(15, 10))  # Crear una figura con 3x2 subgráficos
+    fig, axs = plt.subplots(2, 2, figsize=(10, 8))  # Crear una figura con 2x2 subgráficos
 
-    x = np.linspace(0, 10, 100)  # Definimos x aquí
+    x = np.linspace(0, 10, 100)  # Definimos x aquí si no está definido globalmente
     axs[0, 0].plot(x, np.cos(x))
     axs[0, 0].set_title('Coseno(x)')
 
@@ -171,13 +167,6 @@ def ejemplo_multi_grafico()-> None:
     y_scatter = np.random.rand(50)
     axs[0, 1].scatter(x_scatter, y_scatter, color='orange')
     axs[0, 1].set_title('Dispersión 2')
-
-    aguacates = [150, 165, 140, 170, 155, 160, 145, 175, 150, 160, 165, 155]
-    axs[0, 2].boxplot(aguacates, vert=False)  
-    axs[0, 2].set_title('Boxplot')
-    axs[0, 2].set_xlabel('Peso (gramos)')
-    axs[0, 2].set_yticks([1])
-    axs[0, 2].set_yticklabels(['Pesos'])
 
     # Definimos las variables 'categorias' y 'valores' aquí
     categorias = ['A', 'B', 'C', 'D']
@@ -188,26 +177,8 @@ def ejemplo_multi_grafico()-> None:
     axs[1, 1].hist(np.random.randn(100), bins=20, color='magenta', alpha=0.7)
     axs[1, 1].set_title('Histograma')
 
-    # Gráfico de Violín para los pesos de los aguacates 
-    axs[1, 2].violinplot(aguacates, vert=False, showmeans=True, showmedians=True)
-    axs[1, 2].set_title('Violín Plot ')
-    axs[1, 2].set_xlabel('Peso (gramos)')
-    axs[1, 2].set_yticks([1])
-    axs[1, 2].set_yticklabels(['Pesos'])
-
     fig.suptitle('Múltiples Subgráficos', fontsize=16)
     plt.tight_layout()  # Ajusta el espaciado entre subgráficos
-    plt.show()
-
-def ejemplo_graf_boxplot()-> None:
-    aguacates = [150, 165, 140, 170, 155, 160, 145, 175, 150, 160, 165, 155]
-    # Boxplot
-    plt.boxplot(aguacates, vert=False)
-    plt.title('Distribución del Peso de los Aguacates (Boxplot)')
-    plt.xlabel('Peso (gramos)')
-    plt.yticks([1], ['Pesos'])
-    plt.grid(axis='x', alpha=0.5)
-    plt.tight_layout()
     plt.show()
 
 def ejemplo_graf_barra()-> None:
@@ -255,17 +226,17 @@ def ejemplo_graf_linea()-> None:
     plt.show()
     print("\n--- Fin de la información ---")
 
-def menu_matplotlib()-> None:
-    #Muestra el menú de opciones de la librería NumPy
-    # Bucle Menu NumPy.
+def menu_ScikitLearn()-> None:
+    #Muestra el menú de opciones de la librería ScikitLearn
+    # Bucle Menu scikitlearn.
     while True:
         # Manejo de excepciones para evitar errores de entrada.
         # Se utiliza para asegurarse de que el usuario introduce un valor válido.
         try:
-            mostrar_matplotlib()
+            mostrar_scikitlearn()
             opcion = input("Selecciona una opción: ")
             if opcion == '1':
-                que_es_matplotlib()
+                que_es_SciketLearn()
             elif opcion == '2':
                 conceptos_matplotlib()
             elif opcion == '3':
@@ -274,8 +245,6 @@ def menu_matplotlib()-> None:
                 consideraciones_matplotlib()
             elif opcion == '5':
                 recursos_matplotlib()
-            elif opcion == '6':
-                ea.ejercicio_aguacate()
             elif opcion == '0':
                 break
             else:
@@ -299,8 +268,6 @@ def menu_matplotlib_ejemplos()-> None:
             elif opcion == '3':
                 ejemplo_graf_barra()
             elif opcion == '4':
-                ejemplo_graf_boxplot()
-            elif opcion == '5':
                 ejemplo_multi_grafico()
             elif opcion == '0':
                 break
@@ -324,9 +291,9 @@ if __name__ == "__main__":
             elif opcion == '2':
                 None
             elif opcion == '3':
-                menu_matplotlib()
-            elif opcion == '4':
                 None
+            elif opcion == '4':
+                menu_ScikitLearn()
             elif opcion == '0':
                 print("¡Despegando hacia la próxima aventura!")
                 break
