@@ -68,9 +68,6 @@ def mostrar_scikitlearn_ejemplos()-> None:
     print("-" * ancho_linea)
     print(titulo.center(ancho_linea))
     print("1. Clasificación con Regresión Logística")
-    print("2. Gráfico de Dispersión")
-    print("3. Gráfico de Barras")
-    print("4. Multiples Subgráficos")
     print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
@@ -295,51 +292,6 @@ def ejemplo_clasif_regresion_logistica()-> None:
     input("Pulse Enter para continuar...")
 
 
-def ejemplo_graf_barra()-> None:
-    categorias = ['A', 'B', 'C', 'D']
-    valores = [25, 40, 30, 55]
-
-    plt.figure(figsize=(8, 6))
-    plt.bar(categorias, valores, color=['red', 'green', 'blue', 'purple'])
-    plt.xlabel('Categorías')
-    plt.ylabel('Valores')
-    plt.title('Gráfico de Barras')
-    plt.show()
-    print("\n--- Fin de la información ---")
-
-def ejemplo_graf_diagrama_dispersión()-> None:
-    np.random.seed(0)
-    x_scatter = np.random.rand(50)
-    y_scatter = np.random.rand(50)
-    colores = np.random.rand(50)
-    tamanios = 100 * np.random.rand(50)
-
-    plt.figure(figsize=(8, 6))
-    plt.scatter(x_scatter, y_scatter, c=colores, s=tamanios, alpha=0.7, cmap='viridis')
-    plt.colorbar(label='Intensidad del color')
-    plt.xlabel('Variable A')
-    plt.ylabel('Variable B')
-    plt.title('Diagrama de Dispersión')
-    plt.show()
-    print("\n--- Fin de la información ---")
-
-def ejemplo_graf_linea()-> None:
-    #"""Muestra ejemplo de graficación de línea."""
-    system('cls')
-    print("\n--- Grafico de línea Matplotlib ---")
-    # Ejemplo básico de un gráfico de líneas
-    x = np.linspace(0, 10, 100)
-    y = np.sin(x)
-    plt.figure(figsize=(8, 6))  # Crear una nueva figura con un tamaño específico
-    plt.plot(x, y, label='Seno(x)', color='blue', linestyle='-', linewidth=2)
-    plt.xlabel('Eje X')
-    plt.ylabel('Eje Y')
-    plt.title('Gráfico de la función Seno')
-    plt.legend()
-    plt.grid(True)
-    plt.show()
-    print("\n--- Fin de la información ---")
-
 def menu_ScikitLearn()-> None:
     #Muestra el menú de opciones de la librería ScikitLearn
     # Bucle Menu scikitlearn.
@@ -378,11 +330,11 @@ def menu_scikitlearn_ejemplos()-> None:
             if opcion == '1':
                 ejemplo_clasif_regresion_logistica()
             elif opcion == '2':
-                ejemplo_graf_diagrama_dispersión()
+                None
             elif opcion == '3':
-                ejemplo_graf_barra()
+                None
             elif opcion == '4':
-                ejemplo_multi_grafico()
+                None
             elif opcion == '0':
                 break
             else:

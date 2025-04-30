@@ -278,6 +278,7 @@ def ejemplo_sql_dataFrame()-> None:
     import sqlite3
     # 1. Establecer la conexión a la base de datos
     conn = None  # Inicializar conn fuera del try para poder referenciarlo en finally
+
     try:
         conn = sqlite3.connect('ejemplo.db')
         print("\nConexión a la base de datos 'ejemplo.db' establecida. syntax: conn = sqlite3.connect('ejemplo.db')")
@@ -289,6 +290,7 @@ def ejemplo_sql_dataFrame()-> None:
         # 3. Utilizar pd.read_sql_query() para ejecutar la consulta y cargar los resultados en un DataFrame
         df_from_sql = pd.read_sql_query(sql_query, conn)
         print("\nDataFrame creado a partir de la consulta SQL: ")
+
         print(df_from_sql)
 
     except sqlite3.Error as e:

@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np  # Importamos la librería NumPy
 import matplotlib.pyplot as plt
 import ejercicio_aguacate2 as ea
+import seaborn as sns
 
 def presentar_texto(info_matplotlib, titulo) -> None:
     #"""Imprime un Texto (Formato Diccionario) por consola."""
@@ -51,6 +52,7 @@ def mostrar_matplotlib()-> None:
     print("4. Consideraciones de Matplotlib")
     print("5. Recursos Adicionales")
     print("6. Ejemplo de Aplicación")
+    print("7. Ejercicio de Aplicación Estudiante")
     print("0. Regresar al menú principal")
     print("-" * ancho_linea)
 
@@ -160,6 +162,256 @@ def consideraciones_matplotlib()-> None:
     }
     presentar_texto(info_matplotlib, "Consideraciones de Matplotlib")
 
+def ejercicios_estudiante()-> None:
+    # Definir la ruta del archivo Excel
+    ruta_archivo = 'notas_estudiantes.csv'
+
+    # Verificar si el archivo existe
+    if path.exists(ruta_archivo):
+        system('cls')
+        texto = """
+        Gráfico de Líneas y Gráfico de Barras con Matplotlib 
+        # 1. Calcular la nota media por asignatura
+        nota_media_por_asignatura = df.groupby('asignatura')['nota'].mean().sort_values(ascending=False)
+
+        # 2. Elegir un estudiante y obtener sus notas
+        estudiante_elegido = 'Estudiante_1'  # Puedes cambiar este nombre
+        notas_estudiante = df[df['estudiante'] == estudiante_elegido].sort_values(by='fecha')
+
+        # 3. Crear la figura y los subplots (1 fila, 2 columnas)
+        fig, axes = plt.subplots(1, 2, figsize=(15, 6))
+        fig.suptitle('Análisis de Notas', fontsize=16)
+
+        # 4. Gráfico de barras en el primer subplot (axes[0]) ---
+        axes[0].bar(nota_media_por_asignatura.index, nota_media_por_asignatura.values, color='skyblue')
+        axes[0].set_title('Nota Media por Asignatura (matplotlib)')
+        axes[0].set_xlabel('Asignatura')
+        axes[0].set_ylabel('Nota Media')
+        ...
+
+        # 5. Gráfico de líneas en el segundo subplot (axes[1]) ---
+        axes[1].plot(notas_estudiante['asignatura'], notas_estudiante['nota'], marker='o', linestyle='-', color='coral')
+        axes[1].set_title(f'Notas de {estudiante_elegido} por Asignatura (matplotlib)')
+        axes[1].set_xlabel('Asignatura')
+        axes[1].set_ylabel('Nota')
+        ...
+        plt.show()
+        """
+        print(texto)
+        print("\nElaborado por: Mónica & Francisco")         
+        input("Presione Enter para continuar...")
+
+        # Leer el archivo csv
+        df = pd.read_csv(ruta_archivo)
+    
+        # 1. Calcular la nota media por asignatura
+        nota_media_por_asignatura = df.groupby('asignatura')['nota'].mean().sort_values(ascending=False)
+
+        # 2. Elegir un estudiante y obtener sus notas
+        estudiante_elegido = 'Estudiante_1'  # Puedes cambiar este nombre
+        notas_estudiante = df[df['estudiante'] == estudiante_elegido].sort_values(by='fecha')
+
+        try:
+            # Crear la figura y los subplots (1 fila, 2 columnas)
+            fig, axes = plt.subplots(1, 2, figsize=(15, 6))
+            fig.suptitle('Análisis de Notas', fontsize=16)
+
+            # --- Gráfico de barras en el primer subplot (axes[0]) ---
+            axes[0].bar(nota_media_por_asignatura.index, nota_media_por_asignatura.values, color='skyblue')
+            axes[0].set_title('Nota Media por Asignatura (matplotlib)')
+            axes[0].set_xlabel('Asignatura')
+            axes[0].set_ylabel('Nota Media')
+            axes[0].grid(axis='y', alpha=0.7)
+            axes[0].tick_params(axis='x', rotation=45, labelsize=8)
+            etiquetas_x_barra = axes[0].get_xticklabels()
+            plt.setp(etiquetas_x_barra, rotation=45, ha='right')
+
+            # --- Gráfico de líneas en el segundo subplot (axes[1]) ---
+            if not notas_estudiante.empty:
+                axes[1].plot(notas_estudiante['asignatura'], notas_estudiante['nota'], marker='o', linestyle='-', color='coral')
+                axes[1].set_title(f'Notas de {estudiante_elegido} por Asignatura (matplotlib)')
+                axes[1].set_xlabel('Asignatura')
+                axes[1].set_ylabel('Nota')
+                axes[1].grid(axis='y', alpha=0.7)
+                axes[1].tick_params(axis='x', rotation=45, labelsize=8)
+                etiquetas_x_linea = axes[1].get_xticklabels()
+                plt.setp(etiquetas_x_linea, rotation=45, ha='right')
+            else:
+                axes[1].text(0.5, 0.5, f'No se encontraron notas para el estudiante \'{estudiante_elegido}\'.', horizontalalignment='center', verticalalignment='center')
+
+            plt.tight_layout(rect=[0, 0.03, 1, 0.95]) # Ajustar layout para el título principal
+            plt.show()
+        except Exception as e:
+            print(f"Ocurrió un error: {e}")
+
+        input("Presione Enter para continuar...")
+
+        system('cls')
+        texto = """
+        Gráfico de Líneas y Gráfico de Barras con Seaborn
+        # 1. Calcular la nota media por asignatura
+        nota_media_por_asignatura = df.groupby('asignatura')['nota'].mean().sort_values(ascending=False).reset_index()
+
+        # 2. Elegir un estudiante y obtener sus notas
+        estudiante_elegido = 'Estudiante_2'  # Puedes cambiar este nombre
+        notas_estudiante = df[df['estudiante'] == estudiante_elegido].sort_values(by='fecha')
+
+        # Crear la figura y la matriz de subplots (1 fila, 2 columnas)
+        fig, axes = plt.subplots(1, 2, figsize=(18, 6))
+        fig.suptitle('Análisis de Notas de Estudiantes con Seaborn', fontsize=16)
+
+        # 4. Gráfico de barras en el primer subplot (axes[0]) ---
+        sns.barplot(x='asignatura', y='nota', hue='asignatura', data=nota_media_por_asignatura, palette='viridis', ax=axes[0], legend=False)
+        axes[0].set_title('Nota Media por Asignatura (seaborn)')
+        axes[0].set_xlabel('Asignatura')
+        axes[0].set_ylabel('Nota Media')
+        ...
+
+        # 5. Gráfico de líneas en el segundo subplot (axes[1]) ---
+        sns.lineplot(x='asignatura', y='nota', data=notas_estudiante, marker='o', color='coral', ax=axes[1])
+        axes[1].set_title(f'Notas de {estudiante_elegido} por Asignatura (seaborn)')
+        axes[1].set_xlabel('Asignatura')
+        axes[1].set_ylabel('Nota')
+        axes[1].grid(axis='y', alpha=0.7)
+        ...
+        plt.show()
+        """
+        print(texto)
+        print("\nElaborado por: Mónica & Francisco")         
+        input("Presione Enter para continuar...")
+
+        # Crear la figura y la matriz de subplots (1 fila, 2 columnas)
+        fig, axes = plt.subplots(1, 2, figsize=(18, 6))
+        fig.suptitle('Análisis de Notas de Estudiantes con Seaborn', fontsize=16)
+
+        # 1. Gráfico de barras con Seaborn mostrando la nota media por asignatura (en axes[0])
+        nota_media_por_asignatura = df.groupby('asignatura')['nota'].mean().sort_values(ascending=False).reset_index()
+        sns.barplot(x='asignatura', y='nota', hue='asignatura', data=nota_media_por_asignatura, palette='viridis', ax=axes[0], legend=False)
+        axes[0].set_title('Nota Media por Asignatura (seaborn)')
+        axes[0].set_xlabel('Asignatura')
+        axes[0].set_ylabel('Nota Media')
+        axes[0].set_xticklabels(axes[0].get_xticklabels(), rotation=45, ha='right')
+        axes[0].grid(axis='y', alpha=0.7)
+
+        # 2. Elegir un estudiante y graficar sus notas con un gráfico de líneas con Seaborn (en axes[1])
+        estudiante_elegido = 'Estudiante_2'  # Puedes cambiar este nombre
+        notas_estudiante = df[df['estudiante'] == estudiante_elegido].sort_values(by='fecha')
+
+        if not notas_estudiante.empty:
+            sns.lineplot(x='asignatura', y='nota', data=notas_estudiante, marker='o', color='coral', ax=axes[1])
+            axes[1].set_title(f'Notas de {estudiante_elegido} por Asignatura (seaborn)')
+            axes[1].set_xlabel('Asignatura')
+            axes[1].set_ylabel('Nota')
+            axes[1].grid(axis='y', alpha=0.7)
+        else:
+            axes[1].text(0.5, 0.5, f'No se encontraron notas para {estudiante_elegido}', horizontalalignment='center', verticalalignment='center')
+
+        plt.tight_layout(rect=[0, 0.03, 1, 0.95]) # Ajustar layout para el título principal
+        plt.show()
+
+        system('cls')
+        texto = """
+        Gráfico de Líneas , Gráfico de Barras y Gráfico de Punto con Seaborn 
+        Para 4 estudiantes
+        # 1. Calcular la nota media 
+        media_global = df['nota'].mean()
+
+        # 2. Elegir 4 estudiante y obtener sus notas
+        estudiantes_a_comparar = ['Estudiante_1', 'Estudiante_2', 'Estudiante_3', 'Estudiante_4']
+        df_filtrado = df[df['estudiante'].isin(estudiantes_a_comparar)]
+
+        # Crear la figura y la matriz de subplots (2 fila, 2 columnas)
+        fig, axes = plt.subplots(2, 2, figsize=(18, 14))
+        fig.suptitle('Análisis de Notas de Estudiantes con Seaborn', fontsize=16)
+
+        # 4. Gráfico de linea en el primer subplot (axes[0]) ---
+        sns.lineplot(x='asignatura', y='nota', data=notas_estudiantes4, marker='o', label=estudiante, ax=axes[0, 0])
+        axes[0, 0].axhline(media_global, color='r', linestyle='--', label=f'Media Global ({media_global:.2f})')
+        axes[0, 0].set_xlabel('Asignatura')
+        axes[0, 0].set_ylabel('Nota')
+        ...
+
+        # 5. Gráfico de Barra en el segundo subplot (axes[1]) ---
+        sns.barplot(x='asignatura', y='nota', hue='estudiante', data=df_filtrado, palette='viridis', ax=axes[0, 1])
+        axes[0, 1].axhline(media_global, color='r', linestyle='--', label=f'Media Global ({media_global:.2f})')
+        axes[0, 1].set_xlabel('Asignatura')
+        axes[0, 1].set_ylabel('Nota')
+        ...
+
+        # 6. Gráfico de Puntos en el segundo subplot (axes[1]) ---
+        sns.pointplot(x='asignatura', y='nota', hue='estudiante', data=df_filtrado, palette='viridis', dodge=True, ax=axes[1, 0])
+        axes[1, 0].axhline(media_global, color='r', linestyle='--', label=f'Media Global ({media_global:.2f})')
+        axes[1, 0].set_xlabel('Asignatura')
+        axes[1, 0].set_ylabel('Nota')
+        plt.show()
+        """
+        print(texto)
+        print("\nElaborado por: Mónica & Francisco")         
+        input("Presione Enter para continuar...")
+        # Seleccionar los cuatro estudiantes
+        estudiantes_a_comparar = ['Estudiante_1', 'Estudiante_2', 'Estudiante_3', 'Estudiante_4']
+        df_filtrado = df[df['estudiante'].isin(estudiantes_a_comparar)]
+
+        # Seleccionar los cuatro estudiantes Utilizando Metodo isin()
+        # y filtrar el DataFrame para obtener solo las filas correspondientes a esos estudiantes
+        estudiantes_a_comparar = ['Estudiante_1', 'Estudiante_2', 'Estudiante_3', 'Estudiante_4']
+        df_filtrado = df[df['estudiante'].isin(estudiantes_a_comparar)]
+
+        # Seleccionar los cuatro estudiantes Utilizando un bucle for
+        # y filtrar el DataFrame para obtener solo las filas correspondientes a esos estudiantes
+        # Inicializa un DataFrame vacío para almacenar las notas de los estudiantes seleccionados
+        notas_estudiantes4 = pd.DataFrame()
+        for estudiante in estudiantes_a_comparar:
+            notas_estudiante = df[df['estudiante'] == estudiante].sort_values(by='fecha')
+            notas_estudiantes4 = pd.concat([notas_estudiantes4, notas_estudiante], ignore_index=True)
+
+        # Calcular la media de todas las notas
+        media_global = df['nota'].mean()
+
+        # Crear la figura y la matriz de subplots (2 filas, 2 columnas)
+        fig, axes = plt.subplots(2, 2, figsize=(18, 14))
+        fig.suptitle('Comparación de Notas de Cuatro Estudiantes por Asignatura', fontsize=16)
+
+        # 1. Gráfico de líneas (axes[0, 0])
+        axes[0, 0].set_title('Gráfico de Líneas')
+        if not notas_estudiante.empty:
+            sns.lineplot(x='asignatura', y='nota', hue='estudiante', data=notas_estudiantes4, marker='o', ax=axes[0, 0])
+            axes[0, 0].axhline(media_global, color='r', linestyle='--', label=f'Media Global ({media_global:.2f})')
+            axes[0, 0].set_xlabel('Asignatura')
+            axes[0, 0].set_ylabel('Nota')
+            etiquetas_x = axes[0, 0].get_xticklabels()
+            plt.setp(etiquetas_x, rotation=45, ha='right')
+            axes[0, 0].grid(axis='y', alpha=0.7)
+            axes[0, 0].legend(title='Estudiante')
+
+        # 2. Gráfico de barras agrupadas (axes[0, 1])
+        axes[0, 1].set_title('Gráfico de Barras Agrupadas')
+        sns.barplot(x='asignatura', y='nota', hue='estudiante', data=df_filtrado, palette='viridis', ax=axes[0, 1])
+        axes[0, 1].axhline(media_global, color='r', linestyle='--', label=f'Media Global ({media_global:.2f})')
+        axes[0, 1].set_xlabel('Asignatura')
+        axes[0, 1].set_ylabel('Nota')
+        etiquetas_x_barras = axes[0, 1].get_xticklabels()
+        plt.setp(etiquetas_x_barras, rotation=45, ha='right')
+        axes[0, 1].legend(title='Estudiante')
+        axes[0, 1].grid(axis='y', alpha=0.7)
+
+        # 3. Gráfico de puntos (axes[1, 0])
+        axes[1, 0].set_title('Gráfico de Puntos')
+        sns.pointplot(x='asignatura', y='nota', hue='estudiante', data=df_filtrado, palette='viridis', dodge=True, ax=axes[1, 0])
+        axes[1, 0].axhline(media_global, color='r', linestyle='--', label=f'Media Global ({media_global:.2f})')
+        axes[1, 0].set_xlabel('Asignatura')
+        axes[1, 0].set_ylabel('Nota')
+        etiquetas_x_puntos = axes[1, 0].get_xticklabels()
+        plt.setp(etiquetas_x_puntos, rotation=45, ha='right')
+        axes[1, 0].legend(title='Estudiante')
+        axes[1, 0].grid(axis='y', linestyle='--')
+
+        # 4. Subplot vacío (axes[1, 1]) - Lo dejamos en blanco o podríamos añadir otra visualización si tuviéramos alguna otra idea
+        axes[1, 1].axis('off')  # Desactivar los ejes para que quede en blanco
+
+        plt.tight_layout(rect=[0, 0.03, 1, 0.95]) # Ajustar layout para el título principal
+        plt.show()
+
 def ejemplo_multi_grafico()-> None:
     fig, axs = plt.subplots(2, 3, figsize=(15, 10))  # Crear una figura con 3x2 subgráficos
 
@@ -224,6 +476,7 @@ def ejemplo_graf_barra()-> None:
 
 def ejemplo_graf_diagrama_dispersión()-> None:
     np.random.seed(0)
+    # crea un array NumPy llamado que contiene 50 números flotantes aleatorios, cada uno de ellos entre 0.0 (inclusive) y 1.0 (exclusive).
     x_scatter = np.random.rand(50)
     y_scatter = np.random.rand(50)
     colores = np.random.rand(50)
@@ -243,6 +496,7 @@ def ejemplo_graf_linea()-> None:
     system('cls')
     print("\n--- Grafico de línea Matplotlib ---")
     # Ejemplo básico de un gráfico de líneas
+    # crea un array NumPy llamado x que contiene 100 números distribuidos de manera uniforme entre 0 y 10 (inclusive).
     x = np.linspace(0, 10, 100)
     y = np.sin(x)
     plt.figure(figsize=(8, 6))  # Crear una nueva figura con un tamaño específico
@@ -276,6 +530,8 @@ def menu_matplotlib()-> None:
                 recursos_matplotlib()
             elif opcion == '6':
                 ea.ejercicio_aguacate()
+            elif opcion == '7':
+                ejercicios_estudiante()
             elif opcion == '0':
                 break
             else:
