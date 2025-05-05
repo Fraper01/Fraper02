@@ -1,0 +1,179 @@
+https://hipertextual.com/2025/05/wikipedia-anuncia-que-usara-la-ia-para-mejorar-su-enciclopedia
+
+Wikipedia anuncia que usará la IA para mejorar su enciclopedia
+La Fundación Wikimedia usará la IA para apoyar a los voluntarios humanos en la creación y moderación de contenido.
+por Luis Miranda 1 de mayo de 2025
+
+Wikipedia se ha subido al tren de la inteligencia artificial y anunció 
+su nueva estrategia para impulsar su desarrollo de cara al futuro. 
+A diferencia de empresas como Meta o Microsoft, en donde la IA se apodera poco a poco 
+del trabajo de sus ingenieros, la enciclopedia en línea tomará otro camino. 
+Wikipedia afirmó que su objetivo no es reemplazar editores humanos, 
+sino fortalecerlos.
+
+De acuerdo con una publicación en su blog, la Fundación Wikimedia plantea utilizar IA generativa 
+para fortalecer el trabajo de los voluntarios que han construido la enciclopedia 
+más grande de la historia. 
+
+La estrategia a tres años se enfoca en eliminar barreras técnicas que consumen 
+tiempo y energía a los colaboradores. 
+La IA no redactará entradas ni tomará decisiones editoriales; 
+servirá como una herramienta de apoyo para tareas repetitivas y complejas.
+
+Uno de los pilares de esta estrategia es la implementación de flujos de trabajo 
+asistidos por IA, especialmente diseñados para moderadores y verificadores. 
+Estas funciones automatizarán tareas tediosas que antes requerían intervención manual, 
+como la revisión de cambios menores o la detección de vandalismo. 
+
+La Fundación afirma que este método mejora la integridad del conocimiento 
+sin comprometer la calidad editorial.
+
+La IA también se empleará para mejorar la capacidad de descubrimiento de información 
+dentro de Wikipedia. 
+
+La Fundación pretende acelerar el proceso de edición al optimizar la navegación 
+y la localización del contenido. 
+
+Esta medida busca facilitar la labor de los colaboradores que actualizan 
+entradas con información reciente.
+
+Wikipedia
+Wikipedia no quiere reemplazar a sus editores humanos por robots
+
+Otro aspecto clave de la estrategia es la incorporación de herramientas de 
+traducción automatizada y adaptación contextual. 
+Estas funciones permitirán que temas comunes puedan adaptarse de forma más ágil 
+a diferentes contextos lingüísticos y culturales. 
+
+Wikipedia también se apoyará en la IA para ofrecer mentorías guiadas a los 
+nuevos voluntarios.
+
+"Utilizaremos la IA para crear funciones que eliminen las barreras técnicas y 
+permitan que los humanos en el centro de Wikipedia dediquen su valioso tiempo 
+a lo que quieren lograr, y no a cómo lograrlo técnicamente", 
+dijo la Fundación. 
+"Nuestras inversiones se centrarán en áreas específicas en las que la IA 
+generativa sobresale, todo al servicio de la creación de oportunidades 
+únicas que impulsarán a los voluntarios de Wikipedia".
+
+quick Draw
+withgooble/data
+withgoogleactivelab/quickdraw-dataset
+
+
+¿Qué observaría al explorar los dibujos de las distintas categorías?
+
+Al explorar los dibujos de diferentes categorías en Quick Draw, probablemente observarías una gran variabilidad en la calidad, el estilo y la precisión de las representaciones. Algunas personas dibujarían de forma esquemática y rápida, mientras que otras intentarían representaciones más detalladas.
+
+Además, notarías:
+
+    Elementos comunes y distintivos: Dentro de cada categoría, habría ciertos elementos visuales que tienden a repetirse (por ejemplo, la forma circular y los radios en la categoría "bicicleta"). Al comparar categorías, estos elementos comunes serían diferentes (por ejemplo, la forma alargada con alas en "avión" vs. la forma con cuatro patas en "perro").
+    Diferentes interpretaciones: Incluso dentro de una misma categoría, las personas interpretarían el concepto de manera ligeramente diferente, lo que llevaría a variaciones en la forma, la perspectiva y los detalles incluidos.
+    Nivel de abstracción: Algunos dibujos serían representaciones muy abstractas del concepto, mientras que otros serían más figurativos.
+    Errores y omisiones: Debido a la limitación de tiempo, muchos dibujos contendrían errores o omitirían detalles importantes.
+
+¿Existen temas coherentes entre los dibujos de una categoría?
+
+Sí, generalmente existen temas coherentes entre los dibujos de una misma categoría. A pesar de la variabilidad individual, la mayoría de los dibujos dentro de una categoría compartirían algunos rasgos visuales fundamentales que los identifican con el concepto. Por ejemplo:
+
+    En la categoría "gato", la mayoría de los dibujos incluirían elementos como orejas puntiagudas, bigotes y una cola.
+    En la categoría "coche", la mayoría mostrarían una forma rectangular o similar con ruedas.
+    En la categoría "árbol", se observarían un tronco y una copa (aunque la forma específica de la copa podría variar).
+
+Estos temas coherentes son la base sobre la cual la IA de Quick Draw aprende a reconocer las diferentes categorías.
+
+Si no conociera las etiquetas de las categorías, ¿cómo distinguiría los dibujos entre sí? ¿Qué buscaría?
+
+Si no conocieras las etiquetas de las categorías, distinguir los dibujos entre sí requeriría un análisis comparativo y la búsqueda de patrones visuales distintivos. Buscarías:
+
+    Formas predominantes: ¿Qué formas geométricas básicas o siluetas son más comunes en un grupo de dibujos? (Círculos, rectángulos, líneas curvas, etc.)
+    Elementos clave: ¿Qué partes o componentes esenciales aparecen consistentemente en un conjunto de dibujos? (Ruedas, alas, hojas, patas, etc.)
+    Disposición espacial: ¿Cómo están organizados los elementos dentro del dibujo? (Simetría, verticalidad, horizontalidad, relación entre las partes, etc.)
+    Texturas y detalles (si los hay): Aunque Quick Draw se centra en trazos rápidos, algunos dibujos podrían sugerir texturas o detalles característicos.
+    Analogías con el mundo real: Intentarías relacionar los patrones visuales recurrentes con objetos o conceptos que conoces del mundo real.
+
+Proceso de Distinción:
+
+    Agrupar por similitud visual: Inicialmente, intentarías agrupar los dibujos que parecen tener características visuales similares.
+    Identificar los "temas" de cada grupo: Para cada grupo, buscarías los elementos, formas y disposiciones que se repiten con mayor frecuencia. Estos serían los "temas coherentes" que mencionamos antes.
+    Formular hipótesis sobre las categorías: Basándote en los temas identificados, intentarías adivinar a qué categoría del mundo real podría corresponder cada grupo de dibujos. Por ejemplo, un grupo con formas circulares y radios probablemente estaría relacionado con vehículos con ruedas.
+    Comparar los temas entre grupos: Analizarías cómo los temas visuales difieren entre los distintos grupos para distinguirlos. Las diferencias en las formas predominantes, los elementos clave y su disposición te ayudarían a separar las categorías.
+
+En esencia, el proceso sería similar a cómo un niño aprende a reconocer objetos: observando características recurrentes y diferenciándolas de las de otros objetos. La clave estaría en la identificación de los patrones visuales distintivos para cada grupo de dibujos.
+
+¿Cómo describiría los garabatos de Quick, Draw! que ha explorado desde el punto de vista de los datos?
+
+Desde el punto de vista de los datos, describiría los garabatos de Quick, Draw! como secuencias ordenadas de trazos. Cada trazo se compone de una serie de puntos (coordenadas x, y) capturados a lo largo del tiempo mientras el usuario dibuja con el ratón o el dedo.
+
+Específicamente, los datos de un solo garabato podrían organizarse de la siguiente manera:
+
+    Identificador Único: Cada garabato tendría un ID único para su identificación.
+    Etiqueta de Categoría: Una etiqueta de texto que indica lo que el usuario intentaba dibujar (por ejemplo, "gato", "bicicleta", "árbol").
+    Secuencia de Trazos: Una lista ordenada de trazos.
+    Cada Trazo: Una lista ordenada de puntos.
+    Cada Punto: Un par de coordenadas (x, y) que representan la posición en un espacio bidimensional (el lienzo de dibujo). Opcionalmente, podría incluir información temporal (timestamp) o presión del lápiz (si el dispositivo lo soporta).
+    Información Adicional (Metadatos): Podría haber metadatos asociados, como la duración del dibujo, la velocidad promedio del trazo, el país del usuario, etc.
+
+¿Sería capaz de almacenar este tipo de datos en una base de datos?
+
+Sí, absolutamente. Este tipo de datos se puede almacenar en una base de datos, aunque la estructura podría variar dependiendo de los requisitos de la aplicación y el tipo de base de datos utilizado:
+
+    Base de Datos Relacional: Podríamos tener varias tablas:
+        Una tabla principal para los garabatos con el ID, la etiqueta y metadatos.
+        Otra tabla para los trazos, con una clave foránea al ID del garabato y un orden del trazo.
+        Una tercera tabla para los puntos, con una clave foránea al ID del trazo y un orden del punto, así como las coordenadas x e y (y posiblemente timestamp/presión).
+    Base de Datos NoSQL (Documento o Clave-Valor): Podríamos almacenar cada garabato como un documento JSON o similar, donde el documento contendría el ID, la etiqueta y un array anidado que representaría la secuencia de trazos y puntos. Esta estructura es más flexible para datos jerárquicos como este.
+
+¿En qué se diferencian o se parecen estos garabatos a otros tipos de datos que ha encontrado?
+
+Los garabatos de Quick, Draw! se parecen a otros tipos de datos secuenciales o basados en coordenadas, como:
+
+    Datos de series de tiempo: Al igual que las lecturas de sensores o los precios de las acciones, los garabatos son una secuencia de datos capturados a lo largo de un "tiempo" de dibujo.
+    Datos de trayectorias: Similar a los registros de seguimiento GPS o las rutas de movimiento, los garabatos representan una trayectoria en un espacio bidimensional.
+    Datos vectoriales: A diferencia de las imágenes rasterizadas (píxeles), los garabatos son inherentemente vectoriales, definidos por puntos y las líneas que los conectan.
+
+Se diferencian en algunos aspectos clave:
+
+    Intencionalidad humana: Los garabatos son el resultado de una intención humana de representar un objeto o concepto, lo que introduce una gran variabilidad y subjetividad.
+    Espontaneidad y rapidez: A menudo, los garabatos se realizan rápidamente y de forma espontánea, lo que puede llevar a imprecisiones y abstracciones.
+    Dimensionalidad: Aunque son bidimensionales, la información temporal (orden de los trazos y puntos) añade una dimensión secuencial importante para su interpretación.
+    Semántica: La etiqueta asociada a cada garabato proporciona un fuerte componente semántico que no está presente en muchos otros tipos de datos secuenciales o de trayectoria.
+
+¿Qué tienen estos datos que los hace no estructurados?
+
+Si bien los garabatos de Quick, Draw! tienen una organización interna (secuencia de trazos y puntos), se consideran no estructurados en comparación con los datos de una base de datos relacional tradicional con esquemas rígidos, principalmente por las siguientes razones:
+
+    Variabilidad en la longitud: El número de trazos y el número de puntos por trazo varían significativamente de un garabato a otro, incluso dentro de la misma categoría. No hay un esquema fijo para la cantidad de información.
+    Complejidad de la representación: La forma en que una persona dibuja un objeto puede ser muy diferente a la de otra. Capturar la "esencia" de un "gato" en una secuencia de puntos permite muchas variaciones que no se ajustan a un esquema predefinido.
+    Ausencia de campos predefinidos: No hay un conjunto fijo de atributos con tipos de datos específicos para describir un garabato en sí mismo, más allá de la secuencia de coordenadas. La "forma" del garabato es la información principal y es inherentemente variable.
+    Necesidad de interpretación: Para extraer significado (por ejemplo, reconocer la categoría), se requiere un procesamiento e interpretación complejos (aprendizaje automático), a diferencia de la simple consulta de datos estructurados.
+
+En resumen, aunque tienen una estructura interna, la falta de un esquema fijo, la gran variabilidad en la representación y la necesidad de un procesamiento avanzado para la comprensión semántica son las características que hacen que los garabatos de Quick, Draw! se consideren datos no estructurados.
+
+
+
+
+Ejemplo y brebe descripcion de tipos de aprendizaje Supervisdos, no supervisados, por refuerso
+Tipos de Aprendizajes
+
+Por Refuerzo
+
+googlecolab
+nuevocuaderno en archivos
+Spam_notSpan
+
+7d94be70-29a8-11f0-bdf6-0392d3d32771f75fc144-28e1-43d5-80a6-9919e85321f6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
