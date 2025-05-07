@@ -105,7 +105,10 @@ def actividad3():
                 retiraDinero(mi_cajero, texto)  # Pasamos el objeto Cajero a la función
         except ValueError:
             print("Entrada inválida. Por favor, introduce un número.")
+            
     print("\nGracias por utilizar el cajero automático. ¡Hasta luego!")
+    input("Presione Enter para continuar...")
 
 if __name__ == "__main__":
     actividad3()
+    system('cls')
