@@ -1,0 +1,1001 @@
+Edad,Ingresos mensuales,Ocupación,Historial crediticio,Nivel educativo,Estado civil,Dependientes,Porcentaje de endeudamiento,Provincia,Nivel de riesgo
+34,4437,Estudiante,Malo,Universitario,Casado,0,34,Las Palmas,Medio
+35,1071,Ingeniero,Excelente,Secundario,Casado,0,36,Gijón,Medio
+62,2260,Ingeniero,Malo,Bachillerato,Soltero,4,11,L'Hospitalet de Llobregat,Bajo
+44,1947,Ingeniero,Malo,Universitario,Soltero,1,49,Sevilla,Medio
+57,1608,Abogado,Malo,Bachillerato,Casado,3,13,Málaga,Medio
+56,3449,Estudiante,Malo,Bachillerato,Casado,1,64,Murcia,Medio
+66,3614,Abogado,Excelente,Universitario,Casado,3,24,Barcelona,Bajo
+33,3728,Estudiante,Bueno,Bachillerato,Soltero,2,42,Madrid,Bajo
+61,2530,Profesor,Malo,Universitario,Casado,1,2,L'Hospitalet de Llobregat,Bajo
+69,1500,Comerciante,Malo,Bachillerato,Soltero,1,18,Badajoz,Alto
+24,2408,Profesor,Excelente,Secundario,Casado,1,45,Barcelona,Bajo
+41,4715,Comerciante,Bueno,Bachillerato,Casado,2,91,Las Palmas,Medio
+67,4203,Estudiante,Malo,Secundario,Casado,4,37,Las Palmas,Medio
+27,4014,Profesor,Malo,Universitario,Casado,1,42,Badajoz,Alto
+24,3834,Técnico,Excelente,Bachillerato,Casado,2,77,Córdoba,Medio
+41,3018,Comerciante,Excelente,Universitario,Casado,1,91,Valencia,Medio
+69,3799,Técnico,Malo,Universitario,Casado,4,86,Valladolid,Medio
+53,3666,Ingeniero,Bueno,Secundario,Soltero,3,24,Valladolid,Medio
+55,3957,Comerciante,Malo,Secundario,Casado,4,82,L'Hospitalet de Llobregat,Bajo
+33,4085,Técnico,Bueno,Secundario,Casado,3,82,Melilla,Alto
+19,1094,Profesor,Bueno,Universitario,Soltero,1,55,Vitoria-Gasteiz,Bajo
+38,1597,Técnico,Excelente,Universitario,Casado,3,31,Murcia,Medio
+33,1738,Abogado,Malo,Universitario,Casado,4,40,Vitoria-Gasteiz,Bajo
+19,4791,Abogado,Malo,Universitario,Soltero,3,34,Alicante,Medio
+31,1582,Ingeniero,Excelente,Universitario,Casado,4,6,Vitoria-Gasteiz,Bajo
+28,2226,Comerciante,Excelente,Secundario,Soltero,2,41,Bilbao,Bajo
+23,3131,Técnico,Malo,Bachillerato,Soltero,3,39,Vitoria-Gasteiz,Bajo
+41,2867,Técnico,Excelente,Bachillerato,Casado,0,9,Ceuta,Alto
+63,1683,Técnico,Bueno,Secundario,Casado,3,94,Málaga,Medio
+66,4237,Profesor,Bueno,Universitario,Soltero,0,99,Málaga,Medio
+44,3984,Técnico,Bueno,Bachillerato,Casado,1,46,Cáceres,Alto
+50,3394,Técnico,Excelente,Bachillerato,Soltero,4,99,Badalona,Bajo
+50,2841,Ingeniero,Malo,Secundario,Casado,4,80,Vigo,Medio
+48,3945,Ingeniero,Malo,Bachillerato,Casado,0,55,Las Palmas,Medio
+49,4554,Ingeniero,Bueno,Universitario,Casado,3,96,Bilbao,Bajo
+33,2846,Comerciante,Bueno,Bachillerato,Soltero,2,36,Las Palmas,Medio
+19,3072,Abogado,Bueno,Secundario,Soltero,3,68,Palma,Bajo
+51,2531,Estudiante,Excelente,Bachillerato,Casado,0,87,Vigo,Medio
+69,3600,Estudiante,Malo,Universitario,Casado,3,73,Cáceres,Alto
+18,1379,Comerciante,Excelente,Bachillerato,Soltero,0,51,Palma,Bajo
+52,1192,Profesor,Malo,Secundario,Casado,2,43,Zaragoza,Medio
+63,3312,Ingeniero,Excelente,Secundario,Soltero,3,91,Valladolid,Medio
+42,4463,Comerciante,Malo,Universitario,Soltero,0,24,Zaragoza,Medio
+57,1125,Ingeniero,Bueno,Bachillerato,Soltero,2,46,Badalona,Bajo
+29,2189,Estudiante,Bueno,Bachillerato,Soltero,3,50,Murcia,Medio
+24,4341,Ingeniero,Excelente,Universitario,Soltero,2,38,L'Hospitalet de Llobregat,Bajo
+35,2865,Comerciante,Malo,Bachillerato,Soltero,1,57,Vitoria-Gasteiz,Bajo
+47,1852,Ingeniero,Bueno,Secundario,Soltero,2,28,Melilla,Alto
+63,3878,Ingeniero,Excelente,Secundario,Soltero,1,65,Murcia,Medio
+39,1122,Comerciante,Malo,Secundario,Soltero,1,82,Elche,Medio
+41,1161,Ingeniero,Malo,Universitario,Soltero,2,65,Las Palmas,Medio
+51,3137,Abogado,Malo,Bachillerato,Soltero,4,54,Las Palmas,Medio
+45,3630,Técnico,Malo,Secundario,Soltero,2,40,Palma,Bajo
+67,2929,Profesor,Malo,Secundario,Soltero,0,32,Ceuta,Alto
+61,3684,Técnico,Malo,Bachillerato,Soltero,3,97,Badajoz,Alto
+38,3432,Abogado,Bueno,Universitario,Soltero,4,57,Badajoz,Alto
+32,3067,Ingeniero,Malo,Secundario,Soltero,1,78,Vigo,Medio
+66,1492,Profesor,Excelente,Secundario,Soltero,3,98,Valladolid,Medio
+27,2584,Estudiante,Excelente,Secundario,Soltero,4,25,Zaragoza,Medio
+29,1265,Comerciante,Excelente,Bachillerato,Casado,2,80,L'Hospitalet de Llobregat,Bajo
+37,4934,Abogado,Malo,Secundario,Casado,0,21,Jaén,Alto
+60,4083,Técnico,Malo,Universitario,Soltero,0,89,Sevilla,Medio
+35,2825,Comerciante,Excelente,Secundario,Soltero,2,90,Murcia,Medio
+56,4319,Estudiante,Bueno,Bachillerato,Casado,0,99,Jaén,Alto
+31,2181,Técnico,Excelente,Bachillerato,Soltero,0,36,Sevilla,Medio
+66,3967,Estudiante,Excelente,Universitario,Casado,1,18,Zaragoza,Medio
+33,2425,Ingeniero,Bueno,Secundario,Casado,3,99,Valencia,Medio
+57,1374,Estudiante,Excelente,Universitario,Casado,2,16,Zaragoza,Medio
+36,2740,Estudiante,Malo,Bachillerato,Casado,4,88,Jaén,Alto
+64,1412,Profesor,Excelente,Secundario,Soltero,3,24,Palma,Bajo
+40,3544,Profesor,Bueno,Bachillerato,Casado,1,73,Bilbao,Bajo
+61,2339,Estudiante,Bueno,Secundario,Casado,1,27,Melilla,Alto
+34,1301,Comerciante,Bueno,Secundario,Casado,4,78,Zaragoza,Medio
+23,2656,Comerciante,Malo,Secundario,Casado,4,65,Badajoz,Alto
+25,3992,Profesor,Excelente,Secundario,Casado,3,43,Córdoba,Medio
+29,2022,Ingeniero,Malo,Secundario,Casado,0,20,Cáceres,Alto
+41,3046,Abogado,Excelente,Secundario,Casado,2,11,Sevilla,Medio
+39,3324,Comerciante,Bueno,Bachillerato,Casado,4,28,Sevilla,Medio
+48,1096,Estudiante,Excelente,Secundario,Casado,0,86,Alicante,Medio
+46,3385,Estudiante,Excelente,Secundario,Casado,2,81,L'Hospitalet de Llobregat,Bajo
+26,4343,Estudiante,Excelente,Secundario,Casado,3,41,Melilla,Alto
+21,4120,Ingeniero,Bueno,Bachillerato,Casado,2,72,Jaén,Alto
+44,1552,Profesor,Malo,Universitario,Soltero,1,91,Córdoba,Medio
+23,1376,Comerciante,Excelente,Universitario,Soltero,4,67,Elche,Medio
+55,4988,Técnico,Excelente,Universitario,Soltero,0,9,Madrid,Bajo
+24,3965,Profesor,Excelente,Secundario,Soltero,4,93,Córdoba,Medio
+31,4404,Abogado,Malo,Bachillerato,Casado,1,73,Bilbao,Bajo
+65,4253,Técnico,Bueno,Universitario,Casado,1,7,L'Hospitalet de Llobregat,Bajo
+40,3805,Profesor,Malo,Secundario,Soltero,1,99,Valencia,Medio
+50,3641,Abogado,Bueno,Universitario,Casado,2,28,Ceuta,Alto
+37,3376,Ingeniero,Malo,Secundario,Soltero,4,97,Palma,Bajo
+27,4228,Técnico,Bueno,Bachillerato,Soltero,2,7,Vigo,Medio
+50,4830,Comerciante,Bueno,Universitario,Soltero,4,43,Bilbao,Bajo
+37,4956,Profesor,Bueno,Bachillerato,Casado,2,76,Badajoz,Alto
+48,1630,Profesor,Bueno,Secundario,Soltero,0,57,Valencia,Medio
+39,3165,Abogado,Bueno,Bachillerato,Casado,3,31,Badalona,Bajo
+56,4438,Profesor,Excelente,Bachillerato,Casado,2,32,Melilla,Alto
+42,2357,Abogado,Excelente,Secundario,Casado,4,49,Bilbao,Bajo
+31,2220,Estudiante,Malo,Secundario,Soltero,3,92,L'Hospitalet de Llobregat,Bajo
+20,3949,Estudiante,Excelente,Universitario,Soltero,2,54,Las Palmas,Medio
+64,2411,Estudiante,Excelente,Universitario,Casado,3,9,Sevilla,Medio
+67,4460,Abogado,Malo,Universitario,Casado,1,47,Barcelona,Bajo
+42,4400,Técnico,Excelente,Bachillerato,Soltero,1,95,Vigo,Medio
+26,3824,Abogado,Bueno,Universitario,Soltero,2,53,Bilbao,Bajo
+27,4150,Estudiante,Malo,Bachillerato,Casado,1,16,Bilbao,Bajo
+41,1761,Ingeniero,Malo,Universitario,Soltero,0,13,Las Palmas,Medio
+28,3189,Técnico,Bueno,Universitario,Casado,3,36,Alicante,Medio
+19,3202,Abogado,Bueno,Bachillerato,Casado,4,66,Jaén,Alto
+49,4108,Ingeniero,Malo,Secundario,Casado,2,18,Sevilla,Medio
+38,1134,Estudiante,Excelente,Bachillerato,Soltero,4,57,Málaga,Medio
+69,3162,Ingeniero,Malo,Secundario,Casado,0,6,Jaén,Alto
+37,1885,Profesor,Excelente,Bachillerato,Casado,0,74,Málaga,Medio
+21,3947,Profesor,Malo,Universitario,Casado,4,6,Alicante,Medio
+34,3848,Profesor,Malo,Bachillerato,Soltero,0,51,Madrid,Bajo
+63,1299,Técnico,Excelente,Bachillerato,Soltero,1,31,Palma,Bajo
+32,4369,Estudiante,Malo,Bachillerato,Casado,4,51,Badajoz,Alto
+40,2010,Técnico,Malo,Secundario,Casado,1,94,Sevilla,Medio
+60,2414,Abogado,Excelente,Universitario,Casado,2,91,Alicante,Medio
+63,2417,Técnico,Bueno,Secundario,Soltero,2,89,Las Palmas,Medio
+68,1296,Profesor,Excelente,Bachillerato,Soltero,2,52,Bilbao,Bajo
+28,2124,Abogado,Bueno,Bachillerato,Soltero,3,1,Murcia,Medio
+39,3466,Ingeniero,Malo,Bachillerato,Soltero,0,57,Badalona,Bajo
+38,2657,Profesor,Bueno,Secundario,Soltero,2,4,Alicante,Medio
+31,3512,Profesor,Excelente,Secundario,Soltero,2,22,Sevilla,Medio
+49,4891,Ingeniero,Excelente,Bachillerato,Casado,1,77,Palma,Bajo
+33,2070,Profesor,Excelente,Universitario,Casado,4,26,Bilbao,Bajo
+49,4755,Comerciante,Malo,Universitario,Casado,3,5,Las Palmas,Medio
+36,1227,Abogado,Bueno,Universitario,Casado,4,55,Valladolid,Medio
+40,2005,Comerciante,Bueno,Universitario,Casado,1,65,Badalona,Bajo
+28,3959,Ingeniero,Bueno,Secundario,Casado,2,36,Palma,Bajo
+31,2220,Estudiante,Bueno,Bachillerato,Casado,2,8,Vitoria-Gasteiz,Bajo
+36,3734,Profesor,Bueno,Secundario,Casado,1,64,Murcia,Medio
+28,3724,Técnico,Bueno,Universitario,Soltero,0,99,Elche,Medio
+36,2226,Abogado,Excelente,Secundario,Soltero,2,54,A Coruña,Medio
+24,4838,Técnico,Bueno,Secundario,Soltero,2,52,Murcia,Medio
+57,3940,Técnico,Malo,Secundario,Soltero,3,60,Málaga,Medio
+59,3662,Ingeniero,Excelente,Universitario,Casado,1,10,Barcelona,Bajo
+18,3171,Profesor,Malo,Bachillerato,Casado,4,10,Cáceres,Alto
+65,2839,Comerciante,Malo,Bachillerato,Casado,3,4,Melilla,Alto
+39,1407,Comerciante,Bueno,Bachillerato,Soltero,2,84,Vitoria-Gasteiz,Bajo
+41,4343,Estudiante,Bueno,Bachillerato,Soltero,0,65,Ceuta,Alto
+60,2126,Técnico,Malo,Bachillerato,Soltero,3,80,Zaragoza,Medio
+25,4681,Técnico,Malo,Secundario,Soltero,0,43,A Coruña,Medio
+68,3610,Abogado,Excelente,Bachillerato,Soltero,3,5,Valladolid,Medio
+67,2502,Ingeniero,Excelente,Universitario,Soltero,2,57,Córdoba,Medio
+51,4679,Técnico,Bueno,Secundario,Casado,4,87,Madrid,Bajo
+20,4806,Ingeniero,Malo,Bachillerato,Soltero,4,6,Melilla,Alto
+41,4956,Técnico,Excelente,Secundario,Casado,3,89,Cáceres,Alto
+53,4338,Estudiante,Bueno,Universitario,Casado,4,48,Madrid,Bajo
+69,2072,Profesor,Bueno,Secundario,Soltero,1,76,Valencia,Medio
+18,1504,Comerciante,Malo,Secundario,Soltero,0,2,Jaén,Alto
+24,2315,Estudiante,Malo,Universitario,Soltero,0,4,Badalona,Bajo
+20,1738,Profesor,Malo,Bachillerato,Soltero,0,0,Alicante,Medio
+31,1409,Comerciante,Malo,Universitario,Casado,2,39,Las Palmas,Medio
+66,4924,Abogado,Bueno,Bachillerato,Casado,3,10,Barcelona,Bajo
+48,2979,Profesor,Bueno,Universitario,Soltero,2,81,Gijón,Medio
+64,4934,Abogado,Bueno,Universitario,Soltero,1,5,Zaragoza,Medio
+32,3396,Ingeniero,Bueno,Bachillerato,Soltero,4,43,Valladolid,Medio
+18,4271,Comerciante,Excelente,Secundario,Casado,2,80,Zaragoza,Medio
+44,1045,Profesor,Excelente,Universitario,Soltero,1,38,L'Hospitalet de Llobregat,Bajo
+22,1274,Comerciante,Excelente,Universitario,Soltero,1,69,Palma,Bajo
+69,1633,Ingeniero,Bueno,Secundario,Soltero,4,16,Badajoz,Alto
+23,2118,Abogado,Malo,Bachillerato,Casado,2,0,Barcelona,Bajo
+37,4170,Técnico,Malo,Bachillerato,Soltero,2,94,Barcelona,Bajo
+52,4592,Comerciante,Bueno,Bachillerato,Soltero,4,4,Badalona,Bajo
+32,4260,Técnico,Malo,Bachillerato,Casado,1,73,Vigo,Medio
+29,2497,Estudiante,Malo,Bachillerato,Soltero,4,50,Sevilla,Medio
+58,3791,Estudiante,Excelente,Bachillerato,Soltero,1,20,Sevilla,Medio
+48,1873,Ingeniero,Excelente,Universitario,Soltero,1,13,Madrid,Bajo
+25,4812,Profesor,Excelente,Universitario,Casado,4,10,Málaga,Medio
+61,1980,Técnico,Bueno,Secundario,Soltero,2,75,Elche,Medio
+47,2893,Técnico,Malo,Secundario,Soltero,4,19,Palma,Bajo
+34,1253,Técnico,Bueno,Universitario,Soltero,4,84,Gijón,Medio
+59,2486,Comerciante,Bueno,Secundario,Casado,3,43,Melilla,Alto
+49,2282,Ingeniero,Malo,Universitario,Soltero,3,14,Barcelona,Bajo
+20,2487,Técnico,Bueno,Secundario,Casado,2,29,Vigo,Medio
+23,2099,Abogado,Malo,Secundario,Soltero,2,34,Melilla,Alto
+58,2172,Comerciante,Malo,Universitario,Casado,2,62,Gijón,Medio
+23,2115,Profesor,Excelente,Universitario,Soltero,3,73,Jaén,Alto
+40,2307,Ingeniero,Bueno,Bachillerato,Casado,4,90,Melilla,Alto
+36,4075,Profesor,Bueno,Universitario,Casado,1,25,Melilla,Alto
+58,4450,Profesor,Bueno,Secundario,Soltero,2,74,Sevilla,Medio
+38,4652,Comerciante,Bueno,Secundario,Soltero,0,65,Vigo,Medio
+54,4686,Abogado,Malo,Secundario,Soltero,0,77,Murcia,Medio
+33,3337,Técnico,Malo,Bachillerato,Soltero,2,45,Elche,Medio
+38,4491,Comerciante,Bueno,Universitario,Soltero,3,47,A Coruña,Medio
+38,4074,Comerciante,Bueno,Secundario,Soltero,2,28,Barcelona,Bajo
+20,1308,Profesor,Bueno,Bachillerato,Casado,0,15,Málaga,Medio
+50,1753,Ingeniero,Malo,Universitario,Casado,1,84,Alicante,Medio
+48,2798,Abogado,Malo,Bachillerato,Casado,0,90,Murcia,Medio
+48,3986,Ingeniero,Excelente,Secundario,Casado,1,86,Murcia,Medio
+68,3626,Estudiante,Excelente,Secundario,Soltero,0,11,Alicante,Medio
+66,4696,Comerciante,Malo,Secundario,Soltero,2,18,Barcelona,Bajo
+58,3022,Abogado,Malo,Secundario,Casado,2,45,Murcia,Medio
+48,3089,Abogado,Excelente,Bachillerato,Casado,0,80,Jaén,Alto
+29,4244,Ingeniero,Bueno,Secundario,Casado,4,57,Vitoria-Gasteiz,Bajo
+62,3576,Ingeniero,Bueno,Bachillerato,Soltero,4,4,L'Hospitalet de Llobregat,Bajo
+68,3911,Comerciante,Bueno,Universitario,Casado,0,1,Palma,Bajo
+46,2650,Abogado,Bueno,Universitario,Soltero,0,99,Vigo,Medio
+53,2955,Estudiante,Excelente,Bachillerato,Casado,4,47,Sevilla,Medio
+25,1956,Comerciante,Malo,Universitario,Casado,1,19,Vigo,Medio
+61,1801,Profesor,Malo,Bachillerato,Casado,2,73,Barcelona,Bajo
+41,1584,Estudiante,Excelente,Bachillerato,Casado,2,82,Córdoba,Medio
+37,4677,Comerciante,Bueno,Secundario,Casado,3,97,Vigo,Medio
+18,1160,Abogado,Bueno,Universitario,Soltero,0,18,Murcia,Medio
+20,2749,Abogado,Excelente,Universitario,Soltero,4,24,Bilbao,Bajo
+43,1976,Estudiante,Excelente,Secundario,Soltero,3,98,Madrid,Bajo
+30,4675,Ingeniero,Excelente,Universitario,Soltero,4,32,Murcia,Medio
+46,1767,Ingeniero,Bueno,Bachillerato,Casado,2,26,Bilbao,Bajo
+33,4847,Comerciante,Bueno,Bachillerato,Soltero,4,85,Cáceres,Alto
+52,2535,Estudiante,Excelente,Secundario,Casado,4,73,Vitoria-Gasteiz,Bajo
+55,4159,Ingeniero,Bueno,Bachillerato,Casado,4,54,A Coruña,Medio
+42,4026,Profesor,Excelente,Universitario,Casado,2,97,Sevilla,Medio
+30,4469,Ingeniero,Excelente,Secundario,Casado,3,25,Badalona,Bajo
+68,4851,Abogado,Malo,Secundario,Soltero,3,6,Valencia,Medio
+32,2744,Ingeniero,Excelente,Universitario,Casado,4,40,A Coruña,Medio
+49,3173,Profesor,Bueno,Universitario,Soltero,4,24,Alicante,Medio
+53,1159,Abogado,Bueno,Bachillerato,Soltero,0,83,Zaragoza,Medio
+48,1324,Abogado,Malo,Secundario,Soltero,4,34,Ceuta,Alto
+32,2386,Profesor,Bueno,Universitario,Soltero,2,45,Madrid,Bajo
+27,4844,Técnico,Excelente,Secundario,Soltero,4,80,Palma,Bajo
+35,1547,Técnico,Malo,Universitario,Casado,4,29,Las Palmas,Medio
+36,2906,Profesor,Malo,Bachillerato,Soltero,4,12,Badalona,Bajo
+46,1579,Estudiante,Bueno,Secundario,Casado,4,93,Córdoba,Medio
+27,2857,Comerciante,Malo,Secundario,Soltero,2,96,Vitoria-Gasteiz,Bajo
+36,4923,Técnico,Malo,Universitario,Soltero,3,31,Sevilla,Medio
+46,1056,Técnico,Malo,Secundario,Soltero,1,17,Murcia,Medio
+26,3403,Profesor,Malo,Universitario,Soltero,3,94,Málaga,Medio
+45,3158,Profesor,Bueno,Bachillerato,Soltero,2,35,Badajoz,Alto
+43,3222,Ingeniero,Excelente,Bachillerato,Soltero,2,0,Murcia,Medio
+33,2351,Comerciante,Excelente,Bachillerato,Casado,4,16,Badalona,Bajo
+23,3325,Abogado,Bueno,Bachillerato,Casado,3,2,Vitoria-Gasteiz,Bajo
+47,3086,Técnico,Malo,Secundario,Casado,1,24,Badajoz,Alto
+57,2258,Profesor,Malo,Universitario,Casado,0,93,Palma,Bajo
+42,3999,Técnico,Excelente,Secundario,Casado,4,98,Elche,Medio
+43,3611,Profesor,Excelente,Universitario,Soltero,0,52,Cáceres,Alto
+21,2824,Estudiante,Excelente,Secundario,Soltero,3,78,Elche,Medio
+56,4781,Comerciante,Malo,Universitario,Soltero,1,63,Las Palmas,Medio
+66,1063,Profesor,Bueno,Universitario,Casado,4,30,A Coruña,Medio
+67,4513,Estudiante,Excelente,Secundario,Soltero,4,75,Sevilla,Medio
+23,2325,Técnico,Bueno,Secundario,Casado,0,62,Las Palmas,Medio
+48,2807,Ingeniero,Bueno,Universitario,Casado,0,3,Murcia,Medio
+47,4027,Profesor,Bueno,Secundario,Casado,0,90,Bilbao,Bajo
+53,1897,Ingeniero,Bueno,Bachillerato,Casado,3,98,L'Hospitalet de Llobregat,Bajo
+34,1837,Profesor,Excelente,Universitario,Casado,4,31,Sevilla,Medio
+38,3270,Profesor,Excelente,Universitario,Soltero,1,11,Córdoba,Medio
+31,2650,Técnico,Bueno,Secundario,Casado,0,40,A Coruña,Medio
+47,2537,Ingeniero,Bueno,Secundario,Casado,1,6,A Coruña,Medio
+57,3536,Abogado,Excelente,Bachillerato,Soltero,4,82,Zaragoza,Medio
+26,1567,Ingeniero,Bueno,Secundario,Soltero,2,40,Jaén,Alto
+50,3477,Ingeniero,Bueno,Universitario,Casado,0,94,Valladolid,Medio
+55,2633,Técnico,Malo,Bachillerato,Soltero,4,76,Córdoba,Medio
+61,1953,Comerciante,Malo,Universitario,Casado,0,66,Barcelona,Bajo
+52,3225,Abogado,Malo,Bachillerato,Soltero,3,80,Zaragoza,Medio
+33,4607,Comerciante,Malo,Secundario,Soltero,2,77,Vitoria-Gasteiz,Bajo
+41,1193,Comerciante,Malo,Universitario,Casado,2,18,Zaragoza,Medio
+36,2214,Comerciante,Excelente,Universitario,Soltero,0,90,Málaga,Medio
+56,1292,Profesor,Excelente,Secundario,Soltero,3,11,Gijón,Medio
+37,4631,Abogado,Bueno,Secundario,Soltero,3,25,L'Hospitalet de Llobregat,Bajo
+65,3043,Ingeniero,Malo,Secundario,Casado,4,13,Melilla,Alto
+51,1907,Profesor,Malo,Secundario,Soltero,2,31,Valladolid,Medio
+66,4011,Profesor,Bueno,Secundario,Casado,1,62,Valencia,Medio
+19,4356,Técnico,Excelente,Secundario,Soltero,0,59,L'Hospitalet de Llobregat,Bajo
+30,1122,Ingeniero,Bueno,Bachillerato,Casado,0,51,Málaga,Medio
+47,2170,Profesor,Bueno,Bachillerato,Casado,3,0,Palma,Bajo
+63,1719,Ingeniero,Malo,Bachillerato,Casado,2,78,Málaga,Medio
+31,3284,Estudiante,Bueno,Bachillerato,Soltero,3,39,Las Palmas,Medio
+52,4960,Profesor,Malo,Universitario,Casado,2,87,L'Hospitalet de Llobregat,Bajo
+37,4500,Estudiante,Malo,Secundario,Soltero,4,46,Sevilla,Medio
+51,3907,Técnico,Malo,Universitario,Soltero,0,40,Zaragoza,Medio
+62,2349,Ingeniero,Bueno,Secundario,Casado,1,51,Zaragoza,Medio
+47,4769,Profesor,Malo,Universitario,Soltero,3,9,Badalona,Bajo
+56,2329,Ingeniero,Malo,Bachillerato,Soltero,1,12,Bilbao,Bajo
+44,1633,Comerciante,Bueno,Bachillerato,Casado,0,79,Badalona,Bajo
+51,2823,Técnico,Malo,Universitario,Soltero,2,76,Barcelona,Bajo
+65,4174,Ingeniero,Bueno,Secundario,Casado,0,16,Valladolid,Medio
+52,2192,Ingeniero,Excelente,Secundario,Casado,0,61,Palma,Bajo
+20,4928,Ingeniero,Malo,Secundario,Soltero,2,22,A Coruña,Medio
+38,4681,Estudiante,Malo,Secundario,Soltero,0,25,Palma,Bajo
+18,1941,Profesor,Bueno,Bachillerato,Casado,4,20,Palma,Bajo
+18,2031,Abogado,Excelente,Secundario,Soltero,0,65,L'Hospitalet de Llobregat,Bajo
+54,3096,Profesor,Excelente,Secundario,Soltero,0,69,Gijón,Medio
+63,1586,Ingeniero,Bueno,Bachillerato,Soltero,0,19,Jaén,Alto
+63,2670,Abogado,Bueno,Universitario,Soltero,0,86,A Coruña,Medio
+61,3209,Comerciante,Excelente,Secundario,Soltero,1,99,Valencia,Medio
+35,3707,Estudiante,Excelente,Secundario,Soltero,1,84,Madrid,Bajo
+56,3042,Ingeniero,Bueno,Bachillerato,Casado,2,75,Elche,Medio
+60,1342,Ingeniero,Malo,Bachillerato,Soltero,1,32,Ceuta,Alto
+36,4652,Técnico,Malo,Bachillerato,Soltero,4,25,Córdoba,Medio
+51,1365,Ingeniero,Malo,Universitario,Soltero,4,37,Sevilla,Medio
+53,1094,Técnico,Bueno,Universitario,Casado,0,37,Málaga,Medio
+69,4827,Profesor,Bueno,Secundario,Soltero,4,51,Palma,Bajo
+67,4671,Estudiante,Malo,Bachillerato,Casado,2,3,Bilbao,Bajo
+33,4687,Profesor,Excelente,Secundario,Casado,4,49,Badalona,Bajo
+62,1472,Estudiante,Excelente,Bachillerato,Casado,4,97,Murcia,Medio
+39,4767,Estudiante,Bueno,Secundario,Soltero,2,27,Vitoria-Gasteiz,Bajo
+48,4681,Abogado,Malo,Bachillerato,Soltero,2,64,L'Hospitalet de Llobregat,Bajo
+34,3003,Comerciante,Malo,Bachillerato,Soltero,1,26,Vitoria-Gasteiz,Bajo
+52,4247,Ingeniero,Malo,Universitario,Soltero,4,85,Badalona,Bajo
+36,1811,Ingeniero,Bueno,Bachillerato,Soltero,2,30,Gijón,Medio
+60,3980,Abogado,Malo,Secundario,Casado,4,18,Badalona,Bajo
+45,2501,Estudiante,Excelente,Bachillerato,Casado,3,86,A Coruña,Medio
+46,1892,Profesor,Bueno,Universitario,Casado,2,51,Badajoz,Alto
+49,2067,Comerciante,Bueno,Bachillerato,Soltero,1,44,Bilbao,Bajo
+54,2948,Profesor,Malo,Bachillerato,Soltero,0,16,Barcelona,Bajo
+55,3950,Comerciante,Malo,Secundario,Soltero,2,94,Madrid,Bajo
+31,2757,Abogado,Excelente,Universitario,Casado,2,38,Vitoria-Gasteiz,Bajo
+49,3285,Técnico,Excelente,Secundario,Casado,4,51,Ceuta,Alto
+35,2683,Profesor,Excelente,Bachillerato,Soltero,3,66,A Coruña,Medio
+42,3288,Abogado,Bueno,Bachillerato,Soltero,1,75,Zaragoza,Medio
+68,3085,Estudiante,Malo,Bachillerato,Casado,4,12,Vigo,Medio
+25,4688,Ingeniero,Bueno,Bachillerato,Soltero,0,77,Elche,Medio
+43,4813,Comerciante,Malo,Bachillerato,Casado,3,79,Valladolid,Medio
+29,4576,Profesor,Malo,Universitario,Soltero,4,71,Málaga,Medio
+30,1694,Abogado,Excelente,Bachillerato,Soltero,3,22,L'Hospitalet de Llobregat,Bajo
+54,1846,Estudiante,Excelente,Bachillerato,Casado,1,97,Valencia,Medio
+52,1699,Comerciante,Excelente,Secundario,Soltero,4,92,Vitoria-Gasteiz,Bajo
+57,3958,Ingeniero,Excelente,Universitario,Soltero,2,40,Ceuta,Alto
+26,4963,Técnico,Malo,Bachillerato,Soltero,3,84,Melilla,Alto
+69,4572,Técnico,Bueno,Secundario,Casado,0,44,Las Palmas,Medio
+67,4772,Profesor,Excelente,Secundario,Casado,2,83,Málaga,Medio
+45,2119,Abogado,Bueno,Secundario,Soltero,3,83,L'Hospitalet de Llobregat,Bajo
+49,3797,Ingeniero,Malo,Secundario,Soltero,1,56,Zaragoza,Medio
+34,3974,Técnico,Malo,Secundario,Soltero,0,31,Bilbao,Bajo
+50,1502,Ingeniero,Malo,Universitario,Soltero,0,57,Sevilla,Medio
+44,4798,Ingeniero,Malo,Secundario,Soltero,1,27,Badalona,Bajo
+49,1817,Profesor,Bueno,Secundario,Soltero,0,32,Bilbao,Bajo
+54,3233,Técnico,Bueno,Bachillerato,Casado,3,63,Jaén,Alto
+23,2146,Abogado,Excelente,Universitario,Soltero,2,70,Vitoria-Gasteiz,Bajo
+21,1441,Comerciante,Malo,Universitario,Casado,0,66,Palma,Bajo
+32,3928,Profesor,Excelente,Secundario,Casado,0,36,Valladolid,Medio
+55,1253,Profesor,Excelente,Secundario,Soltero,3,15,Madrid,Bajo
+67,4202,Profesor,Bueno,Secundario,Casado,3,55,Alicante,Medio
+36,3143,Profesor,Bueno,Universitario,Casado,3,34,Sevilla,Medio
+49,3592,Comerciante,Malo,Secundario,Soltero,2,45,Elche,Medio
+69,2034,Técnico,Malo,Universitario,Casado,4,20,Alicante,Medio
+50,3260,Técnico,Excelente,Secundario,Casado,0,20,Madrid,Bajo
+42,3600,Comerciante,Malo,Secundario,Casado,4,48,Badalona,Bajo
+22,3440,Profesor,Malo,Bachillerato,Casado,4,66,Gijón,Medio
+68,3099,Profesor,Excelente,Bachillerato,Casado,1,27,Madrid,Bajo
+38,3352,Comerciante,Excelente,Universitario,Soltero,4,19,Ceuta,Alto
+50,4303,Comerciante,Malo,Universitario,Casado,3,75,Valencia,Medio
+49,1794,Comerciante,Bueno,Bachillerato,Soltero,0,42,L'Hospitalet de Llobregat,Bajo
+42,3127,Comerciante,Bueno,Secundario,Soltero,0,12,Valencia,Medio
+48,4258,Abogado,Malo,Bachillerato,Soltero,4,62,Badalona,Bajo
+46,2860,Estudiante,Malo,Bachillerato,Soltero,1,94,Cáceres,Alto
+22,1785,Abogado,Excelente,Secundario,Soltero,0,65,A Coruña,Medio
+45,4721,Abogado,Bueno,Secundario,Casado,0,88,Gijón,Medio
+64,2512,Técnico,Bueno,Secundario,Soltero,2,53,Valladolid,Medio
+45,2979,Profesor,Excelente,Universitario,Casado,3,98,Ceuta,Alto
+34,1739,Comerciante,Excelente,Universitario,Casado,3,64,L'Hospitalet de Llobregat,Bajo
+54,2048,Técnico,Excelente,Secundario,Casado,0,34,Vigo,Medio
+43,3699,Abogado,Malo,Universitario,Soltero,0,95,Gijón,Medio
+49,2018,Comerciante,Malo,Secundario,Casado,3,89,Málaga,Medio
+60,1848,Estudiante,Bueno,Universitario,Casado,1,65,Córdoba,Medio
+49,4033,Ingeniero,Excelente,Secundario,Casado,4,23,Vigo,Medio
+67,3686,Ingeniero,Malo,Bachillerato,Soltero,3,47,Vitoria-Gasteiz,Bajo
+31,1236,Técnico,Bueno,Universitario,Casado,3,15,Murcia,Medio
+33,4619,Abogado,Malo,Bachillerato,Casado,3,12,Zaragoza,Medio
+46,2840,Ingeniero,Excelente,Bachillerato,Casado,3,57,Vigo,Medio
+60,4960,Técnico,Bueno,Bachillerato,Soltero,0,52,Elche,Medio
+58,3009,Comerciante,Bueno,Bachillerato,Casado,0,40,Barcelona,Bajo
+63,4785,Profesor,Malo,Secundario,Casado,2,69,Valladolid,Medio
+33,4765,Técnico,Excelente,Bachillerato,Casado,3,11,Murcia,Medio
+24,1205,Profesor,Malo,Bachillerato,Soltero,2,88,Badalona,Bajo
+41,4185,Estudiante,Malo,Universitario,Casado,1,44,Elche,Medio
+58,1543,Estudiante,Bueno,Bachillerato,Casado,1,28,Málaga,Medio
+69,4474,Abogado,Excelente,Universitario,Casado,1,93,Melilla,Alto
+46,1411,Técnico,Excelente,Secundario,Soltero,3,77,Las Palmas,Medio
+28,3457,Técnico,Bueno,Secundario,Soltero,2,51,Barcelona,Bajo
+64,1224,Abogado,Excelente,Secundario,Casado,1,68,Vigo,Medio
+31,1754,Abogado,Malo,Secundario,Soltero,2,72,Elche,Medio
+20,4958,Abogado,Bueno,Secundario,Soltero,3,4,Madrid,Bajo
+23,4909,Abogado,Excelente,Universitario,Soltero,0,46,A Coruña,Medio
+44,1091,Estudiante,Bueno,Universitario,Soltero,2,68,Jaén,Alto
+67,2702,Comerciante,Bueno,Universitario,Casado,1,27,Las Palmas,Medio
+37,2799,Estudiante,Excelente,Secundario,Soltero,3,37,Alicante,Medio
+61,3980,Ingeniero,Excelente,Universitario,Casado,2,17,Ceuta,Alto
+41,3346,Estudiante,Excelente,Bachillerato,Casado,0,32,Badalona,Bajo
+48,3362,Comerciante,Excelente,Bachillerato,Soltero,4,51,Badajoz,Alto
+65,3319,Estudiante,Bueno,Universitario,Soltero,4,34,Gijón,Medio
+34,2909,Comerciante,Excelente,Universitario,Casado,3,43,Gijón,Medio
+19,1890,Ingeniero,Bueno,Bachillerato,Casado,3,1,Ceuta,Alto
+48,4248,Abogado,Malo,Secundario,Casado,1,74,Valladolid,Medio
+26,4873,Comerciante,Excelente,Secundario,Casado,2,97,Badajoz,Alto
+20,1158,Técnico,Malo,Universitario,Soltero,2,97,Badajoz,Alto
+58,3907,Profesor,Excelente,Bachillerato,Casado,3,92,Bilbao,Bajo
+23,3251,Abogado,Bueno,Secundario,Soltero,1,31,Badalona,Bajo
+25,3386,Ingeniero,Malo,Secundario,Soltero,3,3,Bilbao,Bajo
+43,2455,Ingeniero,Malo,Secundario,Soltero,0,63,Alicante,Medio
+52,3424,Profesor,Malo,Bachillerato,Soltero,0,80,L'Hospitalet de Llobregat,Bajo
+56,1988,Ingeniero,Bueno,Universitario,Casado,0,36,L'Hospitalet de Llobregat,Bajo
+66,4518,Profesor,Bueno,Bachillerato,Soltero,0,96,Ceuta,Alto
+51,4476,Estudiante,Malo,Secundario,Casado,4,3,Cáceres,Alto
+63,4045,Estudiante,Bueno,Bachillerato,Soltero,0,0,Sevilla,Medio
+18,3782,Profesor,Bueno,Bachillerato,Casado,2,34,Vigo,Medio
+24,4248,Técnico,Excelente,Bachillerato,Soltero,4,20,Vitoria-Gasteiz,Bajo
+40,4377,Profesor,Excelente,Bachillerato,Soltero,1,13,Badajoz,Alto
+45,1950,Ingeniero,Excelente,Universitario,Soltero,2,64,Málaga,Medio
+27,3295,Abogado,Excelente,Bachillerato,Soltero,1,83,Vigo,Medio
+29,2944,Técnico,Bueno,Universitario,Soltero,0,43,A Coruña,Medio
+40,2162,Ingeniero,Malo,Universitario,Casado,0,74,Málaga,Medio
+68,2153,Estudiante,Malo,Universitario,Soltero,4,97,Vigo,Medio
+40,1441,Comerciante,Malo,Secundario,Casado,3,73,Cáceres,Alto
+18,3528,Abogado,Malo,Universitario,Casado,1,34,Valencia,Medio
+34,4142,Estudiante,Bueno,Universitario,Casado,3,62,Barcelona,Bajo
+33,4565,Estudiante,Bueno,Secundario,Soltero,1,63,Bilbao,Bajo
+67,2977,Abogado,Malo,Secundario,Casado,1,2,Murcia,Medio
+53,2729,Profesor,Malo,Secundario,Soltero,1,9,A Coruña,Medio
+58,1854,Comerciante,Bueno,Secundario,Soltero,2,87,Córdoba,Medio
+62,4497,Estudiante,Excelente,Secundario,Casado,4,60,Zaragoza,Medio
+32,4634,Técnico,Bueno,Bachillerato,Soltero,0,65,Palma,Bajo
+67,2259,Profesor,Malo,Bachillerato,Soltero,1,27,Melilla,Alto
+25,2367,Comerciante,Excelente,Universitario,Casado,3,47,Barcelona,Bajo
+51,3693,Ingeniero,Malo,Universitario,Soltero,0,37,Badajoz,Alto
+36,3552,Ingeniero,Malo,Universitario,Soltero,3,65,Alicante,Medio
+45,1056,Profesor,Malo,Universitario,Casado,1,75,Badalona,Bajo
+37,3560,Ingeniero,Malo,Bachillerato,Casado,2,11,Vitoria-Gasteiz,Bajo
+31,2359,Ingeniero,Excelente,Universitario,Casado,3,8,Alicante,Medio
+67,2928,Comerciante,Malo,Universitario,Soltero,3,48,Jaén,Alto
+47,2403,Ingeniero,Malo,Universitario,Soltero,1,21,A Coruña,Medio
+56,4742,Estudiante,Excelente,Secundario,Casado,4,53,Ceuta,Alto
+40,1320,Ingeniero,Bueno,Secundario,Soltero,2,86,Barcelona,Bajo
+65,2629,Comerciante,Bueno,Secundario,Soltero,3,55,Madrid,Bajo
+52,2384,Comerciante,Excelente,Universitario,Soltero,4,11,Zaragoza,Medio
+18,4701,Profesor,Excelente,Bachillerato,Soltero,1,98,Murcia,Medio
+64,3469,Abogado,Excelente,Secundario,Soltero,3,25,Madrid,Bajo
+66,3615,Ingeniero,Malo,Secundario,Casado,1,27,Málaga,Medio
+32,2809,Profesor,Malo,Secundario,Casado,0,22,Valladolid,Medio
+23,1051,Técnico,Malo,Universitario,Soltero,3,8,Bilbao,Bajo
+49,1916,Abogado,Malo,Bachillerato,Soltero,4,66,Elche,Medio
+57,1448,Abogado,Malo,Bachillerato,Casado,4,64,Cáceres,Alto
+62,3284,Comerciante,Bueno,Secundario,Soltero,0,54,Vigo,Medio
+43,4089,Abogado,Malo,Secundario,Casado,2,75,Zaragoza,Medio
+55,2228,Profesor,Malo,Universitario,Soltero,0,13,Málaga,Medio
+50,1119,Abogado,Bueno,Secundario,Casado,2,5,Badajoz,Alto
+26,2604,Abogado,Malo,Universitario,Soltero,1,29,L'Hospitalet de Llobregat,Bajo
+20,1887,Ingeniero,Excelente,Bachillerato,Soltero,1,82,Badajoz,Alto
+33,3048,Abogado,Malo,Universitario,Casado,4,42,Vigo,Medio
+34,1072,Ingeniero,Malo,Universitario,Soltero,3,3,Córdoba,Medio
+69,2696,Técnico,Excelente,Universitario,Soltero,3,46,Córdoba,Medio
+29,1785,Comerciante,Malo,Bachillerato,Casado,2,89,Alicante,Medio
+43,4386,Técnico,Bueno,Secundario,Soltero,0,20,Las Palmas,Medio
+63,3402,Profesor,Bueno,Secundario,Soltero,1,56,Barcelona,Bajo
+30,1079,Estudiante,Malo,Bachillerato,Soltero,0,6,A Coruña,Medio
+23,1911,Técnico,Excelente,Universitario,Casado,0,89,Gijón,Medio
+46,1916,Comerciante,Excelente,Universitario,Casado,2,95,Elche,Medio
+34,1734,Técnico,Malo,Bachillerato,Casado,4,98,Vitoria-Gasteiz,Bajo
+44,2527,Profesor,Excelente,Universitario,Casado,4,76,Badajoz,Alto
+52,2188,Ingeniero,Bueno,Secundario,Casado,1,28,Sevilla,Medio
+18,3479,Estudiante,Excelente,Bachillerato,Casado,2,91,Alicante,Medio
+40,3784,Ingeniero,Excelente,Universitario,Soltero,3,8,Alicante,Medio
+50,4993,Abogado,Bueno,Secundario,Soltero,2,86,Badajoz,Alto
+42,1234,Técnico,Bueno,Secundario,Casado,2,8,L'Hospitalet de Llobregat,Bajo
+65,1444,Estudiante,Bueno,Bachillerato,Casado,0,35,Madrid,Bajo
+27,1924,Profesor,Bueno,Universitario,Soltero,4,33,Palma,Bajo
+67,4175,Profesor,Excelente,Bachillerato,Soltero,0,45,Badalona,Bajo
+38,4153,Ingeniero,Malo,Universitario,Casado,4,59,Cáceres,Alto
+33,2263,Técnico,Excelente,Bachillerato,Casado,2,40,Las Palmas,Medio
+25,1812,Ingeniero,Excelente,Bachillerato,Casado,3,35,Murcia,Medio
+65,2812,Abogado,Bueno,Secundario,Casado,0,8,Zaragoza,Medio
+32,3781,Ingeniero,Bueno,Bachillerato,Soltero,4,34,Vigo,Medio
+51,1956,Abogado,Bueno,Universitario,Casado,4,80,Vitoria-Gasteiz,Bajo
+64,3567,Profesor,Malo,Universitario,Casado,1,47,Badalona,Bajo
+60,2638,Estudiante,Excelente,Secundario,Soltero,2,71,Las Palmas,Medio
+20,1241,Ingeniero,Malo,Universitario,Casado,4,58,Bilbao,Bajo
+47,4575,Abogado,Bueno,Bachillerato,Casado,1,6,Bilbao,Bajo
+18,3059,Técnico,Malo,Secundario,Casado,0,52,Badalona,Bajo
+29,3919,Ingeniero,Bueno,Secundario,Casado,4,50,L'Hospitalet de Llobregat,Bajo
+51,4640,Ingeniero,Malo,Universitario,Casado,3,94,Murcia,Medio
+32,2198,Comerciante,Bueno,Bachillerato,Soltero,4,71,Córdoba,Medio
+47,3975,Comerciante,Bueno,Universitario,Casado,4,67,Cáceres,Alto
+44,3988,Técnico,Bueno,Secundario,Casado,0,71,Valladolid,Medio
+45,1755,Estudiante,Malo,Bachillerato,Casado,3,10,Vitoria-Gasteiz,Bajo
+28,4817,Estudiante,Bueno,Secundario,Casado,0,57,Jaén,Alto
+21,2233,Comerciante,Malo,Secundario,Soltero,0,54,Badalona,Bajo
+49,1228,Ingeniero,Excelente,Bachillerato,Casado,0,42,Elche,Medio
+66,4666,Comerciante,Malo,Universitario,Casado,1,28,Bilbao,Bajo
+66,4596,Comerciante,Malo,Bachillerato,Casado,4,7,Las Palmas,Medio
+20,4295,Ingeniero,Excelente,Universitario,Casado,1,10,Barcelona,Bajo
+58,1590,Profesor,Bueno,Bachillerato,Casado,3,3,Bilbao,Bajo
+63,1078,Técnico,Bueno,Bachillerato,Casado,2,44,Ceuta,Alto
+52,4463,Abogado,Excelente,Bachillerato,Casado,1,33,Sevilla,Medio
+35,2503,Ingeniero,Bueno,Bachillerato,Soltero,4,25,Valladolid,Medio
+40,2610,Estudiante,Malo,Bachillerato,Soltero,3,67,Córdoba,Medio
+38,1357,Técnico,Malo,Universitario,Soltero,4,64,Barcelona,Bajo
+41,4403,Técnico,Malo,Universitario,Casado,3,73,Elche,Medio
+55,3229,Ingeniero,Malo,Secundario,Soltero,0,33,Barcelona,Bajo
+24,2706,Comerciante,Excelente,Universitario,Casado,3,78,Valladolid,Medio
+54,1785,Ingeniero,Bueno,Bachillerato,Soltero,3,25,Bilbao,Bajo
+37,1362,Técnico,Excelente,Bachillerato,Casado,3,56,Las Palmas,Medio
+67,1907,Estudiante,Excelente,Universitario,Casado,0,36,Ceuta,Alto
+33,3650,Ingeniero,Bueno,Universitario,Casado,0,26,Alicante,Medio
+20,3165,Abogado,Bueno,Universitario,Casado,2,18,Vitoria-Gasteiz,Bajo
+34,4197,Técnico,Bueno,Bachillerato,Casado,3,3,L'Hospitalet de Llobregat,Bajo
+52,1076,Ingeniero,Bueno,Universitario,Soltero,4,68,Córdoba,Medio
+69,2686,Estudiante,Malo,Secundario,Casado,1,41,Bilbao,Bajo
+34,3987,Abogado,Excelente,Universitario,Soltero,3,75,Badajoz,Alto
+35,2277,Profesor,Malo,Bachillerato,Soltero,4,94,Bilbao,Bajo
+49,2328,Abogado,Bueno,Universitario,Casado,0,28,Córdoba,Medio
+49,2889,Profesor,Malo,Secundario,Casado,3,27,Barcelona,Bajo
+60,1712,Comerciante,Excelente,Bachillerato,Casado,2,5,Barcelona,Bajo
+48,4713,Técnico,Malo,Secundario,Casado,3,14,L'Hospitalet de Llobregat,Bajo
+58,1165,Comerciante,Malo,Secundario,Casado,3,85,Murcia,Medio
+53,4904,Abogado,Bueno,Secundario,Soltero,2,84,Córdoba,Medio
+48,2242,Comerciante,Malo,Secundario,Soltero,2,83,Vitoria-Gasteiz,Bajo
+44,2389,Abogado,Malo,Secundario,Casado,0,74,Valladolid,Medio
+57,4672,Ingeniero,Malo,Universitario,Casado,1,88,Ceuta,Alto
+22,4645,Abogado,Excelente,Bachillerato,Soltero,3,28,Sevilla,Medio
+66,3697,Comerciante,Malo,Universitario,Casado,4,92,Elche,Medio
+34,1103,Técnico,Malo,Bachillerato,Casado,0,61,Ceuta,Alto
+56,2800,Estudiante,Malo,Secundario,Casado,4,19,Valladolid,Medio
+65,1431,Abogado,Excelente,Bachillerato,Casado,0,38,Las Palmas,Medio
+33,4490,Comerciante,Excelente,Universitario,Soltero,0,53,Córdoba,Medio
+28,1515,Estudiante,Bueno,Secundario,Casado,4,77,Barcelona,Bajo
+65,2950,Profesor,Excelente,Secundario,Casado,0,37,Zaragoza,Medio
+32,1278,Estudiante,Excelente,Bachillerato,Soltero,3,85,Melilla,Alto
+41,4465,Técnico,Excelente,Bachillerato,Casado,2,84,L'Hospitalet de Llobregat,Bajo
+63,1662,Estudiante,Malo,Universitario,Soltero,2,53,Zaragoza,Medio
+23,2875,Estudiante,Bueno,Bachillerato,Soltero,0,87,Murcia,Medio
+28,1484,Ingeniero,Excelente,Bachillerato,Soltero,2,73,Ceuta,Alto
+58,2946,Ingeniero,Excelente,Secundario,Soltero,2,17,Málaga,Medio
+50,2261,Profesor,Bueno,Universitario,Casado,0,95,Jaén,Alto
+27,3970,Ingeniero,Malo,Secundario,Soltero,4,81,Vigo,Medio
+32,2941,Profesor,Bueno,Bachillerato,Casado,3,16,Murcia,Medio
+59,1747,Técnico,Excelente,Secundario,Casado,2,52,Vitoria-Gasteiz,Bajo
+34,3143,Técnico,Bueno,Secundario,Casado,2,85,Vigo,Medio
+27,2623,Ingeniero,Excelente,Bachillerato,Soltero,4,21,Bilbao,Bajo
+34,2996,Técnico,Bueno,Bachillerato,Casado,2,85,Madrid,Bajo
+68,3298,Comerciante,Bueno,Universitario,Soltero,1,70,Valencia,Medio
+25,3103,Abogado,Excelente,Bachillerato,Soltero,4,25,Gijón,Medio
+59,3967,Abogado,Bueno,Bachillerato,Soltero,2,62,Sevilla,Medio
+56,1990,Técnico,Malo,Secundario,Casado,3,58,Murcia,Medio
+43,3810,Comerciante,Malo,Universitario,Soltero,2,47,Málaga,Medio
+38,4516,Técnico,Malo,Bachillerato,Casado,1,9,Elche,Medio
+57,3005,Estudiante,Malo,Bachillerato,Soltero,1,44,Badalona,Bajo
+45,4507,Técnico,Bueno,Universitario,Casado,4,1,Sevilla,Medio
+54,1823,Comerciante,Malo,Universitario,Casado,1,30,Vitoria-Gasteiz,Bajo
+59,4723,Abogado,Excelente,Universitario,Soltero,4,9,Las Palmas,Medio
+58,3774,Comerciante,Excelente,Universitario,Soltero,0,77,Valencia,Medio
+59,1343,Ingeniero,Malo,Universitario,Casado,2,67,Vitoria-Gasteiz,Bajo
+27,4077,Ingeniero,Malo,Bachillerato,Casado,0,76,Vigo,Medio
+30,2497,Profesor,Malo,Secundario,Casado,3,19,Gijón,Medio
+26,4826,Profesor,Excelente,Secundario,Soltero,1,82,Cáceres,Alto
+19,3949,Profesor,Excelente,Bachillerato,Soltero,0,12,Elche,Medio
+27,3100,Técnico,Bueno,Bachillerato,Soltero,0,93,Zaragoza,Medio
+42,2250,Abogado,Excelente,Universitario,Casado,4,17,Valencia,Medio
+18,4403,Estudiante,Bueno,Secundario,Soltero,3,21,Valladolid,Medio
+21,1973,Comerciante,Bueno,Bachillerato,Casado,0,59,Alicante,Medio
+38,3828,Técnico,Excelente,Bachillerato,Casado,2,34,Vitoria-Gasteiz,Bajo
+24,1622,Abogado,Excelente,Secundario,Soltero,2,74,Málaga,Medio
+31,2547,Profesor,Bueno,Bachillerato,Casado,2,53,Vitoria-Gasteiz,Bajo
+57,4556,Ingeniero,Excelente,Universitario,Casado,1,22,Bilbao,Bajo
+27,4209,Abogado,Bueno,Bachillerato,Casado,2,30,A Coruña,Medio
+23,3705,Profesor,Excelente,Bachillerato,Soltero,4,3,Badalona,Bajo
+36,2333,Estudiante,Bueno,Universitario,Casado,3,98,Gijón,Medio
+67,2581,Ingeniero,Malo,Secundario,Soltero,4,49,Vitoria-Gasteiz,Bajo
+20,1859,Abogado,Excelente,Universitario,Casado,1,12,Madrid,Bajo
+58,3936,Ingeniero,Excelente,Secundario,Casado,0,29,Madrid,Bajo
+27,4353,Estudiante,Malo,Secundario,Casado,1,90,Alicante,Medio
+43,3306,Comerciante,Excelente,Universitario,Soltero,2,52,Ceuta,Alto
+41,1470,Abogado,Excelente,Secundario,Soltero,1,54,Madrid,Bajo
+59,4841,Abogado,Malo,Secundario,Casado,0,20,Sevilla,Medio
+59,3750,Comerciante,Bueno,Universitario,Casado,0,39,Valencia,Medio
+54,1185,Técnico,Bueno,Bachillerato,Soltero,1,24,L'Hospitalet de Llobregat,Bajo
+54,1784,Profesor,Malo,Secundario,Soltero,2,24,Córdoba,Medio
+18,3779,Estudiante,Bueno,Secundario,Soltero,4,94,Madrid,Bajo
+31,3969,Abogado,Excelente,Secundario,Casado,0,61,Vigo,Medio
+27,1907,Comerciante,Bueno,Bachillerato,Casado,1,21,Badajoz,Alto
+40,4796,Profesor,Malo,Bachillerato,Casado,4,76,Valencia,Medio
+52,4296,Estudiante,Malo,Secundario,Soltero,1,13,Gijón,Medio
+38,2951,Profesor,Malo,Bachillerato,Soltero,4,46,L'Hospitalet de Llobregat,Bajo
+22,4900,Abogado,Bueno,Universitario,Soltero,1,55,Elche,Medio
+32,1352,Ingeniero,Excelente,Secundario,Casado,3,67,Málaga,Medio
+67,4801,Comerciante,Bueno,Secundario,Soltero,0,65,Madrid,Bajo
+47,4297,Técnico,Excelente,Secundario,Soltero,0,74,Sevilla,Medio
+56,4800,Profesor,Malo,Secundario,Soltero,2,73,Elche,Medio
+45,1041,Abogado,Malo,Bachillerato,Soltero,3,35,Barcelona,Bajo
+22,3991,Estudiante,Malo,Bachillerato,Soltero,2,96,Vigo,Medio
+39,1778,Estudiante,Malo,Universitario,Casado,2,9,Badajoz,Alto
+67,3999,Técnico,Malo,Secundario,Casado,3,68,Zaragoza,Medio
+37,3567,Abogado,Excelente,Universitario,Casado,4,29,A Coruña,Medio
+48,3267,Ingeniero,Malo,Universitario,Soltero,4,55,Valencia,Medio
+61,2300,Abogado,Bueno,Universitario,Casado,4,62,Alicante,Medio
+38,3188,Estudiante,Malo,Universitario,Soltero,3,3,L'Hospitalet de Llobregat,Bajo
+53,1749,Comerciante,Excelente,Bachillerato,Soltero,0,84,Madrid,Bajo
+34,4999,Ingeniero,Malo,Bachillerato,Soltero,3,32,Gijón,Medio
+31,3436,Técnico,Bueno,Bachillerato,Soltero,0,25,Córdoba,Medio
+49,1976,Abogado,Excelente,Universitario,Casado,1,62,Vigo,Medio
+56,1285,Ingeniero,Excelente,Bachillerato,Soltero,0,4,Vitoria-Gasteiz,Bajo
+52,1261,Abogado,Malo,Bachillerato,Casado,4,95,Badalona,Bajo
+63,4132,Comerciante,Malo,Bachillerato,Soltero,1,70,Barcelona,Bajo
+48,3962,Abogado,Excelente,Universitario,Soltero,2,13,Alicante,Medio
+63,3879,Ingeniero,Excelente,Secundario,Soltero,0,42,Málaga,Medio
+26,2207,Profesor,Bueno,Universitario,Soltero,3,21,Barcelona,Bajo
+38,2590,Técnico,Excelente,Bachillerato,Soltero,0,44,Murcia,Medio
+65,3289,Abogado,Bueno,Universitario,Casado,4,60,Gijón,Medio
+29,1751,Abogado,Malo,Universitario,Soltero,0,96,Jaén,Alto
+61,1133,Abogado,Bueno,Universitario,Soltero,4,15,Valladolid,Medio
+51,3622,Ingeniero,Excelente,Secundario,Soltero,1,55,Valladolid,Medio
+28,1958,Estudiante,Excelente,Secundario,Soltero,2,72,Sevilla,Medio
+64,4066,Estudiante,Excelente,Secundario,Soltero,1,22,Jaén,Alto
+49,1770,Estudiante,Bueno,Universitario,Soltero,1,60,Sevilla,Medio
+26,4081,Profesor,Malo,Secundario,Casado,3,95,Barcelona,Bajo
+47,3878,Profesor,Malo,Secundario,Soltero,0,85,Cáceres,Alto
+39,4919,Técnico,Excelente,Secundario,Casado,2,86,Valladolid,Medio
+42,3292,Comerciante,Bueno,Universitario,Casado,4,6,Madrid,Bajo
+39,1139,Profesor,Excelente,Universitario,Soltero,1,62,Córdoba,Medio
+64,3112,Técnico,Malo,Secundario,Casado,1,78,Palma,Bajo
+60,4715,Profesor,Malo,Bachillerato,Soltero,3,85,Valencia,Medio
+52,2028,Comerciante,Bueno,Universitario,Soltero,4,54,Palma,Bajo
+38,2274,Ingeniero,Malo,Bachillerato,Soltero,0,15,Badalona,Bajo
+37,2308,Ingeniero,Excelente,Universitario,Soltero,0,52,Vigo,Medio
+36,4199,Comerciante,Excelente,Secundario,Soltero,0,25,Valladolid,Medio
+29,4809,Técnico,Excelente,Secundario,Soltero,0,43,Gijón,Medio
+53,4399,Técnico,Bueno,Secundario,Soltero,4,81,Badajoz,Alto
+27,4530,Profesor,Excelente,Universitario,Soltero,3,20,Badajoz,Alto
+42,2725,Profesor,Bueno,Secundario,Soltero,4,66,Palma,Bajo
+44,4000,Técnico,Bueno,Bachillerato,Casado,4,98,Jaén,Alto
+37,4936,Estudiante,Bueno,Universitario,Soltero,0,70,Las Palmas,Medio
+46,3748,Técnico,Malo,Universitario,Soltero,0,24,Barcelona,Bajo
+41,3707,Técnico,Malo,Secundario,Casado,2,61,Vigo,Medio
+62,3967,Técnico,Malo,Universitario,Soltero,3,17,A Coruña,Medio
+54,2431,Técnico,Bueno,Secundario,Soltero,4,46,Gijón,Medio
+47,1612,Comerciante,Bueno,Bachillerato,Soltero,2,11,Palma,Bajo
+61,1706,Técnico,Malo,Secundario,Soltero,4,34,Zaragoza,Medio
+18,1372,Comerciante,Excelente,Secundario,Soltero,2,52,Palma,Bajo
+55,4144,Técnico,Excelente,Universitario,Soltero,3,29,Melilla,Alto
+39,1728,Estudiante,Malo,Secundario,Soltero,4,62,Elche,Medio
+49,3061,Estudiante,Bueno,Universitario,Casado,0,92,Gijón,Medio
+33,3530,Técnico,Bueno,Bachillerato,Soltero,3,18,Vigo,Medio
+64,3788,Ingeniero,Bueno,Bachillerato,Soltero,4,30,Vitoria-Gasteiz,Bajo
+54,2626,Abogado,Excelente,Bachillerato,Casado,0,58,Jaén,Alto
+53,3859,Comerciante,Bueno,Bachillerato,Casado,4,70,Cáceres,Alto
+21,2925,Comerciante,Excelente,Universitario,Casado,1,57,Córdoba,Medio
+66,3687,Técnico,Excelente,Secundario,Soltero,0,59,Alicante,Medio
+58,3684,Comerciante,Malo,Bachillerato,Soltero,2,75,Palma,Bajo
+46,2760,Abogado,Excelente,Secundario,Casado,0,64,Cáceres,Alto
+61,1574,Ingeniero,Excelente,Secundario,Soltero,3,64,Madrid,Bajo
+55,3301,Técnico,Bueno,Bachillerato,Soltero,0,11,Madrid,Bajo
+41,3830,Comerciante,Bueno,Universitario,Soltero,0,70,Vitoria-Gasteiz,Bajo
+36,2121,Profesor,Malo,Secundario,Casado,1,88,L'Hospitalet de Llobregat,Bajo
+52,2649,Técnico,Bueno,Universitario,Soltero,3,41,Barcelona,Bajo
+46,4300,Comerciante,Bueno,Secundario,Soltero,1,20,Melilla,Alto
+60,3885,Abogado,Malo,Universitario,Soltero,1,36,Sevilla,Medio
+66,3856,Profesor,Malo,Universitario,Soltero,1,3,Sevilla,Medio
+36,1099,Profesor,Bueno,Universitario,Soltero,0,20,Zaragoza,Medio
+34,3839,Técnico,Bueno,Bachillerato,Casado,1,57,L'Hospitalet de Llobregat,Bajo
+51,1434,Comerciante,Malo,Bachillerato,Soltero,2,19,Elche,Medio
+56,1635,Comerciante,Excelente,Bachillerato,Soltero,2,57,Murcia,Medio
+44,4905,Abogado,Bueno,Bachillerato,Casado,0,89,Gijón,Medio
+45,2032,Abogado,Bueno,Secundario,Casado,3,89,Murcia,Medio
+21,4607,Técnico,Malo,Secundario,Casado,1,91,Zaragoza,Medio
+24,2061,Ingeniero,Bueno,Universitario,Soltero,3,42,Vigo,Medio
+55,3395,Ingeniero,Bueno,Secundario,Soltero,4,73,A Coruña,Medio
+30,3564,Ingeniero,Excelente,Bachillerato,Casado,2,22,Las Palmas,Medio
+34,4140,Profesor,Malo,Secundario,Casado,2,24,Zaragoza,Medio
+65,3798,Ingeniero,Malo,Secundario,Soltero,1,85,Málaga,Medio
+38,2880,Técnico,Bueno,Universitario,Casado,1,34,L'Hospitalet de Llobregat,Bajo
+64,4810,Abogado,Excelente,Universitario,Soltero,2,83,Gijón,Medio
+62,1212,Ingeniero,Malo,Secundario,Soltero,0,37,Elche,Medio
+38,1658,Profesor,Bueno,Bachillerato,Casado,3,92,Vigo,Medio
+34,4650,Técnico,Malo,Universitario,Casado,2,95,Zaragoza,Medio
+63,4224,Técnico,Bueno,Bachillerato,Casado,2,56,Vigo,Medio
+50,2994,Abogado,Excelente,Secundario,Casado,1,52,Badajoz,Alto
+55,3792,Profesor,Excelente,Bachillerato,Casado,0,51,Madrid,Bajo
+48,1508,Abogado,Malo,Bachillerato,Casado,1,84,Barcelona,Bajo
+67,1993,Ingeniero,Excelente,Secundario,Soltero,3,96,Bilbao,Bajo
+43,2988,Estudiante,Bueno,Secundario,Soltero,0,83,L'Hospitalet de Llobregat,Bajo
+58,2389,Estudiante,Malo,Bachillerato,Casado,2,87,L'Hospitalet de Llobregat,Bajo
+22,4282,Técnico,Excelente,Universitario,Soltero,4,21,Las Palmas,Medio
+46,4543,Técnico,Excelente,Secundario,Soltero,0,96,Murcia,Medio
+65,2124,Técnico,Bueno,Bachillerato,Casado,3,79,Ceuta,Alto
+18,1724,Ingeniero,Excelente,Universitario,Casado,3,44,Vitoria-Gasteiz,Bajo
+40,4460,Comerciante,Bueno,Secundario,Casado,3,72,Valencia,Medio
+34,4303,Abogado,Bueno,Universitario,Casado,2,35,Murcia,Medio
+43,2299,Ingeniero,Excelente,Secundario,Soltero,4,13,Málaga,Medio
+43,4177,Profesor,Malo,Universitario,Casado,0,38,Málaga,Medio
+60,4613,Profesor,Bueno,Bachillerato,Soltero,4,63,Vigo,Medio
+31,4692,Técnico,Bueno,Secundario,Soltero,1,56,Málaga,Medio
+63,3251,Estudiante,Bueno,Universitario,Casado,2,10,Córdoba,Medio
+67,2677,Comerciante,Bueno,Universitario,Soltero,0,15,Córdoba,Medio
+30,2998,Comerciante,Bueno,Secundario,Casado,2,23,Palma,Bajo
+35,4814,Ingeniero,Bueno,Secundario,Casado,1,15,Zaragoza,Medio
+38,1644,Abogado,Bueno,Secundario,Soltero,2,44,Ceuta,Alto
+37,1565,Ingeniero,Malo,Universitario,Casado,4,61,Alicante,Medio
+29,1716,Profesor,Excelente,Universitario,Casado,4,98,Alicante,Medio
+58,1249,Técnico,Bueno,Universitario,Casado,0,6,Sevilla,Medio
+26,3078,Abogado,Malo,Bachillerato,Soltero,3,40,Zaragoza,Medio
+30,3143,Profesor,Malo,Secundario,Soltero,1,70,Las Palmas,Medio
+68,2432,Estudiante,Excelente,Universitario,Casado,4,7,Bilbao,Bajo
+23,2080,Estudiante,Malo,Universitario,Soltero,4,48,Cáceres,Alto
+48,1393,Comerciante,Excelente,Secundario,Casado,1,18,A Coruña,Medio
+53,4344,Profesor,Malo,Universitario,Casado,2,86,Málaga,Medio
+40,3248,Comerciante,Malo,Universitario,Soltero,4,42,Málaga,Medio
+59,3536,Profesor,Malo,Secundario,Casado,2,47,Badalona,Bajo
+39,2024,Estudiante,Malo,Universitario,Casado,1,14,Vitoria-Gasteiz,Bajo
+40,3937,Comerciante,Excelente,Bachillerato,Casado,2,96,Málaga,Medio
+27,1351,Estudiante,Bueno,Universitario,Casado,3,27,L'Hospitalet de Llobregat,Bajo
+26,3328,Técnico,Bueno,Bachillerato,Soltero,3,34,Sevilla,Medio
+21,2408,Técnico,Bueno,Secundario,Soltero,3,77,Valladolid,Medio
+68,3458,Comerciante,Excelente,Universitario,Soltero,2,64,Cáceres,Alto
+19,2845,Profesor,Bueno,Universitario,Soltero,3,99,Córdoba,Medio
+43,1741,Técnico,Excelente,Secundario,Casado,1,88,Murcia,Medio
+50,2857,Técnico,Excelente,Secundario,Casado,4,15,Sevilla,Medio
+55,2759,Técnico,Malo,Bachillerato,Soltero,4,39,Zaragoza,Medio
+29,2880,Comerciante,Bueno,Universitario,Casado,3,4,Melilla,Alto
+65,3100,Comerciante,Bueno,Bachillerato,Soltero,1,51,Córdoba,Medio
+42,4153,Comerciante,Malo,Universitario,Soltero,2,51,Sevilla,Medio
+41,4352,Estudiante,Bueno,Universitario,Soltero,3,96,Palma,Bajo
+23,1899,Abogado,Malo,Universitario,Soltero,3,42,Córdoba,Medio
+18,2388,Abogado,Bueno,Universitario,Casado,4,56,Elche,Medio
+69,4388,Ingeniero,Excelente,Bachillerato,Soltero,1,27,Badajoz,Alto
+22,3695,Comerciante,Excelente,Secundario,Casado,0,29,Murcia,Medio
+68,3430,Técnico,Malo,Secundario,Soltero,0,35,Barcelona,Bajo
+34,4561,Estudiante,Excelente,Bachillerato,Casado,4,14,Córdoba,Medio
+29,2636,Estudiante,Malo,Bachillerato,Casado,3,70,Bilbao,Bajo
+63,2327,Profesor,Bueno,Secundario,Soltero,0,78,Jaén,Alto
+43,3675,Abogado,Excelente,Secundario,Soltero,1,82,Valencia,Medio
+68,3115,Comerciante,Malo,Secundario,Casado,2,98,Barcelona,Bajo
+36,3867,Profesor,Malo,Bachillerato,Casado,0,5,Gijón,Medio
+46,4750,Estudiante,Bueno,Universitario,Soltero,4,18,Las Palmas,Medio
+45,3351,Estudiante,Malo,Bachillerato,Soltero,0,99,Zaragoza,Medio
+38,1643,Ingeniero,Malo,Secundario,Casado,3,21,Valladolid,Medio
+26,4279,Comerciante,Malo,Universitario,Soltero,3,56,L'Hospitalet de Llobregat,Bajo
+31,4553,Profesor,Malo,Secundario,Soltero,0,44,Ceuta,Alto
+18,4828,Estudiante,Excelente,Bachillerato,Casado,1,41,Zaragoza,Medio
+65,3149,Ingeniero,Excelente,Universitario,Soltero,4,85,Barcelona,Bajo
+58,3945,Estudiante,Excelente,Universitario,Casado,4,68,A Coruña,Medio
+19,1169,Profesor,Bueno,Secundario,Soltero,3,36,Valencia,Medio
+58,1988,Profesor,Bueno,Bachillerato,Casado,3,41,Gijón,Medio
+46,4312,Estudiante,Malo,Universitario,Casado,1,77,Zaragoza,Medio
+62,4968,Estudiante,Bueno,Universitario,Casado,0,77,Murcia,Medio
+29,2532,Técnico,Excelente,Secundario,Soltero,4,40,Alicante,Medio
+22,2942,Abogado,Malo,Bachillerato,Soltero,3,49,A Coruña,Medio
+30,4821,Abogado,Bueno,Secundario,Casado,3,22,Cáceres,Alto
+48,1026,Ingeniero,Bueno,Bachillerato,Casado,1,67,Badajoz,Alto
+68,1567,Profesor,Bueno,Universitario,Casado,2,28,Murcia,Medio
+62,2682,Ingeniero,Bueno,Universitario,Casado,1,20,Valladolid,Medio
+23,1784,Ingeniero,Bueno,Universitario,Soltero,0,91,Sevilla,Medio
+53,1388,Abogado,Malo,Bachillerato,Soltero,4,62,Cáceres,Alto
+69,4526,Comerciante,Bueno,Universitario,Soltero,2,87,Córdoba,Medio
+61,4589,Comerciante,Malo,Secundario,Soltero,0,67,Cáceres,Alto
+22,3890,Comerciante,Bueno,Universitario,Casado,1,18,Vitoria-Gasteiz,Bajo
+61,1104,Ingeniero,Malo,Secundario,Soltero,2,79,Valencia,Medio
+27,4218,Ingeniero,Bueno,Secundario,Soltero,1,16,Gijón,Medio
+51,3272,Profesor,Excelente,Bachillerato,Casado,2,53,Málaga,Medio
+27,1535,Estudiante,Bueno,Universitario,Casado,0,53,Barcelona,Bajo
+32,1349,Estudiante,Excelente,Bachillerato,Soltero,2,80,Málaga,Medio
+40,2497,Técnico,Malo,Bachillerato,Casado,1,36,Vigo,Medio
+59,1713,Ingeniero,Malo,Secundario,Soltero,1,78,Madrid,Bajo
+25,1023,Ingeniero,Bueno,Secundario,Soltero,0,39,Zaragoza,Medio
+28,3395,Comerciante,Excelente,Bachillerato,Casado,2,90,Vigo,Medio
+53,4828,Estudiante,Malo,Bachillerato,Soltero,2,25,Jaén,Alto
+47,1546,Abogado,Excelente,Bachillerato,Soltero,0,21,Ceuta,Alto
+43,3280,Comerciante,Excelente,Bachillerato,Soltero,2,30,Sevilla,Medio
+27,3807,Técnico,Bueno,Secundario,Casado,0,97,Barcelona,Bajo
+36,2858,Abogado,Excelente,Bachillerato,Casado,3,98,Valencia,Medio
+21,3604,Técnico,Excelente,Bachillerato,Soltero,1,61,A Coruña,Medio
+23,3383,Profesor,Malo,Bachillerato,Casado,0,34,Sevilla,Medio
+69,2686,Estudiante,Excelente,Universitario,Soltero,3,85,Badajoz,Alto
+22,2993,Abogado,Bueno,Bachillerato,Casado,1,34,Las Palmas,Medio
+32,1168,Técnico,Excelente,Universitario,Soltero,3,57,Alicante,Medio
+39,4264,Ingeniero,Malo,Universitario,Soltero,3,63,Sevilla,Medio
+51,4955,Abogado,Excelente,Secundario,Soltero,0,59,Las Palmas,Medio
+43,1754,Ingeniero,Bueno,Universitario,Casado,2,77,Melilla,Alto
+31,4428,Abogado,Bueno,Secundario,Casado,1,70,Las Palmas,Medio
+24,3828,Ingeniero,Excelente,Bachillerato,Casado,1,70,Vigo,Medio
+47,1848,Abogado,Excelente,Universitario,Soltero,2,23,Málaga,Medio
+27,4352,Abogado,Bueno,Bachillerato,Soltero,3,2,Las Palmas,Medio
+29,2357,Profesor,Excelente,Universitario,Casado,3,80,L'Hospitalet de Llobregat,Bajo
+31,1548,Abogado,Bueno,Bachillerato,Soltero,3,39,Valencia,Medio
+59,2564,Profesor,Excelente,Secundario,Soltero,1,17,Barcelona,Bajo
+25,1445,Estudiante,Bueno,Bachillerato,Soltero,4,73,Zaragoza,Medio
+57,2722,Ingeniero,Malo,Universitario,Casado,1,26,Zaragoza,Medio
+41,3508,Ingeniero,Malo,Bachillerato,Casado,3,59,Madrid,Bajo
+56,1003,Profesor,Excelente,Secundario,Soltero,3,37,Valladolid,Medio
+59,1970,Ingeniero,Malo,Secundario,Casado,0,37,Badajoz,Alto
+59,4468,Ingeniero,Excelente,Universitario,Soltero,1,3,Las Palmas,Medio
+21,2554,Técnico,Malo,Universitario,Casado,1,7,Las Palmas,Medio
+61,2960,Ingeniero,Excelente,Bachillerato,Casado,3,27,Valencia,Medio
+31,2954,Técnico,Bueno,Bachillerato,Soltero,4,25,Cáceres,Alto
+45,3939,Abogado,Malo,Bachillerato,Soltero,0,82,Sevilla,Medio
+34,1942,Ingeniero,Excelente,Secundario,Soltero,3,50,Badajoz,Alto
+51,1924,Profesor,Malo,Bachillerato,Soltero,2,7,Jaén,Alto
+47,2157,Abogado,Bueno,Secundario,Casado,2,25,Melilla,Alto
+66,1172,Estudiante,Malo,Bachillerato,Soltero,1,63,Sevilla,Medio
+26,4031,Profesor,Excelente,Bachillerato,Soltero,1,51,Las Palmas,Medio
+59,1241,Ingeniero,Malo,Secundario,Soltero,4,54,Elche,Medio
+61,4850,Profesor,Excelente,Secundario,Casado,4,33,Málaga,Medio
+60,1155,Abogado,Excelente,Bachillerato,Soltero,0,94,Zaragoza,Medio
+45,3693,Profesor,Excelente,Bachillerato,Casado,1,64,Málaga,Medio
+57,2284,Técnico,Excelente,Secundario,Casado,4,70,Alicante,Medio
+30,2651,Ingeniero,Bueno,Secundario,Casado,1,5,Vigo,Medio
+44,3863,Estudiante,Excelente,Bachillerato,Soltero,2,69,Melilla,Alto
+43,4490,Abogado,Excelente,Secundario,Casado,1,86,Murcia,Medio
+34,2772,Abogado,Malo,Universitario,Soltero,2,3,Palma,Bajo
+68,3985,Abogado,Bueno,Universitario,Casado,4,58,Alicante,Medio
+45,4916,Estudiante,Excelente,Universitario,Soltero,1,81,Palma,Bajo
+34,3852,Técnico,Malo,Bachillerato,Soltero,4,59,Zaragoza,Medio
+57,2639,Técnico,Excelente,Secundario,Soltero,4,30,Gijón,Medio
+26,1360,Comerciante,Bueno,Bachillerato,Casado,1,95,Vigo,Medio
+55,3922,Ingeniero,Bueno,Secundario,Casado,3,40,Málaga,Medio
+18,3464,Profesor,Bueno,Bachillerato,Casado,1,50,Sevilla,Medio
+24,3682,Abogado,Bueno,Secundario,Soltero,1,33,Badajoz,Alto
+54,3552,Estudiante,Malo,Secundario,Soltero,0,59,Las Palmas,Medio
+28,2550,Ingeniero,Excelente,Bachillerato,Casado,0,37,Córdoba,Medio
+63,4566,Abogado,Malo,Universitario,Casado,0,63,Badalona,Bajo
+44,2749,Estudiante,Bueno,Bachillerato,Soltero,2,52,Gijón,Medio
+54,2214,Técnico,Bueno,Bachillerato,Soltero,4,74,Valencia,Medio
+51,1043,Técnico,Excelente,Universitario,Casado,1,84,Valencia,Medio
+63,3191,Técnico,Bueno,Secundario,Casado,4,6,Las Palmas,Medio
+27,4936,Estudiante,Malo,Bachillerato,Soltero,1,98,Badajoz,Alto
+59,3070,Ingeniero,Malo,Secundario,Soltero,2,20,A Coruña,Medio
+68,4214,Comerciante,Malo,Secundario,Soltero,0,20,Elche,Medio
+45,1349,Ingeniero,Excelente,Universitario,Soltero,3,83,A Coruña,Medio
+59,2380,Estudiante,Malo,Bachillerato,Casado,1,51,Badalona,Bajo
+35,4130,Técnico,Malo,Secundario,Casado,1,41,Cáceres,Alto
+26,4023,Técnico,Malo,Universitario,Soltero,4,0,Palma,Bajo
+25,3463,Ingeniero,Excelente,Bachillerato,Soltero,4,67,Vigo,Medio
+65,1961,Ingeniero,Excelente,Bachillerato,Soltero,0,20,Madrid,Bajo
+64,1196,Técnico,Bueno,Bachillerato,Soltero,1,25,Sevilla,Medio
+67,4070,Abogado,Bueno,Universitario,Casado,0,59,Ceuta,Alto
+69,4960,Técnico,Excelente,Bachillerato,Soltero,2,5,Badalona,Bajo
+56,2629,Ingeniero,Excelente,Secundario,Casado,0,14,Zaragoza,Medio
+58,3558,Comerciante,Malo,Secundario,Soltero,2,92,Cáceres,Alto
+68,4849,Técnico,Malo,Universitario,Soltero,2,7,Vitoria-Gasteiz,Bajo
+21,3797,Abogado,Malo,Universitario,Soltero,3,4,Murcia,Medio
+63,2229,Comerciante,Excelente,Bachillerato,Casado,4,15,Badalona,Bajo
+58,1663,Abogado,Bueno,Secundario,Soltero,0,82,Melilla,Alto
+54,3782,Estudiante,Excelente,Universitario,Casado,2,3,Córdoba,Medio
+51,3608,Abogado,Malo,Bachillerato,Soltero,4,72,Elche,Medio
+35,1853,Abogado,Bueno,Secundario,Casado,3,99,Valladolid,Medio
+23,1551,Profesor,Bueno,Secundario,Casado,4,86,Cáceres,Alto
+59,1841,Profesor,Bueno,Universitario,Soltero,0,0,A Coruña,Medio
+67,2687,Comerciante,Malo,Universitario,Soltero,0,48,Valencia,Medio
+43,1922,Profesor,Excelente,Universitario,Soltero,3,91,Elche,Medio
+21,3254,Comerciante,Bueno,Bachillerato,Soltero,0,88,Madrid,Bajo
+32,4806,Ingeniero,Malo,Bachillerato,Casado,2,4,Jaén,Alto
+42,2360,Profesor,Excelente,Bachillerato,Casado,3,94,Cáceres,Alto
+65,3648,Abogado,Bueno,Bachillerato,Soltero,3,72,Palma,Bajo
+53,2879,Comerciante,Bueno,Bachillerato,Soltero,0,27,Alicante,Medio
+49,4302,Técnico,Bueno,Bachillerato,Casado,1,71,Las Palmas,Medio
+36,2694,Ingeniero,Bueno,Universitario,Soltero,1,28,Murcia,Medio
+66,3310,Estudiante,Excelente,Secundario,Casado,1,18,Sevilla,Medio
+32,2762,Ingeniero,Excelente,Universitario,Soltero,1,83,Jaén,Alto
+21,3925,Profesor,Excelente,Universitario,Casado,1,17,Elche,Medio
+63,1290,Abogado,Excelente,Secundario,Soltero,3,42,Gijón,Medio
+44,1742,Profesor,Malo,Universitario,Casado,0,85,Valencia,Medio
+44,4090,Abogado,Bueno,Universitario,Casado,2,39,Vigo,Medio
+21,1718,Profesor,Excelente,Secundario,Soltero,1,20,Alicante,Medio
+68,4936,Comerciante,Excelente,Secundario,Casado,2,18,Zaragoza,Medio
+53,1762,Ingeniero,Bueno,Bachillerato,Soltero,2,59,Las Palmas,Medio
+47,3005,Técnico,Bueno,Bachillerato,Casado,1,58,Barcelona,Bajo
+62,3783,Ingeniero,Malo,Bachillerato,Soltero,4,52,Palma,Bajo
+60,2522,Abogado,Excelente,Bachillerato,Casado,2,21,Jaén,Alto
+34,2531,Técnico,Bueno,Universitario,Casado,0,43,Palma,Bajo
+53,4946,Profesor,Bueno,Bachillerato,Casado,3,48,Badalona,Bajo
+49,3769,Técnico,Excelente,Bachillerato,Soltero,4,68,Málaga,Medio
+39,2249,Estudiante,Bueno,Bachillerato,Soltero,2,27,Madrid,Bajo
+57,4185,Profesor,Malo,Secundario,Soltero,3,31,Badalona,Bajo
+41,3208,Ingeniero,Malo,Bachillerato,Casado,1,13,Ceuta,Alto
+56,2839,Técnico,Excelente,Bachillerato,Soltero,2,6,L'Hospitalet de Llobregat,Bajo
+62,3531,Comerciante,Malo,Universitario,Soltero,0,44,Valencia,Medio
+25,1719,Ingeniero,Excelente,Universitario,Casado,2,72,Valladolid,Medio
+54,3990,Abogado,Bueno,Universitario,Casado,1,71,Gijón,Medio
+20,3058,Comerciante,Bueno,Universitario,Casado,3,93,Murcia,Medio
+24,4208,Técnico,Bueno,Secundario,Soltero,0,47,Valladolid,Medio
+26,3423,Estudiante,Excelente,Bachillerato,Soltero,1,0,Ceuta,Alto
+32,1384,Ingeniero,Malo,Secundario,Casado,2,41,Valencia,Medio
+53,4829,Técnico,Bueno,Universitario,Soltero,0,32,Valladolid,Medio
+28,2579,Ingeniero,Excelente,Bachillerato,Soltero,4,7,Sevilla,Medio
+23,1618,Ingeniero,Bueno,Bachillerato,Casado,3,16,Madrid,Bajo
+57,3134,Abogado,Malo,Universitario,Casado,4,16,Badajoz,Alto
+60,3692,Abogado,Excelente,Universitario,Soltero,2,70,Elche,Medio
+20,2179,Ingeniero,Bueno,Secundario,Casado,4,13,Cáceres,Alto
+68,1702,Comerciante,Malo,Universitario,Soltero,4,73,Elche,Medio
+46,2208,Ingeniero,Bueno,Universitario,Soltero,1,50,Madrid,Bajo
+20,1264,Profesor,Excelente,Bachillerato,Soltero,0,36,Elche,Medio
+21,1674,Profesor,Excelente,Secundario,Casado,3,1,Melilla,Alto
+28,2764,Profesor,Malo,Universitario,Soltero,2,21,Murcia,Medio
+49,4284,Comerciante,Malo,Universitario,Casado,4,61,Valencia,Medio
+56,1753,Abogado,Bueno,Secundario,Soltero,4,5,Cáceres,Alto
+39,1903,Abogado,Malo,Universitario,Soltero,4,82,Valencia,Medio
+58,4723,Ingeniero,Excelente,Bachillerato,Casado,2,98,Elche,Medio
+21,4228,Técnico,Excelente,Universitario,Soltero,0,96,Gijón,Medio
+31,2128,Comerciante,Excelente,Universitario,Soltero,2,16,A Coruña,Medio
+37,4408,Ingeniero,Excelente,Bachillerato,Soltero,1,63,Murcia,Medio
+38,4583,Técnico,Bueno,Bachillerato,Casado,2,20,Valencia,Medio
+57,1171,Abogado,Malo,Bachillerato,Casado,2,83,Cáceres,Alto
+36,1264,Profesor,Malo,Universitario,Casado,1,2,Gijón,Medio
+60,1644,Profesor,Bueno,Secundario,Soltero,1,90,Melilla,Alto
+24,1604,Abogado,Bueno,Universitario,Casado,1,82,Ceuta,Alto
+53,1767,Estudiante,Excelente,Secundario,Casado,2,44,Valencia,Medio
+47,2623,Abogado,Malo,Universitario,Soltero,3,69,Bilbao,Bajo
+48,3271,Comerciante,Excelente,Secundario,Casado,2,96,L'Hospitalet de Llobregat,Bajo
+23,2202,Comerciante,Malo,Bachillerato,Soltero,4,1,Melilla,Alto
+38,2179,Ingeniero,Bueno,Universitario,Soltero,0,81,Gijón,Medio
+50,4268,Comerciante,Excelente,Secundario,Soltero,4,71,Gijón,Medio
+55,3334,Profesor,Excelente,Universitario,Casado,0,76,A Coruña,Medio
+43,1952,Ingeniero,Excelente,Bachillerato,Casado,2,54,Murcia,Medio
+49,3614,Ingeniero,Excelente,Universitario,Soltero,0,56,A Coruña,Medio
+25,4542,Comerciante,Malo,Secundario,Casado,0,33,Ceuta,Alto
+32,1771,Abogado,Excelente,Universitario,Casado,3,39,Alicante,Medio
+64,2551,Comerciante,Excelente,Bachillerato,Soltero,0,88,Palma,Bajo
+42,2070,Ingeniero,Bueno,Bachillerato,Soltero,1,94,Alicante,Medio
+30,3744,Comerciante,Malo,Universitario,Casado,4,21,Vigo,Medio
+54,4436,Técnico,Bueno,Secundario,Soltero,4,80,Bilbao,Bajo
+52,3474,Profesor,Malo,Secundario,Casado,0,25,Vitoria-Gasteiz,Bajo
+50,3749,Técnico,Malo,Bachillerato,Casado,3,46,Badajoz,Alto
+58,2173,Comerciante,Malo,Universitario,Casado,2,88,Las Palmas,Medio
+26,2773,Abogado,Bueno,Universitario,Soltero,3,48,Badajoz,Alto
+26,3655,Estudiante,Malo,Secundario,Casado,2,75,Barcelona,Bajo
+63,1872,Ingeniero,Excelente,Universitario,Casado,2,17,Elche,Medio
+24,3814,Comerciante,Bueno,Bachillerato,Casado,3,39,Valladolid,Medio
+37,2618,Profesor,Excelente,Universitario,Soltero,4,57,Málaga,Medio
+37,3786,Ingeniero,Malo,Secundario,Casado,0,69,Las Palmas,Medio
+50,3669,Abogado,Malo,Universitario,Casado,0,9,A Coruña,Medio
+52,1109,Profesor,Malo,Universitario,Casado,0,90,Zaragoza,Medio
+23,4360,Estudiante,Bueno,Bachillerato,Casado,3,10,Barcelona,Bajo
+63,3826,Comerciante,Bueno,Secundario,Casado,1,65,Valencia,Medio
+63,4465,Abogado,Malo,Secundario,Soltero,4,85,Melilla,Alto
+39,3175,Estudiante,Excelente,Bachillerato,Casado,0,2,Elche,Medio
+27,2654,Técnico,Excelente,Secundario,Casado,1,84,Valencia,Medio
+52,3183,Abogado,Excelente,Bachillerato,Soltero,4,26,Elche,Medio
+49,1521,Abogado,Bueno,Universitario,Soltero,1,68,Palma,Bajo
+37,4302,Estudiante,Bueno,Bachillerato,Soltero,3,84,Valencia,Medio
+50,1240,Ingeniero,Malo,Universitario,Soltero,2,10,Badajoz,Alto
+49,1201,Profesor,Bueno,Universitario,Soltero,0,18,Ceuta,Alto
+62,3685,Ingeniero,Excelente,Universitario,Soltero,1,83,Zaragoza,Medio
+42,1513,Técnico,Bueno,Secundario,Soltero,1,6,Zaragoza,Medio
+34,2579,Comerciante,Bueno,Universitario,Casado,4,99,Alicante,Medio
+41,3435,Técnico,Malo,Universitario,Soltero,4,62,Palma,Bajo
+55,4077,Abogado,Malo,Bachillerato,Soltero,3,25,Bilbao,Bajo
+25,3741,Técnico,Malo,Universitario,Soltero,3,27,Vitoria-Gasteiz,Bajo
+35,1587,Profesor,Malo,Secundario,Casado,4,36,Valencia,Medio
+65,4172,Técnico,Malo,Secundario,Soltero,0,53,Córdoba,Medio
+49,4990,Abogado,Excelente,Secundario,Soltero,0,63,Melilla,Alto
+46,3008,Técnico,Bueno,Secundario,Casado,1,1,Sevilla,Medio
+20,1577,Comerciante,Bueno,Universitario,Casado,2,72,Elche,Medio
+43,3786,Profesor,Excelente,Bachillerato,Casado,2,10,Barcelona,Bajo
+27,2600,Técnico,Excelente,Bachillerato,Soltero,1,1,Ceuta,Alto
+55,2844,Técnico,Bueno,Bachillerato,Soltero,1,27,Córdoba,Medio
+66,3809,Profesor,Malo,Universitario,Casado,4,73,Zaragoza,Medio
+27,1754,Comerciante,Bueno,Bachillerato,Casado,4,21,Madrid,Bajo
+69,1939,Abogado,Malo,Secundario,Soltero,1,57,Zaragoza,Medio
+21,1035,Ingeniero,Excelente,Universitario,Casado,4,31,Badajoz,Alto
+61,2801,Ingeniero,Bueno,Secundario,Casado,4,87,Melilla,Alto
+64,4178,Técnico,Excelente,Bachillerato,Casado,4,21,Badajoz,Alto
+56,3354,Comerciante,Excelente,Universitario,Casado,1,32,Melilla,Alto
+69,4641,Técnico,Malo,Secundario,Soltero,1,34,Badalona,Bajo
+47,1839,Técnico,Malo,Secundario,Casado,2,79,Barcelona,Bajo
+18,3214,Profesor,Malo,Secundario,Casado,3,36,Las Palmas,Medio
+52,1277,Comerciante,Malo,Secundario,Casado,3,34,Zaragoza,Medio
+43,3344,Estudiante,Malo,Universitario,Casado,3,15,Las Palmas,Medio
+40,4934,Ingeniero,Excelente,Universitario,Casado,2,3,Gijón,Medio
+56,4882,Abogado,Bueno,Universitario,Soltero,3,72,Las Palmas,Medio
+33,2495,Profesor,Excelente,Universitario,Soltero,0,47,Cáceres,Alto
+63,3735,Comerciante,Excelente,Bachillerato,Soltero,0,18,A Coruña,Medio
+49,1073,Ingeniero,Bueno,Bachillerato,Soltero,1,41,Cáceres,Alto
+50,1792,Técnico,Excelente,Secundario,Casado,0,27,Vitoria-Gasteiz,Bajo
+68,1455,Estudiante,Bueno,Secundario,Casado,4,4,Alicante,Medio
+49,3815,Técnico,Bueno,Bachillerato,Casado,2,11,Jaén,Alto
+29,3915,Estudiante,Excelente,Secundario,Soltero,4,44,Ceuta,Alto
+52,4220,Estudiante,Bueno,Bachillerato,Soltero,0,50,A Coruña,Medio
+31,2849,Técnico,Bueno,Bachillerato,Casado,0,84,Málaga,Medio
+54,4994,Comerciante,Bueno,Secundario,Casado,3,22,Vitoria-Gasteiz,Bajo
+41,3098,Ingeniero,Bueno,Secundario,Soltero,4,27,Madrid,Bajo
+37,4495,Ingeniero,Excelente,Universitario,Soltero,3,9,Alicante,Medio
+35,4407,Ingeniero,Bueno,Universitario,Casado,0,40,Madrid,Bajo
+39,2927,Profesor,Excelente,Bachillerato,Casado,3,74,Melilla,Alto
+23,1773,Profesor,Malo,Bachillerato,Soltero,4,83,Córdoba,Medio
+43,4391,Comerciante,Bueno,Bachillerato,Casado,4,28,Zaragoza,Medio
+18,1925,Profesor,Malo,Bachillerato,Casado,0,28,Alicante,Medio
+43,2859,Estudiante,Malo,Universitario,Soltero,0,30,Gijón,Medio
+28,3251,Profesor,Excelente,Secundario,Soltero,1,70,Zaragoza,Medio
+22,3747,Técnico,Excelente,Bachillerato,Soltero,4,28,Bilbao,Bajo
+55,3698,Técnico,Bueno,Secundario,Casado,3,8,Córdoba,Medio
+46,1864,Abogado,Bueno,Universitario,Soltero,2,10,Bilbao,Bajo
+45,3467,Técnico,Malo,Bachillerato,Soltero,1,41,Valladolid,Medio
+61,4288,Profesor,Malo,Universitario,Casado,1,3,Badalona,Bajo
+46,1253,Técnico,Bueno,Bachillerato,Soltero,2,54,Badajoz,Alto
+23,1301,Ingeniero,Bueno,Bachillerato,Casado,0,87,Ceuta,Alto
+64,3667,Técnico,Excelente,Universitario,Soltero,3,69,Melilla,Alto
+39,1989,Técnico,Excelente,Universitario,Soltero,4,29,Badalona,Bajo
+27,1720,Estudiante,Malo,Bachillerato,Soltero,2,15,Cáceres,Alto
+48,3799,Abogado,Malo,Universitario,Casado,2,92,Ceuta,Alto
+58,2325,Estudiante,Excelente,Bachillerato,Casado,3,45,Ceuta,Alto
+41,4447,Ingeniero,Excelente,Secundario,Soltero,2,59,Vigo,Medio
+58,2131,Estudiante,Bueno,Universitario,Soltero,2,12,Sevilla,Medio
+68,2126,Abogado,Malo,Bachillerato,Soltero,4,75,Vigo,Medio
+45,2498,Profesor,Bueno,Universitario,Casado,4,59,Valencia,Medio
+47,1071,Estudiante,Malo,Universitario,Casado,4,75,Elche,Medio
+39,2205,Profesor,Excelente,Bachillerato,Soltero,4,71,Badajoz,Alto
+43,2802,Ingeniero,Excelente,Secundario,Soltero,0,59,Jaén,Alto
+48,1396,Profesor,Malo,Universitario,Casado,3,65,Sevilla,Medio
+59,4288,Profesor,Malo,Bachillerato,Soltero,2,60,Gijón,Medio
+63,4104,Abogado,Malo,Bachillerato,Casado,1,36,Bilbao,Bajo
+22,1462,Abogado,Excelente,Bachillerato,Soltero,1,93,Palma,Bajo
+46,1820,Ingeniero,Malo,Bachillerato,Soltero,4,66,L'Hospitalet de Llobregat,Bajo
