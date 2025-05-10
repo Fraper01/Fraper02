@@ -1,0 +1,798 @@
+import numpy as np # algebra linear
+import pandas as pd # data
+
+# Visualización
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Preprocesamiento
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.impute import SimpleImputer
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+
+# Modelado y validación
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import cross_val_score, StratifiedKFold # Importar cross_val_score and StratifiedKFold
+from sklearn.metrics import confusion_matrix, f1_score # Importar confusion_matrix and f1_score
+from xgboost import XGBClassifier
+
+# Evaluación del modelo
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import confusion_matrix, classification_report, f1_score, roc_curve, auc
+from sklearn.preprocessing import label_binarize
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.model_selection import cross_val_score, StratifiedKFold
+from sklearn.neighbors import KNeighborsClassifier
+
+from sklearn.model_selection import train_test_split, StratifiedKFold, GridSearchCV
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import classification_report, confusion_matrix, f1_score, make_scorer, precision_recall_fscore_support
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import VotingClassifier, BaggingClassifier
+from imblearn.over_sampling import SMOTE, BorderlineSMOTE, ADASYN
+from imblearn.under_sampling import NearMiss, RandomUnderSampler
+from imblearn.combine import SMOTETomek, SMOTEENN
+from imblearn.pipeline import Pipeline
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import warnings
+warnings.filterwarnings("ignore")
+
+from sklearn.model_selection import RandomizedSearchCV, StratifiedKFold
+from imblearn.combine import SMOTETomek, SMOTEENN
+from imblearn.over_sampling import BorderlineSMOTE
+from sklearn.metrics import make_scorer, precision_recall_fscore_support
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.pipeline import Pipeline
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler, StandardScaler, OneHotEncoder
+
+# Visualizacion de los datos
+sns.set(style="whitegrid")
+
+# se lee base de datos
+df = pd.read_csv('financial_risk_assessment.csv')
+
+## Descripcion y Analisis Descriptivo
+
+# Diccionario de traducción de columnas al español
+nombres_es = {
+    'Age': 'Edad',
+    'Gender': 'Género',
+    'Education Level': 'Nivel Educativo',
+    'Marital Status': 'Estado Civil',
+    'Income': 'Ingreso',
+    'Credit Score': 'Puntaje de Crédito',
+    'Loan Amount': 'Monto del Préstamo',
+    'Loan Purpose': 'Propósito del Préstamo',
+    'Employment Status': 'Situación Laboral',
+    'Years at Current Job': 'Años en el Empleo Actual',
+    'Payment History': 'Historial de Pagos',
+    'Debt-to-Income Ratio': 'Relación Deuda-Ingreso',
+    'Assets Value': 'Valor de Activos',
+    'Number of Dependents': 'Número de Dependientes',
+    'City': 'Ciudad',
+    'State': 'Estado',
+    'Country': 'País',
+    'Previous Defaults': 'Incumplimientos Previos',
+    'Marital Status Change': 'Cambio de Estado Civil',
+    'Risk Rating': 'Calificación de Riesgo'
+}
+
+# Renombrar columnas
+df.rename(columns=nombres_es, inplace=True)
+
+# Verificar los nuevos nombres
+df.columns
+
+# Se muestran los 10 primeros
+#df.head()
+
+# Informacion basica
+#df.info()
+
+#### Descripcion numericas
+
+# Descripcion estadistica
+#df.describe(include=[np.number])
+
+#### Descripcion Categoricas
+
+# Resumen estadistico de categorias
+#df.describe(include=[object])
+
+#### Valores nulos
+
+# Miras cuantos valores nulos tiene
+df.isnull().sum()
+
+# columnas específicas
+columnas_interes = ['Ingreso', 'Puntaje de Crédito', 'Monto del Préstamo',
+                    'Valor de Activos', 'Número de Dependientes', 'Incumplimientos Previos']
+
+# Generar la descripción
+descripcion_estadistica = df[columnas_interes].describe()
+
+# Mostrar la descripción estadística
+#print(descripcion_estadistica)
+
+
+#### Intrepretacion de las variables con datos faltantes
+
+# Eliminar todas las filas que contengan al menos un valor nulo
+df = df.dropna()
+
+# Miras cuantos valores nulos tiene
+df.isnull().sum()
+
+###**Grafico target**
+
+# Calcular porcentaje de cada clase
+total = len(df)
+porcentajes = df['Calificación de Riesgo'].value_counts(normalize=True) * 100
+
+# Gráfico con porcentajes
+"""
+plt.figure(figsize=(8, 6))
+ax = sns.countplot(x='Calificación de Riesgo', data=df, order=porcentajes.index, palette='Blues')
+
+# Añadir los porcentajes encima de cada barra
+for p in ax.patches:
+    height = p.get_height()
+    porcentaje = 100 * height / total
+    ax.annotate(f'{porcentaje:.1f}%', (p.get_x() + p.get_width() / 2, height),
+                ha='center', va='bottom', fontsize=11)
+
+plt.title('Distribución porcentual de Calificación de Riesgo', fontsize=14)
+plt.ylabel('Frecuencia')
+plt.xlabel('Calificación de Riesgo')
+plt.tight_layout()
+plt.show()
+"""
+
+###**Grafico Variables Numericas**
+
+# Lista de variables numéricas
+numericos = ['Edad', 'Ingreso', 'Puntaje de Crédito', 'Monto del Préstamo',
+                'Años en el Empleo Actual', 'Relación Deuda-Ingreso',
+                'Valor de Activos', 'Número de Dependientes', 'Incumplimientos Previos']
+
+# Paleta personalizada de tonos azules
+colores = sns.color_palette("Blues", len(numericos))
+
+# Crear figura
+"""
+fig, axes = plt.subplots(3, 3, figsize=(15, 12))
+fig.suptitle('Histograma para las variables numéricas')
+
+# Dibujar cada histograma con un color específico
+for i, feature in enumerate(numericos):
+    ax = axes[i // 3, i % 3]
+    df[feature].hist(ax=ax, bins=30, edgecolor='black', color=colores[i])
+    ax.set_title(feature)
+
+plt.tight_layout(rect=[0, 0, 1, 0.96])  # Ajustar para dejar espacio al título
+plt.show()
+"""
+
+# Paleta personalizada colores
+palette = sns.color_palette("Blues", n_colors=len(df['Calificación de Riesgo'].unique()))
+
+"""
+# grafico de Cajas y bigotes
+plt.figure(figsize=(15, 10))
+for i, feature in enumerate(numericos):
+    plt.subplot(3, 3, i + 1)
+    sns.boxplot(x='Calificación de Riesgo', y=feature, data=df, palette=palette)
+    plt.title(f'Boxplot de {feature}')
+plt.tight_layout()
+plt.show()
+"""
+
+#Valores unicos
+"""
+for columna in ['Género', 'Nivel Educativo', 'Estado Civil', 'Propósito del Préstamo',
+                'Situación Laboral', 'Historial de Pagos', 'Ciudad', 'Estado', 'País']:
+    print(f'{columna} unique values:')
+    print(df[columna].value_counts())
+    print()
+"""
+
+###**Grafico Variables Categoricas**
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Estilo visual
+sns.set(style="whitegrid")
+
+# Lista de variables categóricas mejorada
+categoricas = ['Género', 'Nivel Educativo', 'Estado Civil', 'Propósito del Préstamo',
+               'Situación Laboral', 'Historial de Pagos'] # se excluyen  'Ciudad', 'Estado', 'País', 'Calificación de Riesgo'
+
+"""
+# Recorrer y graficar cada columna categórica
+for columna in categoricas:
+    if columna in df.columns:
+        plt.figure(figsize=(10, 5))
+        orden = df[columna].value_counts().index
+        sns.countplot(data=df, x=columna, order=orden, palette='Blues')
+        plt.title(f'Distribución de {columna}', fontsize=14)
+        plt.xlabel(columna, fontsize=12)
+        plt.ylabel('Frecuencia', fontsize=12)
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        plt.show()
+"""
+
+###**Grafico Matrices de correlacion**
+
+"""
+# Matriz de correlacion con mapa de calor  total datos
+plt.figure(figsize=(12,10))
+correlation_matrix = df[numericos].corr()
+sns.heatmap(correlation_matrix, annot=True, cmap='Blues', fmt='.2f', vmin=-1, vmax=1)
+plt.title('Mapa de calor')
+plt.show()
+"""
+
+# Convertir la columna categórica a numérica si aún no existe
+if 'Calificación de Riesgo_Num' not in df.columns:
+    df['Calificación de Riesgo_Num'] = df['Calificación de Riesgo'].map({'Low': 0, 'Medium': 1, 'High': 2})
+
+# Eliminar la columna original categórica
+df = df.drop(columns=['Calificación de Riesgo'])
+
+# Añadir la nueva columna a la lista de variables numéricas
+variables_corr = numericos + ['Calificación de Riesgo_Num']
+
+# Calcular matriz de correlación
+correlation_matrix = df[variables_corr].corr()
+
+# Extraer solo las correlaciones con 'Calificación de Riesgo_Num', excluyendo la correlación consigo misma
+cor_riesgo = correlation_matrix[['Calificación de Riesgo_Num']].drop(index='Calificación de Riesgo_Num').sort_values(by='Calificación de Riesgo_Num', ascending=False)
+
+"""
+# Gráfico del mapa de calor
+plt.figure(figsize=(8, 6))
+sns.heatmap(cor_riesgo, annot=True, cmap='Blues', fmt='.2f', vmin=-1, vmax=1, cbar=True)
+plt.title('Correlación con Calificación de Riesgo (Excluyendo la Propia)')
+plt.tight_layout()
+plt.show()
+"""
+
+# Lista de columnas categóricas
+categoricas = ['Género', 'Nivel Educativo', 'Estado Civil', 'Propósito del Préstamo', 'Situación Laboral', 'Historial de Pagos']# se excluyen ,'Ciudad', 'Estado', 'Calificación de Riesgo'
+
+# Eliminar la columna original categórica
+df = df.drop(columns=['Ciudad', 'Estado', 'País'])
+
+# Aplicar one-hot encoding
+df_encoded = pd.get_dummies(df, columns=categoricas, drop_first=True)
+
+# Calcular matriz de correlación
+correlation_matrix = df_encoded.corr()
+
+# Extraer correlaciones con 'Calificación de Riesgo_Num', excluyendo la diagonal
+cor_riesgo = correlation_matrix[['Calificación de Riesgo_Num']].drop(index='Calificación de Riesgo_Num')
+cor_riesgo = cor_riesgo.sort_values(by='Calificación de Riesgo_Num', ascending=False)
+
+"""
+# Gráfico del mapa de calor
+plt.figure(figsize=(10, 8))
+sns.heatmap(cor_riesgo, annot=True, cmap='Blues', fmt='.2f', vmin=-1, vmax=1, cbar=True)
+plt.title('Correlación con Calificación de Riesgo (Excluyendo la Propia)')
+plt.tight_layout()
+plt.show()
+"""
+
+### Cruces Esenciales para Análisis de Riesgo
+
+# Tabla de contingencia: Género vs. Calificación de Riesgo
+tabla_genero_riesgo = pd.crosstab(
+    index=df['Género'],
+    columns=df['Calificación de Riesgo_Num'],
+    margins=True,  # Incluir totales
+    margins_name="Total"
+)
+#print(tabla_genero_riesgo)
+
+# Tabla: Propósito del Préstamo vs. Historial de Pagos
+tabla_proposito_pagos = pd.crosstab(
+    index=df['Propósito del Préstamo'],
+    columns=df['Historial de Pagos'],
+    normalize="index",  # Porcentajes por fila
+    margins=True
+)
+#print(tabla_proposito_pagos)
+
+# Tabla: Educación vs. Empleo
+tabla_educacion_empleo = pd.crosstab(
+    index=df['Nivel Educativo'],
+    columns=df['Situación Laboral'],
+    margins=True
+)
+#print(tabla_educacion_empleo)
+
+### Cruces para Validar Calidad de Datos
+
+# Agrupar edad en rangos
+df['Rango Edad'] = pd.cut(df['Edad'], bins=[0, 30, 50, 70], labels=['Joven', 'Adulto', 'Mayor'])
+
+# Tabla: Estado Civil vs. Rango de Edad
+tabla_estadocivil_edad = pd.crosstab(
+    index=df['Estado Civil'],
+    columns=df['Rango Edad'],
+    margins=True
+)
+#print(tabla_estadocivil_edad)
+
+# Agrupar años de empleo
+df['Experiencia Laboral'] = pd.cut(df['Años en el Empleo Actual'], bins=[-1, 0, 5, 20], labels=['Ninguna', '1-5 años', '+5 años'])
+
+# Tabla: Situación Laboral vs. Experiencia
+tabla_empleo_experiencia = pd.crosstab(
+    index=df['Situación Laboral'],
+    columns=df['Experiencia Laboral'],
+    margins=True
+)
+#print(tabla_empleo_experiencia)
+
+###Cruces con Variables Numéricas (Discretizadas)
+
+# Agrupar ingreso en cuartiles
+df['Rango Ingreso'] = pd.qcut(df['Ingreso'], q=4, labels=['Bajo', 'Medio', 'Alto', 'Muy Alto'])
+
+# Tabla: Ingreso vs. Riesgo
+tabla_ingreso_riesgo = pd.crosstab(
+    index=df['Rango Ingreso'],
+    columns=df['Calificación de Riesgo_Num'],
+    margins=True,
+    normalize="index"  # Porcentajes por nivel de ingreso
+)
+#print(tabla_ingreso_riesgo)
+
+# Limpieza de los datos
+
+#*************************************************************************************************************************************FP
+df['Años en el Empleo Actual'] = df['Años en el Empleo Actual'].fillna(df['Años en el Empleo Actual'].median())
+df['Número de Dependientes'] = df['Número de Dependientes'].fillna(df['Número de Dependientes'].median())
+df['Cambio de Estado Civil'] = df['Cambio de Estado Civil'].fillna(df['Cambio de Estado Civil'].median())
+
+# Definir características
+#continuas = ['Ingreso', 'Puntaje de Crédito', 'Monto del Préstamo',
+#             'Relación Deuda-Ingreso', 'Valor de Activos', 'Incumplimientos Previos']
+#discretas = ['Edad', 'Años en el Empleo Actual',
+#             'Número de Dependientes', 'Cambio de Estado Civil']
+#categorico = ['Género', 'Nivel Educativo', 'Estado Civil', 'Propósito del Préstamo',
+#              'Situación Laboral', 'Historial de Pagos']
+
+# Definir características ********************************************************************************************* FP
+# Definir características CORRECTO
+continuas = ['Ingreso', 'Puntaje de Crédito', 'Monto del Préstamo',
+             'Relación Deuda-Ingreso', 'Valor de Activos', 'Incumplimientos Previos']
+discretas = ['Edad', 'Años en el Empleo Actual',
+             'Número de Dependientes']
+categorico = ['Género', 'Nivel Educativo', 'Estado Civil', 'Propósito del Préstamo',
+              'Situación Laboral', 'Historial de Pagos', 'Cambio de Estado Civil']
+
+# Crear el preprocesador
+preprocessor = ColumnTransformer(transformers=[
+    ('cont', MinMaxScaler(), continuas),
+    ('disc',  StandardScaler(), discretas),
+    ('cat', OneHotEncoder(sparse_output=False, handle_unknown='ignore'), categorico)
+])
+
+#  Selección de variables
+X = df[continuas + discretas + categorico]
+y = df['Calificación de Riesgo_Num']
+
+#*********************************************************************************************************************fp
+# Aplicar el preprocesador a los datos completos
+X_processed = preprocessor.fit_transform(X)
+
+# Obtener los nombres de las columnas después del OneHotEncoding
+feature_names = list(preprocessor.transformers_[0][2]) + \
+                list(preprocessor.transformers_[1][2]) + \
+                list(preprocessor.transformers_[2][1].get_feature_names_out(categorico))
+
+X_processed = pd.DataFrame(X_processed, columns=feature_names)
+
+
+# ******************** INSERTA ESTE CÓDIGO PARA GUARDAR X_processed ********************
+import joblib
+ruta_x_processed = 'x_processed_entrenamiento.joblib'
+joblib.dump(X_processed, ruta_x_processed)
+print(f"\nDataFrame X_processed guardado en: {ruta_x_processed}")
+# *************************************************************************************
+
+# ******************** INSERTA ESTE CÓDIGO AQUÍ ********************
+print("\nEstructura de X_processed después del preprocesamiento:")
+print(X_processed.head())
+print("\nNombres de las columnas en X_processed:")
+print(X_processed.columns.tolist())
+# ******************************************************************
+
+input("alto")#**********************************************************************************************
+
+# 4. División del conjunto de datos (ahora con datos preprocesados)
+X_train, X_test, y_train, y_test = train_test_split(
+    X_processed, y, test_size=0.3, random_state=42, stratify=y
+)
+#*********************************************************************************************************************fp
+
+# 4. División del conjunto de datos (antes de escalar)
+#X_train, X_test, y_train, y_test = train_test_split(
+#    X, y, test_size=0.3, random_state=42, stratify=y
+#)
+
+from imblearn.pipeline import Pipeline
+#  Mejora: Añadir escalado de características y más parámetros en la búsqueda
+#  Mejora: Mayor reproducibilidad con random_state en todos los componentes
+#. Mejora: Ponderación dinámica basada en distribución de clases
+
+def custom_scorer(y_true, y_pred):
+    """Calcula un F1 ponderado dando mayor importancia a las clases minoritarias"""
+    precision, recall, f1, support = precision_recall_fscore_support(
+        y_true, y_pred, average=None, zero_division=0
+    )
+
+    # Calcular pesos inversamente proporcionales al soporte de clase
+    class_weights = 1 / (np.sqrt(support) + 1e-6)  # Evitar división por cero
+    class_weights /= class_weights.sum()  # Normalizar
+
+    weighted_f1 = np.dot(f1, class_weights)
+    return weighted_f1
+
+custom_f1_scorer = make_scorer(custom_scorer)
+
+# Configuración mejorada de pipelines con escalado y parámetros de muestreo
+pipelines = {
+    'smote_tomek': Pipeline([
+        ('scaler', StandardScaler()),  # Mejora: Escalado antes del muestreo **************************************************
+        ('sampling', SMOTETomek(random_state=42, sampling_strategy='auto')),
+        ('classifier', KNeighborsClassifier())
+    ]),
+    'borderline_smote': Pipeline([
+        ('scaler', StandardScaler()),
+        ('sampling', BorderlineSMOTE(random_state=42, sampling_strategy='auto')),
+        ('classifier', KNeighborsClassifier())
+    ]),
+    'smote_enn': Pipeline([
+        ('scaler', StandardScaler()),
+        ('sampling', SMOTEENN(random_state=42)),
+        ('classifier', KNeighborsClassifier())
+    ])
+}
+
+# Parámetros ampliados para la búsqueda
+param_grid = {
+    'classifier__n_neighbors': list(range(3, 16, 2)),  # Más opciones
+    'classifier__weights': ['uniform', 'distance'],
+    'classifier__metric': ['euclidean', 'manhattan', 'minkowski'],
+    'classifier__algorithm': ['auto', 'ball_tree', 'kd_tree'],
+    'classifier__leaf_size': [20, 30, 40],  # Nuevo parámetro
+    'sampling__sampling_strategy': ['auto', 'not majority', 'all']  # Explorar estrategias
+}
+
+# Configuración común para la validación cruzada
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+results = {}
+best_score = 0
+best_pipeline = None
+
+# Búsqueda optimizada con más iteraciones y paralelización
+for name, pipeline in pipelines.items():
+    print(f"\nEvaluando pipeline: {name}")
+
+    search = RandomizedSearchCV(
+        estimator=pipeline,
+        param_distributions=param_grid,
+        n_iter=50,  # Más combinaciones
+        cv=cv,
+        scoring=custom_f1_scorer,
+        n_jobs=-1, # tenia valor -1 y lo cambie a 1 ****************************************************
+        random_state=42,
+        error_score='raise'  # Mejor manejo de errores
+    )
+
+    for col in continuas + discretas:
+        if X_train[col].dtype == 'object':
+            print(f"\nColumna '{col}' es de tipo 'object'. Valores únicos:")
+            print(X_train[col].unique())
+
+    search.fit(X_train, y_train)
+
+    # Almacenar métricas adicionales
+    results[name] = {
+        'best_score': search.best_score_,
+        'best_params': search.best_params_,
+        'cv_results': search.cv_results_
+    }
+
+    if search.best_score_ > best_score:
+        best_score = search.best_score_
+        best_pipeline = search.best_estimator_
+        best_params = search.best_params_
+
+# Análisis post-procesamiento de resultados
+print("\n===== RESULTADOS DETALLADOS =====")
+for name, res in results.items():
+    print(f"\nPipeline {name}:")
+    print(f"Mejor puntuación: {res['best_score']:.4f}")
+    print(f"Mejores parámetros: {res['best_params']}")
+
+    # Mostrar desviación estándar de la mejor puntuación
+    best_idx = res['cv_results']['rank_test_score'].argmin()
+    std_score = res['cv_results']['std_test_score'][best_idx]
+    print(f"Variabilidad: ±{std_score:.4f}")
+
+print("\n===== MEJOR MODELO SELECCIONADO =====")
+print(f"Pipeline: {best_pipeline}")
+print(f"Puntuación CV: {best_score:.4f}")
+print(f"Parámetros: {best_params}")
+
+# Mejora adicional: Evaluación final con métricas extendidas
+if best_pipeline is not None:
+    from sklearn.metrics import classification_report
+    y_pred = best_pipeline.predict(X_test)
+    print("\n===== REPORTE DE CLASIFICACIÓN =====")
+    print(classification_report(y_test, y_pred, digits=4))
+
+# Entrenamiento del Modelo KNN
+
+#  Crear el pipeline completo
+#best_pipeline = Pipeline(steps=[
+#    ('preprocessing', preprocessor),
+#    ('sampling', BorderlineSMOTE(random_state=42, sampling_strategy='all')),
+#    ('classifier', KNeighborsClassifier(
+#        algorithm='auto',
+#        metric='manhattan',
+#        n_neighbors=3,
+#        weights='uniform',
+#        leaf_size=20
+#    ))
+#])
+
+#  Entrenar el pipeline
+best_pipeline.fit(X_train, y_train)
+
+#  Predicción en el conjunto de prueba
+y_pred = best_pipeline.predict(X_test)
+
+#  Validación cruzada con el pipeline completo
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+f1_scores_cv = cross_val_score(
+    best_pipeline,
+    X_train,
+    y_train,
+    cv=cv,
+    scoring='f1_weighted'
+)
+
+#  Evaluación del modelo
+cm = confusion_matrix(y_test, y_pred)
+f1_test = f1_score(y_test, y_pred, average='weighted')
+
+#  Resultados
+print(f"F1-score promedio en validación cruzada: {f1_scores_cv.mean():.4f}")
+print(f"F1-score en conjunto de prueba: {f1_test:.4f}")
+print("Matriz de confusión:")
+print(cm)
+
+## COMO FUNCIONA
+
+# Confusion matrix
+conf_matrix = confusion_matrix(y_test, y_pred)
+"""
+plt.figure(figsize=(10,7))
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues',
+            xticklabels=['Low', 'Medium', 'High'], yticklabels=['Low', 'Medium', 'High'])
+plt.xlabel('Prediccion')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix')
+plt.show()
+"""
+
+#*****************************************************************************************************************************fp
+# Aplicar el preprocesador a los datos de entrenamiento y prueba DESPUÉS de la división
+#X_train_proc = preprocessor.transform(X_train)
+#X_test_proc = preprocessor.transform(X_test)
+#*****************************************************************************************************************************fp
+
+# Binarizar etiquetas para clasificación multiclase
+y_test_bin = label_binarize(y_test, classes=np.unique(y_test))
+n_classes = y_test_bin.shape[1]
+
+# Usar el mismo clasificador que en el pipeline
+# Extraer solo el preprocesamiento y modelo base
+#X_train_proc = best_pipeline.named_steps['preprocessing'].transform(X_train)
+#X_test_proc = best_pipeline.named_steps['preprocessing'].transform(X_test)
+
+# Usar el clasificador del mejor pipeline
+model = best_pipeline.named_steps['classifier']
+
+# Ajustar un modelo One-vs-Rest con los datos ya procesados
+ovr_classifier = OneVsRestClassifier(model)
+ovr_classifier.fit(X_train, y_train) #X_train_proc****************************************************************************************fp
+y_score = ovr_classifier.predict_proba(X_test)#X_test_proc***************************************************************************fp
+
+# Calcular la curva ROC y el AUC para cada clase
+fpr = dict()
+tpr = dict()
+roc_auc = dict()
+for i in range(n_classes):
+    fpr[i], tpr[i], _ = roc_curve(y_test_bin[:, i], y_score[:, i])
+    roc_auc[i] = auc(fpr[i], tpr[i])
+
+# Macro-promedio
+all_fpr = np.unique(np.concatenate([fpr[i] for i in range(n_classes)]))
+mean_tpr = np.zeros_like(all_fpr)
+for i in range(n_classes):
+    mean_tpr += np.interp(all_fpr, fpr[i], tpr[i])
+mean_tpr /= n_classes
+
+fpr["macro"] = all_fpr
+tpr["macro"] = mean_tpr
+roc_auc["macro"] = auc(fpr["macro"], tpr["macro"])
+
+# Graficar
+"""
+plt.figure(figsize=(10, 7))
+for i in range(n_classes):
+    plt.plot(fpr[i], tpr[i], lw=2, label=f'Clase {ovr_classifier.classes_[i]} (AUC = {roc_auc[i]:.2f})')
+
+plt.plot([0, 1], [0, 1], 'k--', lw=2, label='Aleatorio')
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.05])
+plt.xlabel('Tasa de Falsos Positivos')
+plt.ylabel('Tasa de Verdaderos Positivos')
+plt.title(f'Curva ROC Multiclase - AUC Macro: {roc_auc["macro"]:.2f}')
+plt.legend(loc='lower right')
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+"""
+
+# Imprimir matriz de confusión
+print("Matriz de Confusión:")
+print(cm)
+
+# Reporte de clasificación
+print("\n Reporte de Clasificación:")
+print(classification_report(y_test, y_pred))
+
+# F1-score ponderado
+f1 = f1_score(y_test, y_pred, average='weighted')
+print(f"\n F1-score ponderado: {f1:.4f}")
+
+# AUC por clase
+print("\n Área bajo la curva ROC (AUC) por clase:")
+for i in range(n_classes):
+    clase = ovr_classifier.classes_[i]
+    print(f"Clase {clase}: AUC = {roc_auc[i]:.4f}")
+
+# AUC promedio (macro)
+auc_macro = roc_auc["macro"]
+print(f"\n AUC promedio (macro): {auc_macro:.4f}")
+
+"""
+# Se separa el riesgo bajo del resto y se aplica el mismo algoritmo
+
+from sklearn.pipeline import Pipeline
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix, f1_score, roc_auc_score
+from sklearn.preprocessing import label_binarize
+import numpy as np
+
+# Entrenar el pipeline
+model = Pipeline(steps=[
+    ('preprocessor', preprocessor),
+    ('classifier', RandomForestClassifier(random_state=42))
+])
+
+# Entrenamiento
+model.fit(X_train, y_train)
+
+# Predicciones
+y_pred = model.predict(X_test)
+y_proba = model.predict_proba(X_test)
+
+# Matriz de confusión
+cm = confusion_matrix(y_test, y_pred)
+print("Matriz de Confusión:")
+print(cm)
+
+# Reporte de clasificación
+print("\nReporte de Clasificación:")
+print(classification_report(y_test, y_pred))
+
+# F1-score ponderado
+f1 = f1_score(y_test, y_pred, average='weighted')
+print(f"\nF1-score ponderado: {f1:.4f}")
+
+# AUC por clase
+# Convertimos y_test a binarizado para cálculo de AUC multiclase
+classes = np.unique(y_test)
+y_test_binarized = label_binarize(y_test, classes=classes)
+
+roc_auc = roc_auc_score(y_test_binarized, y_proba, average=None, multi_class='ovr')
+
+print("\nÁrea bajo la curva ROC (AUC) por clase:")
+for i, clase in enumerate(classes):
+    print(f"Clase {clase}: AUC = {roc_auc[i]:.4f}")
+
+# AUC promedio (macro)
+roc_auc_macro = roc_auc_score(y_test_binarized, y_proba, average='macro', multi_class='ovr')
+print(f"\nAUC promedio (macro): {roc_auc_macro:.4f}")
+
+"""
+
+import joblib
+"""
+joblib está optimizada para guardar y cargar objetos de Python que contienen grandes arrays numéricos, 
+como los modelos de scikit-learn y los objetos de preprocesamiento. 
+"""
+
+import joblib
+
+import joblib
+
+# Guardar el mejor pipeline (contiene el preprocesador, el muestreador y el clasificador)
+ruta_guardado_pipeline = 'best_pipeline_riesgo_financiero.joblib'
+joblib.dump(best_pipeline, ruta_guardado_pipeline)
+print(f"El mejor pipeline (best_pipeline) guardado exitosamente en: {ruta_guardado_pipeline}")
+
+# Guardar los componentes individuales del mejor pipeline
+
+import joblib
+
+# Guardar el mejor pipeline
+ruta_guardado_pipeline = 'best_pipeline_riesgo_financiero.joblib'
+joblib.dump(best_pipeline, ruta_guardado_pipeline)
+print(f"El mejor pipeline (best_pipeline) guardado exitosamente en: {ruta_guardado_pipeline}")
+
+# Guardar los componentes individuales del mejor pipeline
+
+# 1. Guardar el escalador (StandardScaler)
+scaler = best_pipeline.named_steps['scaler']
+ruta_guardado_scaler = 'scaler_riesgo_financiero.joblib'
+joblib.dump(scaler, ruta_guardado_scaler)
+print(f"El escalador (StandardScaler) guardado exitosamente en: {ruta_guardado_scaler}")
+
+# 2. Guardar el muestreador (SMOTETomek)
+sampler = best_pipeline.named_steps['sampling']
+ruta_guardado_sampler = 'sampler_riesgo_financiero.joblib'
+joblib.dump(sampler, ruta_guardado_sampler)
+print(f"El muestreador (SMOTETomek) guardado exitosamente en: {ruta_guardado_sampler}")
+
+# 3. Guardar el modelo KNN (KNeighborsClassifier)
+knn_model = best_pipeline.named_steps['classifier']
+ruta_guardado_knn = 'knn_model_riesgo_financiero.joblib'
+joblib.dump(knn_model, ruta_guardado_knn)
+print(f"El modelo KNN (KNeighborsClassifier) guardado exitosamente en: {ruta_guardado_knn}")
+
+# Guardar los nombres de las columnas originales
+columnas_originales = continuas + discretas + categorico
+ruta_guardado_columnas = 'nombres_columnas_originales.joblib'
+joblib.dump(columnas_originales, ruta_guardado_columnas)
+print(f"Los nombres de las columnas originales guardados exitosamente en: {ruta_guardado_columnas}")
+
+# Guardar los nombres de las características después del preprocesamiento
+# El StandardScaler mantiene los nombres de las columnas numéricas.
+# El OneHotEncoder (implícito) genera nuevos nombres. Necesitamos reconstruirlos.
+import pandas as pd
+encoder = pd.get_dummies(df[categorico]).columns.tolist() # Obtiene los nombres codificados
+feature_names_preprocesadas = continuas + discretas + encoder
+ruta_guardado_feature_names = 'nombres_caracteristicas_preprocesadas.joblib'
+joblib.dump(feature_names_preprocesadas, ruta_guardado_feature_names)
+print(f"Los nombres de las características preprocesadas guardados exitosamente en: {ruta_guardado_feature_names}")
+
+print(f"Felicidades has guardado el Modelo")
