@@ -47,6 +47,7 @@ class ExtraerInformacionWeb:
         except Exception as e:
             print(f"Error al obtener la información: {e}")
             return None 
+        
     def mostrar_respuesta_ia(self, texto):
         self.limpiar_terminal()
         if texto.strip() == "":
@@ -55,6 +56,10 @@ class ExtraerInformacionWeb:
             respuesta_estilizada = f"\033[1;96m🤖 IA: {texto}\033[0m"
             print(respuesta_estilizada)
         print("\n--- Fin de la información ---")
+
+    def preguntar_entrevistado(self, texto):
+        self.limpiar_terminal()
+        
 
 def mostrar_definicion(atitulo, aparrafos)-> None:
     iExtraer = ExtraerInformacionWeb()

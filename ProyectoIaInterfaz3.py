@@ -85,14 +85,31 @@ st.write("--- Fin de la Inspección ---")
 
 if st.button("Predecir Riesgo"):
     df_nuevo_solicitante_original = df_nuevo_solicitante_original.copy()
+    st.subheader("4. DataFrame Original antes del preprocesamiento:")
+    st.write(df_nuevo_solicitante_original)
+
     try:
         scaler_continuas = MinMaxScaler()
+        st.subheader("5. Valores de Continuas antes de la transformación:")
+        st.write(df_nuevo_solicitante_original[continuas_orig])
         scaled_continuas = scaler_continuas.fit_transform(df_nuevo_solicitante_original[continuas_orig])
+        st.subheader("6. Valores de Continuas después de la transformación:")
+        st.write(scaled_continuas)
+
         scaler_discretas = StandardScaler()
+        st.subheader("7. Valores de Discretas antes de la transformación:")
+        st.write(df_nuevo_solicitante_original[discretas_orig])
         scaled_discretas = scaler_discretas.fit_transform(df_nuevo_solicitante_original[discretas_orig])
+        st.subheader("8. Valores de Discretas después de la transformación:")
+        st.write(scaled_discretas)
+
         encoder_categoricas = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
+        st.subheader("9. Valores de Categoricas antes de la codificación:")
+        st.write(df_nuevo_solicitante_original[categorico_orig])
         encoded_categoricas = encoder_categoricas.fit_transform(df_nuevo_solicitante_original[categorico_orig])
         encoded_feature_names = encoder_categoricas.get_feature_names_out(categorico_orig)
+        st.subheader("10. Valores de Categoricas después de la codificación:")
+        st.write(encoded_categoricas)
     except Exception as e:
         st.error(f"Error durante el preprocesamiento: {e}")
         st.stop()

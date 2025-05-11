@@ -420,13 +420,20 @@ print("\nNombres de las columnas en X_processed:")
 print(X_processed.columns.tolist())
 # ******************************************************************
 
-input("alto")#**********************************************************************************************
+#*****************************************************************************************************************
 
 # 4. División del conjunto de datos (ahora con datos preprocesados)
 X_train, X_test, y_train, y_test = train_test_split(
     X_processed, y, test_size=0.3, random_state=42, stratify=y
 )
 #*********************************************************************************************************************fp
+
+import joblib
+
+ruta_y_train = 'y_train.joblib'
+joblib.dump(y_train, ruta_y_train)
+print(f"\nSeries y_train guardada en: {ruta_y_train}")
+
 
 # 4. División del conjunto de datos (antes de escalar)
 #X_train, X_test, y_train, y_test = train_test_split(
