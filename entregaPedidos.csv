@@ -1,0 +1,13 @@
+Número de pedido,Nombre del cliente,Tipo de mercancía,Peso (kg),Origen,Destino,Medio de transporte,Fecha de entrega
+1,María López,Alimentos frescos,20,Valencia,Madrid,Camión,2025-01-05
+2,Juan Pérez,Electrónicos,50,Barcelona,Sevilla,Avión,2025-01-04
+3,Laura Hernández,Ropa,120,Alicante,Málaga,Camión,2025-01-06
+4,Carlos Ramírez,Medicinas,10,Madrid,Bilbao,Avión,2025-01-03
+5,Sofía Gómez,Muebles,800,Zaragoza,Valladolid,Camión,2025-01-07
+6,Andrés Jiménez,Alimentos secos,500,Salamanca,León,Tren,2025-01-08
+7,Marta Ruiz,Electrodomésticos,200,Sevilla,Granada,Camión,2025-01-06
+8,Luis Torres,Juguetes,150,Madrid,Palma de Mallorca,Avión,2025-01-05
+9,Julia Vega,Material escolar,80,Toledo,Albacete,Camión,2025-01-07
+10,Pedro Silva,Productos químicos,600,Valencia,Tarragona,Camión,2025-01-04
+11,Ana Rojas,Equipos médicos,100,Barcelona,Zaragoza,Tren,2025-01-06
+12,Manuel Castillo,Piezas industriales,1200,Cádiz,Las Palmas,Barco,2025-01-09
